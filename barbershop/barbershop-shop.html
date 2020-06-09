@@ -19,7 +19,7 @@
             <li><a href="contacts.html">Контакты</a></li>
         </ul>
         <ul class="user-nav">
-            <li class="auth-link">Вход</li>
+            <li class="auth-link"><a href="#">Вход</a></li>
         </ul>
     </nav>
 </header>
@@ -34,12 +34,56 @@
     </ul>
 
     <section class="filters">
-        <h2 class="hidden">Фильтры</h2>
-<!--        Здесь будет форма-->
+        <h2 class="visibility-hidden">Фильтры</h2>
+
+        <form class="shop-filters-form">
+            <h3>Производители:</h3>
+            <p>
+                <input id="manufacturer_1" type="checkbox" name="manufacturer" value="1">
+                <label for="manufacturer_1">Baxter of California</label>
+            </p>
+            <p>
+                <input id="manufacturer_2" type="checkbox" name="manufacturer" value="2">
+                <label for="manufacturer_2">Mr Natty</label>
+            </p>
+            <p>
+                <input id="manufacturer_3" type="checkbox" name="manufacturer" value="3">
+                <label for="manufacturer_3">Suavecito</label>
+            </p>
+            <p>
+                <input id="manufacturer_4" type="checkbox" name="manufacturer" value="4">
+                <label for="manufacturer_4">Malin-Goetz</label>
+            </p>
+            <p>
+                <input id="manufacturer_5" type="checkbox" name="manufacturer" value="5">
+                <label for="manufacturer_5">Murrays</label>
+            </p>
+            <p>
+                <input id="manufacturer_6" type="checkbox" name="manufacturer" value="6">
+                <label for="manufacturer_6">American Crew</label>
+            </p>
+
+            <h3>Группы товаров:</h3>
+
+            <p>
+                <input id="group_1" type="checkbox" name="group" value="1">
+                <label for="group_1">Бритвенные принадлежности</label>
+            </p>
+            <p>
+                <input id="group_2" type="checkbox" name="group" value="2">
+                <label for="group_2">Средства для ухода</label>
+            </p>
+            <p>
+                <input id="group_3" type="checkbox" name="group" value="3">
+                <label for="group_3">Аксессуары</label>
+            </p>
+
+            <button type="submit">Показать</button>
+        </form>
     </section>
 
     <section class="catalog">
-        <h2 class="hidden">Список средств для ухода</h2>
+        <h2 class="visibility-hidden">Список средств для ухода</h2>
         <ul class="catalog-list">
             <li class="catalog-item">
                 <h3>
