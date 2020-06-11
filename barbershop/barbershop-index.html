@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
 
@@ -45,51 +49,74 @@
         </ul>
     </section>
 
-    <section class="news">
-        <h2>Новости</h2>
-        <ul class="news-list">
-            <li class="news-item">
-                <p>НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ</p>
-                <time datetime="2020-01-11">11 января</time>
-            </li>
-            <li class="news-item">
-                <p>В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС «БРИТВА» СТРИГУНЕЦ, ОБЛАДAТЕЛЬ МНОЖЕСТВА ТИТУЛОВ И НАГРАД ПОПОЛНИЛ НАШИ СТРОЙНЫЕ РЯДЫ</p>
-                <time datetime="2020-01-18">18 января</time>
-            </li>
-        </ul>
-        <a class="button" href="news.html">ВСЕ НОВОСТИ</a>
-    </section>
+    <div class="index-columns">
+        <section class="news">
+            <h2>Новости</h2>
+            <ul class="news-list">
+                <li class="news-item">
+                    <p>НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ</p>
+                    <time datetime="2020-01-11">11 января</time>
+                </li>
+                <li class="news-item">
+                    <p>В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС «БРИТВА» СТРИГУНЕЦ, ОБЛАДAТЕЛЬ МНОЖЕСТВА ТИТУЛОВ И НАГРАД ПОПОЛНИЛ НАШИ СТРОЙНЫЕ РЯДЫ</p>
+                    <time datetime="2020-01-18">18 января</time>
+                </li>
+            </ul>
+            <a class="button" href="news.html">ВСЕ НОВОСТИ</a>
+        </section>
 
-    <section class="gallery">
-        <h2>Фотогалерея</h2>
-        <div class="gallery-img">
-            <a href="#">
-                <img src="gallery.png" alt="Интерьер">
-            </a>
-        </div>
-        <button class="gallery-back">Назад</button>
-        <button class="gallery-next">Вперед</button>
-    </section>
+        <section class="gallery">
+            <h2>Фотогалерея</h2>
+            <div class="gallery-img">
+                <a href="#">
+                    <img src="gallery.png" alt="Интерьер">
+                </a>
+            </div>
+            <button class="gallery-back">Назад</button>
+            <button class="gallery-next">Вперед</button>
+        </section>
+    </div>
 
-    <section class="contacts">
-        <h2>Контакты</h2>
-        <p>
-            БАРБЕРШОП «БОРОДИНСКИЙ»<br>
-            АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8<br>
-            ТЕЛЕФОН: +7 (495) 666-02-66
-        </p>
-        <p>
-            ВРЕМЯ РАБОТЫ:<br>
-            ПН—ПТ: С 10:00 ДО 22:00<br>
-            СБ—ВС: С 10:00 ДО 19:00
-        </p>
-    </section>
+    <div class="index-columns">
+        <section class="contacts">
+            <h2>Контакты</h2>
+            <p>
+                БАРБЕРШОП «БОРОДИНСКИЙ»<br>
+                АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8<br>
+                ТЕЛЕФОН: +7 (495) 666-02-66
+            </p>
+            <p>
+                ВРЕМЯ РАБОТЫ:<br>
+                ПН—ПТ: С 10:00 ДО 22:00<br>
+                СБ—ВС: С 10:00 ДО 19:00
+            </p>
+        </section>
 
-    <section class="appointment">
-        <h2>Записаться</h2>
-        <p>УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ</p>
-<!--        Форма-->
-    </section>
+        <section class="appointment">
+            <h2>Записаться</h2>
+            <p>УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ</p>
+
+            <form class="appointment-form">
+                <p>
+                    <label for="appointment-form-date">Дата</label>
+                    <input id="appointment-form-date" type="text" name="date" placeholder="08.10.2017">
+                </p>
+                <p>
+                    <label for="appointment-form-time">Время</label>
+                    <input id="appointment-form-time" type="text" name="time" placeholder="10:00">
+                </p>
+                <p>
+                    <label for="appointment-form-name">Ваше имя</label>
+                    <input id="appointment-form-name" type="text" name="name" placeholder="Борода">
+                </p>
+                <p>
+                    <label for="appointment-form-phone">Телефон</label>
+                    <input id="appointment-form-phone" type="text" name="phone" placeholder="+7 123 456-78-90">
+                </p>
+            </form>
+        </section>
+    </div>
+
 </main>
 
 <footer class="main-footer">
@@ -111,7 +138,28 @@
         <b>РАЗРАБОТАНО:</b>
         <a class="button" href="#">HTML Academy</a>
     </p>
-</footer>
+
+
+    <section class="modal modal-login">
+        <h2>Личный кабинет</h2>
+        <p>Введите свой логин и пароль</p>
+        <form class="login-form">
+            <p class="login-form-item">
+                <input type="text" name="login" placeholder="Логин">
+            </p>
+            <p class="login-form-item">
+                <input type="password" name="password" placeholder="Пароль">
+            </p>
+            <p class="login-form-item">
+                <input id="login-form-remember" type="checkbox" name="remember" value="1">
+                <label for="login-form-remember">Дата</label>
+            </p>
+            <p class="login-form-item">
+                <a href="#">Я забыл пароль</a>
+            </p>
+        </form>
+        <span class="modal-close">x</span>
+    </section>
 
 </body>
 </html>
