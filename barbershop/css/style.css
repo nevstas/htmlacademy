@@ -42,6 +42,10 @@ a {
     background-color: #663d15;
 }
 
+.breadcrumbs {
+    list-style: none;
+}
+
 /* Шапка начало */
 
 .top-nav {
@@ -70,6 +74,7 @@ a {
 }
 
 /* Шапка конец */
+
 /* Главная начало */
 
 .features-list {
@@ -120,6 +125,46 @@ a {
 }
 
 /* Главная конец */
+
+/* Продукт начало */
+
+.product-price b, .catalog-item-price b {
+    background-color: #e5e5e5;
+    color: #000000;
+}
+
+.item-composition {
+    list-style: none;
+}
+
+/* Продукт конец */
+
+/* Прайс-лист начало */
+
+.price-instrument-list {
+    list-style: none;
+}
+
+.table-pricelist {
+
+}
+
+/* Прайс-лист конец */
+
+/* Каталог начало */
+
+.pagination-list .pagination-item {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+.pagination-list .pagination-item-current {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+/* Каталог конец */
+
 /* Футер начало */
 
 .main-footer {
@@ -163,6 +208,8 @@ a {
 
 /* Футер конец */
 
+/* Модал начало */
+
 .modal {
     color: #000000;
     background-color: #f8f3f0;
@@ -201,3 +248,5 @@ a {
 .restore:focus {
     text-decoration: none;
 }
+
+/* Модал конец */
