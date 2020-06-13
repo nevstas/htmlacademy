@@ -13,6 +13,15 @@ a {
     text-decoration: none;
 }
 
+.button {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+
+    color: #FFFFFF;
+    background-color: #ee3643;
+}
+
 /* Шапка начало */
 
 .main-header {
@@ -65,6 +74,146 @@ a {
 
 .container {
     background-color: #FFFFFF;
+}
+
+.home-catalog {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
+
+.home-catalog h2 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.home-catalog-item1 {
+    background-color: #ffbf47;
+}
+
+.home-catalog-item2 {
+    background-color: #3bbce3;
+}
+
+.home-catalog-item3 {
+    background-color: #dc91d8;
+}
+
+.home-catalog-item4 {
+    background-color: #8ed78f;
+}
+
+.home-catalog-item5 {
+    background-color: #ffc047;
+}
+
+.products-popular {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 17px;
+    line-height: 18px;
+}
+
+.section-header {
+    background-color: #f9f5f0;
+}
+
+.products-popular h2 {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+}
+
+.products-item h3 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.products-item .products-price {
+    font-weight: 700;
+}
+
+.products-item .products-discount-price {
+    font-weight: 700;
+    color: #FFFFFF;
+    background-color: #ee3643;
+}
+
+.manufacturer-popular {
+
+}
+
+.manufacturer-popular h2 {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+}
+
+.manufacturer-popular-list {
+    list-style: none;
+}
+
+.services {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+
+    background-color: #f4f8f9;
+}
+
+.services h2 {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+}
+
+.services-menu {
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 30px;
+}
+
+.services-desc h3 {
+    font-size: 36px;
+    line-height: 36px;
+}
+
+.about-and-contacts {
+    background-color: #FFFFFF;
+}
+
+.about {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+}
+
+.about h2 {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+}
+
+.about-partners {
+    list-style: none;
+
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.contacts {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+}
+
+.contacts h2 {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 30px;
+    line-height: 30px;
 }
 
 /* Главная конец */
