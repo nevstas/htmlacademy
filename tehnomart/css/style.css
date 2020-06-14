@@ -219,9 +219,127 @@ a {
 /* Главная конец */
 
 /* Каталог начало */
+
+.container-shop {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+}
+
+.container-shop h1 {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+
+    color: #32425c;
+    background-color: #f2f6f8;
+}
+
+.breadcrumbs {
+    list-style: none;
+
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.filters {
+
+}
+
+.filters h2 {
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.filters-list {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 30px;
+}
+
+.filters-more {
+
+}
+
+.products {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.products-sort-list {
+    list-style: none;
+}
+
+.products-sort-order {
+    list-style: none;
+}
+
+.pagination-list {
+    list-style: none;
+}
+
+.pagination-item {
+    border: 4px solid #000000;
+}
+
+.pagination-item-current {
+    background-color: #ee3643;
+}
+
+.catalog-about h2 {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+}
+
+.catalog-about p {
+    font-size: 13px;
+    line-height: 24px;
+}
+
 /* Каталог конец */
 
 /* Футер начало */
+
+.main-footer {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+
+    color: #FFFFFF;
+}
+
+.footer-top .footer-logo {
+    font-size: 30px;
+    line-height: 30px;
+
+    background-color: #ee3643;
+}
+
+.footer-top-menu {
+    list-style: none;
+}
+
+.footer-main .footer-main-menu {
+    line-height: 30px;
+    color: #ffda96;
+}
+
+.footer-bottom {
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.footer-social {
+    list-style: none;
+}
+
+.footer-bottom-right a {
+    color: #ffd180;
+}
+
 /* Футер конец */
 
 /* Модал начало */
