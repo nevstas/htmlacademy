@@ -20,6 +20,14 @@ body {
     background-color: #f9f6f3;
 }
 
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
 a {
     text-decoration: none;
 }
@@ -44,21 +52,51 @@ a {
 
 .breadcrumbs {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 /* Шапка начало */
+
+.main-header {
+    margin-bottom: 75px;
+}
 
 .top-nav {
     font-size: 16px;
     line-height: 20px;
     color: #ffffff;
+    text-align: center;
+}
 
+.top-nav-container {
     background-color: #000000;
+    margin-bottom: 55px;
+}
+
+.top-nav-container ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.top-nav-container .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 70px;
 }
 
 .site-nav,
 .user-nav {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .site-nav a,
@@ -77,12 +115,23 @@ a {
 
 /* Главная начало */
 
+.features {
+    font-weight: 100;
+    margin-bottom: 85px;
+}
+
 .features-list {
     list-style: none;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    justify-content: space-between;
 }
 
 .features-item {
     text-align: center;
+    width: 300px;
 }
 
 .features-item h3 {
@@ -90,9 +139,17 @@ a {
     line-height: 42px;
 }
 
+.news-gallery {
+    margin-bottom: 40px;
+}
+
 .index-columns {
     color: #000000;
     background-color: #f8f5f2;
+    padding: 50px 80px;
+
+    display: flex;
+    justify-content: space-between;
 }
 
 .index-columns h2 {
@@ -100,17 +157,39 @@ a {
     line-height: 42px;
 }
 
+.news {
+    width: 380px;
+}
+
 .news-list {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .news-item time {
     text-transform: none;
 }
 
+.gallery {
+    width: 300px;
+}
+
 .gallery-img {
     background-color: #cccccc;
     border: 7px solid #ffffff;
+}
+
+.contacts-appointment {
+    margin-bottom: 65px;
+}
+
+.contacts {
+    width: 380px;
+}
+
+.appointment {
+    width: 300px;
 }
 
 .appointment input {
@@ -135,6 +214,8 @@ a {
 
 .item-composition {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 /* Продукт конец */
@@ -143,6 +224,8 @@ a {
 
 .price-instrument-list {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .table-pricelist {
@@ -169,8 +252,17 @@ a {
 
 .main-footer {
     color: #ffffff;
-
     background-color: #212121;
+    padding: 60px 0px 40px 0px;
+}
+
+.main-footer .container {
+    display: flex;
+}
+
+.footer-contats {
+    width: 380px;
+    margin-right: 20px;
 }
 
 .footer-contats a {
@@ -185,10 +277,17 @@ a {
 
 .footer-social {
     text-align: center;
+    width: 140px;
 }
 
-.footer-social ul {
+.footer-social-list {
     list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-social-list li {
+    display: inline;
 }
 
 .social-button {
@@ -196,7 +295,9 @@ a {
 }
 
 .footer-copyright {
+    width: 140px;
     text-align: center;
+    margin-left: auto;
 }
 
 .footer-copyright .button:hover,
@@ -213,6 +314,7 @@ a {
 .modal {
     color: #000000;
     background-color: #f8f3f0;
+    display: none;
 }
 
 .modal h2 {

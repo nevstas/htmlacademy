@@ -14,26 +14,30 @@
 
 <header class="main-header">
     <nav class="top-nav">
+        <div class="top-nav-container">
+            <div class="container">
+                <ul class="site-nav">
+                    <li><a href="info.html">Информация</a></li>
+                    <li><a href="news.html">Новости</a></li>
+                    <li><a href="price.html">Прайс-лист</a></li>
+                    <li><a href="catalog.html">Магазин</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+                <ul class="user-nav">
+                    <li class="auth-link"><a href="#">Вход</a></li>
+                </ul>
+            </div>
+        </div>
         <a class="main-top-logo">
-            <img src="top-logo.png" alt="Логотип барбершопа">
+            <img src="img/index-logo.png" alt="Логотип барбершопа">
         </a>
-        <ul class="site-nav">
-            <li><a href="info.html">Информация</a></li>
-            <li><a href="news.html">Новости</a></li>
-            <li><a href="price.html">Прайс-лист</a></li>
-            <li><a href="catalog.html">Магазин</a></li>
-            <li><a href="contacts.html">Контакты</a></li>
-        </ul>
-        <ul class="user-nav">
-            <li class="auth-link"><a href="#">Вход</a></li>
-        </ul>
     </nav>
 </header>
 
 <main class="container">
-    <h1 class="visibility-hidden">Барбершоп Бородинский</h1>
+    <h1 class="visually-hidden">Барбершоп Бородинский</h1>
     <section class="features">
-        <h2 class="visibility-hidden">Преимущества</h2>
+        <h2 class="visually-hidden">Преимущества</h2>
         <ul class="features-list">
             <li class="features-item">
                 <h3>БЫСТРО</h3>
@@ -51,7 +55,7 @@
         </ul>
     </section>
 
-    <div class="index-columns">
+    <div class="news-gallery index-columns">
         <section class="news">
             <h2>Новости</h2>
             <ul class="news-list">
@@ -79,7 +83,7 @@
         </section>
     </div>
 
-    <div class="index-columns">
+    <div class="contacts-appointment index-columns">
         <section class="contacts">
             <h2>Контакты</h2>
             <p>
@@ -122,46 +126,49 @@
 </main>
 
 <footer class="main-footer">
-    <p class="footer-contats">
-        БАРБЕРШОП «БОРОДИНСКИЙ»<br>
-        АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8<br>
-        КАК НАС НАЙТИ?<br>
-        ТЕЛЕФОН: +7 (495) 666-02-66
-    </p>
-    <div class="footer-social">
-        <b>ДАВАЙТЕ ДРУЖИТЬ!</b>
-        <ul>
-            <li><a class="social-button social-button-vk">Вконтакте</a></li>
-            <li><a class="social-button social-button-fb">Фейсбук</a></li>
-            <li><a class="social-button social-button-instagram">Инстаграм</a></li>
-        </ul>
+    <div class="container">
+        <p class="footer-contats">
+            БАРБЕРШОП «БОРОДИНСКИЙ»<br>
+            АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8<br>
+            КАК НАС НАЙТИ?<br>
+            ТЕЛЕФОН: +7 (495) 666-02-66
+        </p>
+        <div class="footer-social">
+            <b>ДАВАЙТЕ ДРУЖИТЬ!</b>
+            <ul class="footer-social-list">
+                <li><a class="social-button social-button-vk"><img src="img/social-vk.svg" alt="Вконтакте"></a></li>
+                <li><a class="social-button social-button-fb"><img src="img/social-facebook.svg" alt="Фейсбук"></a></li>
+                <li><a class="social-button social-button-instagram"><img src="img/social-instagram.svg" alt="Инстаграм"></a></li>
+            </ul>
+        </div>
+        <p class="footer-copyright">
+            <b>РАЗРАБОТАНО:</b><br>
+            <a class="button" href="#">HTML Academy</a>
+        </p>
     </div>
-    <p class="footer-copyright">
-        <b>РАЗРАБОТАНО:</b>
-        <a class="button" href="#">HTML Academy</a>
-    </p>
+</footer>
 
 
-    <section class="modal modal-login">
-        <h2>Личный кабинет</h2>
-        <p>Введите свой логин и пароль</p>
-        <form class="login-form">
-            <p class="login-form-item">
-                <input type="text" name="login" placeholder="Логин">
-            </p>
-            <p class="login-form-item">
-                <input type="password" name="password" placeholder="Пароль">
-            </p>
-            <p class="login-form-item">
-                <input id="login-form-remember" type="checkbox" name="remember" value="1">
-                <label for="login-form-remember">Дата</label>
-            </p>
-            <p class="login-form-item">
-                <a href="#">Я забыл пароль</a>
-            </p>
-        </form>
-        <span class="modal-close">x</span>
-    </section>
+<section class="modal modal-login">
+    <h2>Личный кабинет</h2>
+    <p>Введите свой логин и пароль</p>
+    <form class="login-form">
+        <p class="login-form-item">
+            <input type="text" name="login" placeholder="Логин">
+        </p>
+        <p class="login-form-item">
+            <input type="password" name="password" placeholder="Пароль">
+        </p>
+        <p class="login-form-item">
+            <input id="login-form-remember" type="checkbox" name="remember" value="1">
+            <label for="login-form-remember">Дата</label>
+        </p>
+        <p class="login-form-item">
+            <a href="#">Я забыл пароль</a>
+        </p>
+    </form>
+    <span class="modal-close">x</span>
+</section>
 
 </body>
 </html>
