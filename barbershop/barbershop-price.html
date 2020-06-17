@@ -14,19 +14,23 @@
 
 <header class="main-header">
     <nav class="top-nav">
-        <a class="main-top-logo" href="index.html">
-            <img src="top-logo.png" alt="Логотип барбершопа">
-        </a>
-        <ul class="site-nav">
-            <li><a href="info.html">Информация</a></li>
-            <li><a href="news.html">Новости</a></li>
-            <li><a href="price.html">Прайс-лист</a></li>
-            <li><a href="catalog.html" class="active">Магазин</a></li>
-            <li><a href="contacts.html">Контакты</a></li>
-        </ul>
-        <ul class="user-nav">
-            <li class="auth-link"><a href="#">Вход</a></li>
-        </ul>
+        <div class="top-nav-container">
+            <div class="container">
+                <a class="inner-top-logo">
+                    <img src="img/logo.png" alt="Логотип барбершопа">
+                </a>
+                <ul class="site-nav">
+                    <li><a href="info.html">Информация</a></li>
+                    <li><a href="news.html">Новости</a></li>
+                    <li><a href="price.html">Прайс-лист</a></li>
+                    <li><a href="catalog.html">Магазин</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+                <ul class="user-nav">
+                    <li class="auth-link"><a href="#">Вход</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
 </header>
 
@@ -40,59 +44,66 @@
 
     <p class="slogan">ИСТИННО МУЖСКАЯ КЛАССИКА</p>
 
-    <section class="price-instrument">
-        <h2>МЫ ИСПОЛЬЗУЕМ ТОЛЬКО ЛУЧШИЕ СРЕДСТВА:</h2>
-        <ul class="price-instrument-list">
-            <li>Baxter of California</li>
-            <li>Mr Natty</li>
-            <li>Suavecito</li>
-            <li>Malin+Goetz</li>
-        </ul>
-    </section>
+    <div class="instrument-price">
+        <section class="price-instrument">
+            <h2>МЫ ИСПОЛЬЗУЕМ ТОЛЬКО ЛУЧШИЕ СРЕДСТВА:</h2>
+            <ul class="price-instrument-list">
+                <li>Baxter of California</li>
+                <li>Mr Natty</li>
+                <li>Suavecito</li>
+                <li>Malin+Goetz</li>
+            </ul>
+        </section>
 
-    <section class="price-price">
-        <h2>ЦЕНЫ НА УСЛУГИ НАШИХ МАСТЕРОВ:</h2>
-        <table class="table-pricelist">
-            <tr>
-                <td>СТРИЖКА</td>
-                <td>1500 ₽</td>
-            </tr>
-            <tr>
-                <td>СТРИЖКА БОРОДЫ</td>
-                <td>500 ₽</td>
-            </tr>
-            <tr>
-                <td>НАКРУТКА УСОВ</td>
-                <td>350 ₽</td>
-            </tr>
-        </table>
-    </section>
+        <section class="price-price">
+            <h2>ЦЕНЫ НА УСЛУГИ НАШИХ МАСТЕРОВ:</h2>
+            <table class="table-pricelist">
+                <tr>
+                    <td>СТРИЖКА</td>
+                    <td>1500 ₽</td>
+                </tr>
+                <tr>
+                    <td>СТРИЖКА БОРОДЫ</td>
+                    <td>500 ₽</td>
+                </tr>
+                <tr>
+                    <td>НАКРУТКА УСОВ</td>
+                    <td>350 ₽</td>
+                </tr>
+            </table>
+        </section>
+    </div>
 
     <section class="price-about">
-        <p>Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас - это уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.</p>
-        <p>Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и свободно!</p>
+        <h2>Несколько слов о нас</h2>
+        <div class="price-about-container">
+            <p>Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас - это уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.</p>
+            <p>Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и свободно!</p>
+        </div>
     </section>
 </main>
 
 <footer class="main-footer">
-    <p class="footer-contats">
-        БАРБЕРШОП «БОРОДИНСКИЙ»<br>
-        АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8<br>
-        КАК НАС НАЙТИ?<br>
-        ТЕЛЕФОН: +7 (495) 666-02-66
-    </p>
-    <div class="footer-social">
-        <b>ДАВАЙТЕ ДРУЖИТЬ!</b>
-        <ul>
-            <li><a class="social-button social-button-vk">Вконтакте</a></li>
-            <li><a class="social-button social-button-fb">Фейсбук</a></li>
-            <li><a class="social-button social-button-instagram">Инстаграм</a></li>
-        </ul>
+    <div class="container">
+        <p class="footer-contats">
+            БАРБЕРШОП «БОРОДИНСКИЙ»<br>
+            АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8<br>
+            КАК НАС НАЙТИ?<br>
+            ТЕЛЕФОН: +7 (495) 666-02-66
+        </p>
+        <div class="footer-social">
+            <b>ДАВАЙТЕ ДРУЖИТЬ!</b>
+            <ul class="footer-social-list">
+                <li><a class="social-button social-button-vk"><img src="img/social-vk.svg" alt="Вконтакте"></a></li>
+                <li><a class="social-button social-button-fb"><img src="img/social-facebook.svg" alt="Фейсбук"></a></li>
+                <li><a class="social-button social-button-instagram"><img src="img/social-instagram.svg" alt="Инстаграм"></a></li>
+            </ul>
+        </div>
+        <p class="footer-copyright">
+            <b>РАЗРАБОТАНО:</b><br>
+            <a class="button" href="#">HTML Academy</a>
+        </p>
     </div>
-    <p class="footer-copyright">
-        <b>РАЗРАБОТАНО:</b>
-        <a class="button" href="#">HTML Academy</a>
-    </p>
 </footer>
 
 

@@ -15,6 +15,11 @@ body {
     background-repeat: no-repeat;
 }
 
+body.inner-page {
+    background-color: #f6f3f0;
+    background-image: none;
+}
+
 .inner-page {
     color: #000000;
     background-color: #f9f6f3;
@@ -54,12 +59,21 @@ a {
     list-style: none;
     margin: 0;
     padding: 0;
+    margin-bottom: 60px;
+}
+
+.breadcrumbs li {
+    display: inline;
 }
 
 /* Шапка начало */
 
 .main-header {
     margin-bottom: 75px;
+}
+
+.inner-page .main-header {
+    margin-bottom: 0px;
 }
 
 .top-nav {
@@ -72,6 +86,10 @@ a {
 .top-nav-container {
     background-color: #000000;
     margin-bottom: 55px;
+}
+
+.inner-page .top-nav-container {
+    margin-bottom: 60px;
 }
 
 .top-nav-container ul li {
@@ -90,6 +108,14 @@ a {
     justify-content: space-between;
     align-items: center;
     min-height: 70px;
+}
+
+.inner-page .top-nav-container .container {
+    justify-content: start;
+}
+
+.inner-page .user-nav {
+    margin-left: auto;
 }
 
 .site-nav,
@@ -207,6 +233,47 @@ a {
 
 /* Продукт начало */
 
+.main-container {
+    background-color: #f2efec;
+}
+
+.page-title {
+    margin-bottom: 30px;
+}
+
+.photo-info {
+    display: flex;
+    justify-content: space-around;
+
+    margin-bottom: 50px;
+}
+
+.product-photos {
+    width: 460px;
+}
+
+.product-photo-preview {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-photo-item {
+    width: 140px;
+}
+
+.product-info {
+    width: 390px;
+}
+
+.availability-article {
+    display: flex;
+    justify-content: space-between;
+}
+
 .product-price b, .catalog-item-price b {
     background-color: #e5e5e5;
     color: #000000;
@@ -222,6 +289,19 @@ a {
 
 /* Прайс-лист начало */
 
+.slogan {
+    margin-bottom: 50px;
+}
+
+.instrument-price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-instrument, .price-price {
+    width: 460px;
+}
+
 .price-instrument-list {
     list-style: none;
     margin: 0;
@@ -232,13 +312,73 @@ a {
 
 }
 
+.price-about-container {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 75px;
+}
+
+.price-about-container p {
+    width: 460px;
+}
+
 /* Прайс-лист конец */
 
 /* Каталог начало */
 
+.filters-catalog {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 50px;
+}
+
+.filters {
+    width: 220px;
+}
+
+.catalog {
+    width: 700px;
+}
+
+.catalog-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.catalog-item {
+    width: 220px;
+    margin-bottom: 20px;
+}
+
+.catalog-item img {
+    max-width: 220px;
+}
+
+.pagination-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    justify-content: start;
+}
+
+
 .pagination-list .pagination-item {
     background-color: #000000;
     color: #FFFFFF;
+    display: inline;
+    min-height: 45px;
+    min-width: 45px;
+    text-align: center;
+    margin-right: 10px;
 }
 
 .pagination-list .pagination-item-current {
