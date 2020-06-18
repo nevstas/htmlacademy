@@ -22,6 +22,20 @@ a {
     background-color: #ee3643;
 }
 
+.container {
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
 /* Шапка начало */
 
 .main-header {
@@ -29,11 +43,41 @@ a {
     font-size: 17px;
     color: #FFFFFF;
     background-color: #f3f7f8;
+    padding-bottom: 60px;
+    margin-bottom: 60px;
+}
+
+.header-top {
+    background-color: #293449;
+    min-height: 40px;
+    margin-bottom: 50px;
+}
+
+.header-top .container {
+    display: flex;
+    justify-content: start;
 }
 
 .header-logo {
     font-size: 24px;
     background-color: #ee3643;
+}
+
+.header-search {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header-user-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+}
+
+.header-user-menu li {
+    display: inline;
 }
 
 .header-user-menu .mark {
@@ -42,18 +86,31 @@ a {
 
 .header-desc {
     font-size: 21px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 45px;
 }
 
-.header-desc .header-description {
+.header-description {
     font-style: italic;
     color: #ee3643;
+    width: 300px;
+    margin: 0px;
 }
 
-.header-desc .header-phone {
+.header-phone-address {
+    width: 300px;
+}
+
+.header-buttons-user {
+    width: 300px;
+}
+
+.header-phone {
     color: #ee3643;
 }
 
-.header-desc .header-address {
+.header-address {
     font-size: 14px;
     color: #32425c;
 }
@@ -68,13 +125,20 @@ a {
     margin: 0;
     padding: 0;
     background-color: #32425c;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-menu-list li {
+    display: inline;
 }
 
 /* Шапка конец */
 
 /* Главная начало */
 
-.container {
+.main {
     background-color: #FFFFFF;
 }
 
@@ -85,10 +149,38 @@ a {
     color: #FFFFFF;
 }
 
+.home-catalog-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-catalog-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
 .home-catalog h2 {
     font-weight: 700;
     font-size: 24px;
     line-height: 30px;
+}
+
+.home-catalog-item {
+    min-height: 120px;
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.home-slider {
+    min-height: 260px;
+    width: 620px;
+    background-color: red;
+}
+
+.home-two-item {
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .home-catalog-item1 {
@@ -109,6 +201,7 @@ a {
 
 .home-catalog-item5 {
     background-color: #ffc047;
+    margin-bottom: 0px;
 }
 
 .products-popular {

@@ -14,30 +14,36 @@
 
 <header class="main-header">
     <nav class="header-top">
-        <a class="header-logo">Техномарт</a>
+        <div class="container">
+            <a class="header-logo visually-hidden">Техномарт</a>
 
-        <ul class="header-search">
-            <li>Поиск</li>
-        </ul>
+            <ul class="header-search">
+                <li>Поиск</li>
+            </ul>
 
-        <ul class="header-user-menu">
-            <li>Закладки: <span class="bookmarks-count">0</span></li>
-            <li>Корзина: <span class="basket-count">0</span></li>
-            <li class="mark">Оформить заказ</li>
-        </ul>
-
+            <ul class="header-user-menu">
+                <li>Закладки: <span class="bookmarks-count">0</span></li>
+                <li>Корзина: <span class="basket-count">0</span></li>
+                <li class="mark">Оформить заказ</li>
+            </ul>
+        </div>
     </nav>
 
-    <section class="header-desc">
+    <section class="header-desc container">
         <p class="header-description">Интернет-магазин строительных материалов и инструментов для ремонта</p>
-        <a class="header-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
-        <p class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 
-        <a class="button-user button-login" href="#">Войти</a>
-        <a class="button-user button-register" href="#">Регистрация</a>
+        <div class="header-phone-address">
+            <a class="header-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
+            <p class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        </div>
+
+        <div class="header-buttons-user">
+            <a class="button-user button-login" href="#">Войти</a>
+            <a class="button-user button-register" href="#">Регистрация</a>
+        </div>
     </section>
 
-    <nav class="header-menu">
+    <nav class="header-menu container">
         <ul class="header-menu-list">
             <li>Главная</li>
             <li>Компания</li>
@@ -72,14 +78,16 @@
             <div class="home-slider">
 
             </div>
-            <a href="#" class="home-catalog-item home-catalog-item4">
-                <h2>Скидки 50%</h2>
-                <p class="home-catalog-desc">На 350 товаров</p>
-            </a>
-            <a href="#" class="home-catalog-item home-catalog-item5">
-                <h2>Доставка</h2>
-                <p class="home-catalog-desc">Бесплатно</p>
-            </a>
+            <div class="home-two-item">
+                <a href="#" class="home-catalog-item home-catalog-item4">
+                    <h2>Скидки 50%</h2>
+                    <p class="home-catalog-desc">На 350 товаров</p>
+                </a>
+                <a href="#" class="home-catalog-item home-catalog-item5">
+                    <h2>Доставка</h2>
+                    <p class="home-catalog-desc">Бесплатно</p>
+                </a>
+            </div>
         </div>
     </section>
 
