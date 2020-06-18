@@ -183,23 +183,23 @@ a {
     flex-wrap: wrap;
 }
 
-.home-catalog-item1 {
+.home-catalog-top .home-catalog-item:nth-child(1) {
     background-color: #ffbf47;
 }
 
-.home-catalog-item2 {
+.home-catalog-top .home-catalog-item:nth-child(2) {
     background-color: #3bbce3;
 }
 
-.home-catalog-item3 {
+.home-catalog-top .home-catalog-item:nth-child(3) {
     background-color: #dc91d8;
 }
 
-.home-catalog-item4 {
+.home-catalog-bottom .home-catalog-item:nth-child(1) {
     background-color: #8ed78f;
 }
 
-.home-catalog-item5 {
+.home-catalog-bottom .home-catalog-item:nth-child(2) {
     background-color: #ffc047;
     margin-bottom: 0px;
 }
