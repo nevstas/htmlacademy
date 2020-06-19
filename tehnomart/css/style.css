@@ -147,6 +147,8 @@ a {
     font-size: 14px;
     line-height: 18px;
     color: #FFFFFF;
+
+    margin-bottom: 50px;
 }
 
 .home-catalog-top {
@@ -208,10 +210,29 @@ a {
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 17px;
     line-height: 18px;
+    margin-bottom: 30px;
+}
+
+.products-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    justify-content: space-between;
 }
 
 .section-header {
     background-color: #f9f5f0;
+
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 20px;
+}
+
+.products-popular .products-item {
+    width: 220px;
 }
 
 .products-popular h2 {
@@ -237,7 +258,7 @@ a {
 }
 
 .manufacturer-popular {
-
+    margin-bottom: 90px;
 }
 
 .manufacturer-popular h2 {
@@ -250,6 +271,20 @@ a {
     list-style: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.manufacturer-popular-item {
+    width: 220px;
+    min-height: 145px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 25px;
 }
 
 .services {
@@ -258,6 +293,8 @@ a {
     line-height: 24px;
 
     background-color: #f4f8f9;
+    padding: 65px 0px 100px 0px;
+    margin-bottom: 70px;
 }
 
 .services h2 {
@@ -266,15 +303,42 @@ a {
     line-height: 30px;
 }
 
+.services-flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
 .services-menu {
     font-weight: 700;
     font-size: 21px;
     line-height: 30px;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    width: 240px;
+}
+
+.services-desc {
+    width: 300px;
+}
+
+.services-img {
+    width: 300px;
 }
 
 .services-desc h3 {
     font-size: 36px;
     line-height: 36px;
+    margin: 0px;
+}
+
+.about-contacts {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 85px;
 }
 
 .about-and-contacts {
@@ -285,6 +349,8 @@ a {
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     line-height: 24px;
+
+    width: 620px;
 }
 
 .about h2 {
@@ -307,6 +373,8 @@ a {
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     line-height: 24px;
+
+    width: 300px;
 }
 
 .contacts h2 {
@@ -416,6 +484,14 @@ a {
     line-height: 24px;
 
     color: #FFFFFF;
+}
+
+.footer-top, .footer-main {
+    background-color: #32425c;
+}
+
+.footer-bottom {
+    background-color: #293449;
 }
 
 .footer-top .footer-logo {
