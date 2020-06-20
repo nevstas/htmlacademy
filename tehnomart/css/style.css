@@ -47,6 +47,10 @@ a {
     margin-bottom: 60px;
 }
 
+.inner-page .main-header {
+    margin-bottom: 0px;
+}
+
 .header-top {
     background-color: #293449;
     min-height: 40px;
@@ -102,6 +106,10 @@ a {
     width: 300px;
 }
 
+.user-panel {
+    width: 300px;
+}
+
 .header-buttons-user {
     width: 300px;
 }
@@ -113,6 +121,24 @@ a {
 .header-address {
     font-size: 14px;
     color: #32425c;
+}
+
+.user-panel {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+.user-panel-profile {
+    width: 100%;
+}
+
+.user-panel-orders {
+
+}
+
+.user-panel-member {
+
 }
 
 .button-user {
@@ -220,6 +246,7 @@ a {
 
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .section-header {
@@ -404,20 +431,38 @@ a {
 
 .breadcrumbs {
     list-style: none;
-    margin: 0;
-    padding: 0;
+
+    min-height: 65px;
 
     font-size: 13px;
     line-height: 18px;
 }
 
-.filters {
+.breadcrumbs li {
+    display: inline;
+}
 
+.page-title {
+    padding: 30px;
+    margin-bottom: 25px;
+}
+
+.filters-products {
+    display: flex;
+    justify-content: space-between;
+}
+
+.filters {
+    width: 220px;
 }
 
 .filters h2 {
     font-size: 13px;
     line-height: 18px;
+    margin: 0px;
+
+    background-color: #f7f3ec;
+    min-height: 35px;
 }
 
 .filters-list {
@@ -425,6 +470,10 @@ a {
     font-weight: 700;
     font-size: 17px;
     line-height: 30px;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .filters-more {
@@ -435,32 +484,80 @@ a {
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     line-height: 18px;
+
+    width: 700px;
+    margin-bottom: 60px;
+}
+
+.sort {
+    background-color: #f7f3ec;
+    min-height: 35px;
+
+    margin-bottom: 25px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.sort h3 {
+    width: 220px;
+    margin: 0px;
 }
 
 .products-sort-list {
     list-style: none;
     margin: 0;
     padding: 0;
+
+    width: 380px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.products-sort-list li {
+    display: inline;
 }
 
 .products-sort-order {
     list-style: none;
     margin: 0;
     padding: 0;
+
+    width: 60px;
+}
+
+.products-sort-order {
+    display: inline;
 }
 
 .pagination-list {
     list-style: none;
     margin: 0;
     padding: 0;
+
+    display: flex;
+    justify-content: start;
 }
 
 .pagination-item {
-    border: 4px solid #000000;
+    border: 1px solid #e5e5e5;
+    min-height: 36px;
+    min-width: 36px;
+    margin-right: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .pagination-item-current {
     background-color: #ee3643;
+}
+
+.catalog-about {
+    padding: 65px 0px;
+    background-color: #f2f6f8;
 }
 
 .catalog-about h2 {
