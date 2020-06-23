@@ -16,11 +16,11 @@
     <nav class="top-nav">
         <div class="top-nav-container">
             <div class="container">
-                <a class="inner-top-logo">
+                <a class="inner-top-logo" href="">
                     <img src="img/logo.png" alt="Логотип барбершопа">
                 </a>
                 <ul class="site-nav">
-                    <li><a href="">Информация</a></li>
+                    <li class="active"><a href="">Информация</a></li>
                     <li><a href="">Новости</a></li>
                     <li><a href="">Прайс-лист</a></li>
                     <li><a href="">Магазин</a></li>
@@ -50,46 +50,73 @@
             <form class="shop-filters-form">
                 <h3>Производители:</h3>
                 <p>
-                    <input id="manufacturer_1" type="checkbox" name="manufacturer" value="1">
-                    <label for="manufacturer_1">Baxter of California</label>
+                    <label for="manufacturer_1">
+                        Baxter of California
+                        <input id="manufacturer_1" type="checkbox" name="manufacturer" value="1" checked>
+                        <span class="checkmark-checkbox"><span class="checkmark-cross"></span></span>
+                    </label>
                 </p>
                 <p>
-                    <input id="manufacturer_2" type="checkbox" name="manufacturer" value="2">
-                    <label for="manufacturer_2">Mr Natty</label>
+                    <label for="manufacturer_2">
+                        Mr Natty
+                        <input id="manufacturer_2" type="checkbox" name="manufacturer" value="2">
+                        <span class="checkmark-checkbox"><span class="checkmark-cross"></span></span>
+                    </label>
                 </p>
                 <p>
-                    <input id="manufacturer_3" type="checkbox" name="manufacturer" value="3">
-                    <label for="manufacturer_3">Suavecito</label>
+                    <label for="manufacturer_3">
+                        Suavecito
+                        <input id="manufacturer_3" type="checkbox" name="manufacturer" value="3">
+                        <span class="checkmark-checkbox"><span class="checkmark-cross"></span></span>
+                    </label>
                 </p>
                 <p>
-                    <input id="manufacturer_4" type="checkbox" name="manufacturer" value="4">
-                    <label for="manufacturer_4">Malin-Goetz</label>
+                    <label for="manufacturer_4">
+                        Malin-Goetz
+                        <input id="manufacturer_4" type="checkbox" name="manufacturer" value="4">
+                        <span class="checkmark-checkbox"><span class="checkmark-cross"></span></span>
+                    </label>
                 </p>
                 <p>
-                    <input id="manufacturer_5" type="checkbox" name="manufacturer" value="5">
-                    <label for="manufacturer_5">Murrays</label>
+                    <label for="manufacturer_5">
+                        Murrays
+                        <input id="manufacturer_5" type="checkbox" name="manufacturer" value="5">
+                        <span class="checkmark-checkbox"><span class="checkmark-cross"></span></span>
+                    </label>
                 </p>
                 <p>
-                    <input id="manufacturer_6" type="checkbox" name="manufacturer" value="6">
-                    <label for="manufacturer_6">American Crew</label>
+                    <label for="manufacturer_6">
+                        American Crew
+                        <input id="manufacturer_6" type="checkbox" name="manufacturer" value="6">
+                        <span class="checkmark-checkbox"><span class="checkmark-cross"></span></span>
+                    </label>
                 </p>
 
                 <h3>Группы товаров:</h3>
 
                 <p>
-                    <input id="group_1" type="checkbox" name="group" value="1">
-                    <label for="group_1">Бритвенные принадлежности</label>
+                    <label for="group_1">
+                        Бритвенные принадлежности
+                        <input id="group_1" type="radio" name="group" value="1" checked>
+                        <span class="checkmark-radio"><span class="checkmark-circle"></span></span>
+                    </label>
                 </p>
                 <p>
-                    <input id="group_2" type="checkbox" name="group" value="2">
-                    <label for="group_2">Средства для ухода</label>
+                    <label for="group_2">
+                        Средства для ухода
+                        <input id="group_2" type="radio" name="group" value="2">
+                        <span class="checkmark-radio"><span class="checkmark-circle"></span></span>
+                    </label>
                 </p>
                 <p>
-                    <input id="group_3" type="checkbox" name="group" value="3">
-                    <label for="group_3">Аксессуары</label>
+                    <label for="group_3">
+                        Аксессуары
+                        <input id="group_3" type="radio" name="group" value="3">
+                        <span class="checkmark-radio"><span class="checkmark-circle"></span></span>
+                    </label>
                 </p>
 
-                <button type="submit">Показать</button>
+                <button class="button" type="submit">Показать</button>
             </form>
         </section>
 
@@ -97,104 +124,104 @@
             <h2 class="visually-hidden">Список средств для ухода</h2>
             <ul class="catalog-list">
                 <li class="catalog-item">
-                    <h3>
-                        <a href="">
-                            <span class="catalog-category">Набор для путешествий</span>
-                            <span class="catalog-item">Baxter of California</span>
-                        </a>
-                    </h3>
                     <p class="catalog-item-image">
                         <a href="">
                             <img src="img/prod_main.jpg" alt="Baxter of California">
                         </a>
                     </p>
-                    <p class="catalog-item-price">
-                        <b>2 900 ₽</b>
+                    <h3>
+                        <a href="">
+                            <span class="product-category">Набор для путешествий</span>
+                            <span class="product-item">Baxter of California</span>
+                        </a>
+                    </h3>
+                    <p class="product-price">
+                        <b class="price">2 900 ₽</b>
                         <a class="button" href="">Купить</a>
                     </p>
                 </li>
                 <li class="catalog-item">
-                    <h3>
-                        <a href="">
-                            <span class="catalog-category">Набор для путешествий</span>
-                            <span class="catalog-item">Baxter of California</span>
-                        </a>
-                    </h3>
                     <p class="catalog-item-image">
                         <a href="">
                             <img src="img/prod_main.jpg" alt="Baxter of California">
                         </a>
                     </p>
-                    <p class="catalog-item-price">
-                        <b>2 900 ₽</b>
+                    <h3>
+                        <a href="">
+                            <span class="product-category">Набор для путешествий</span>
+                            <span class="product-item">Baxter of California</span>
+                        </a>
+                    </h3>
+                    <p class="product-price">
+                        <b class="price">2 900 ₽</b>
                         <a class="button" href="">Купить</a>
                     </p>
                 </li>
                 <li class="catalog-item">
-                    <h3>
-                        <a href="">
-                            <span class="catalog-category">Набор для путешествий</span>
-                            <span class="catalog-item">Baxter of California</span>
-                        </a>
-                    </h3>
                     <p class="catalog-item-image">
                         <a href="">
                             <img src="img/prod_main.jpg" alt="Baxter of California">
                         </a>
                     </p>
-                    <p class="catalog-item-price">
-                        <b>2 900 ₽</b>
+                    <h3>
+                        <a href="">
+                            <span class="product-category">Набор для путешествий</span>
+                            <span class="product-item">Baxter of California</span>
+                        </a>
+                    </h3>
+                    <p class="product-price">
+                        <b class="price">2 900 ₽</b>
                         <a class="button" href="">Купить</a>
                     </p>
                 </li>
                 <li class="catalog-item">
-                    <h3>
-                        <a href="">
-                            <span class="catalog-category">Набор для путешествий</span>
-                            <span class="catalog-item">Baxter of California</span>
-                        </a>
-                    </h3>
                     <p class="catalog-item-image">
                         <a href="">
                             <img src="img/prod_main.jpg" alt="Baxter of California">
                         </a>
                     </p>
-                    <p class="catalog-item-price">
-                        <b>2 900 ₽</b>
+                    <h3>
+                        <a href="">
+                            <span class="product-category">Набор для путешествий</span>
+                            <span class="product-item">Baxter of California</span>
+                        </a>
+                    </h3>
+                    <p class="product-price">
+                        <b class="price">2 900 ₽</b>
                         <a class="button" href="">Купить</a>
                     </p>
                 </li>
                 <li class="catalog-item">
-                    <h3>
-                        <a href="">
-                            <span class="catalog-category">Набор для путешествий</span>
-                            <span class="catalog-item">Baxter of California</span>
-                        </a>
-                    </h3>
                     <p class="catalog-item-image">
                         <a href="">
                             <img src="img/prod_main.jpg" alt="Baxter of California">
                         </a>
                     </p>
-                    <p class="catalog-item-price">
-                        <b>2 900 ₽</b>
+                    <h3>
+                        <a href="">
+                            <span class="product-category">Набор для путешествий</span>
+                            <span class="product-item">Baxter of California</span>
+                        </a>
+                    </h3>
+                    <p class="product-price">
+                        <b class="price">2 900 ₽</b>
                         <a class="button" href="">Купить</a>
                     </p>
                 </li>
                 <li class="catalog-item">
-                    <h3>
-                        <a href="">
-                            <span class="catalog-category">Набор для путешествий</span>
-                            <span class="catalog-item">Baxter of California</span>
-                        </a>
-                    </h3>
                     <p class="catalog-item-image">
                         <a href="">
                             <img src="img/prod_main.jpg" alt="Baxter of California">
                         </a>
                     </p>
-                    <p class="catalog-item-price">
-                        <b>2 900 ₽</b>
+                    <h3>
+                        <a href="">
+                            <span class="product-category">Набор для путешествий</span>
+                            <span class="product-item">Baxter of California</span>
+                        </a>
+                    </h3>
+                    <p class="product-price">
+                        <b class="price">2 900 ₽</b>
                         <a class="button" href="">Купить</a>
                     </p>
                 </li>
