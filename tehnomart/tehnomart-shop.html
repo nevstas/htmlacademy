@@ -15,16 +15,47 @@
 <header class="main-header">
     <nav class="header-top">
         <div class="container">
-            <a class="header-logo">Техномарт</a>
+            <a href="" class="header-logo">Техномарт</a>
 
-            <ul class="header-search">
-                <li>Поиск</li>
-            </ul>
+            <div class="header-search">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                     y="0px" width="17px" height="17px" viewBox="0 0 17 17" enable-background="new 0 0 17 17"
+                     xml:space="preserve">
+<g id="Layer_1">
+</g>
+                    <g id="Layer_2">
+	<path d="M17,15.586l-3.542-3.542C14.421,10.782,15,9.21,15,7.5C15,3.358,11.643,0,7.5,0C3.358,0,0,3.358,0,7.5
+		C0,11.643,3.358,15,7.5,15c1.71,0,3.282-0.579,4.544-1.542L15.586,17L17,15.586z M2,7.5C2,4.467,4.467,2,7.5,2
+		C10.532,2,13,4.467,13,7.5c0,3.032-2.468,5.5-5.5,5.5C4.467,13,2,10.532,2,7.5z"/>
+</g>
+</svg>
+
+                <input type="text" value="" placeholder="Поиск">
+            </div>
 
             <ul class="header-user-menu">
-                <li>Закладки: <span class="bookmarks-count">0</span></li>
-                <li>Корзина: <span class="basket-count">0</span></li>
-                <li class="mark">Оформить заказ</li>
+                <li class="menu-bookmarks">
+                    <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                         width="14px" height="16px" viewBox="0 0 14 16" enable-background="new 0 0 14 16" xml:space="preserve">
+<path d="M14,15c0,0.55-0.368,0.741-0.818,0.426l-5.363-3.765c-0.45-0.315-1.187-0.315-1.637,0l-5.364,3.765
+	C0.368,15.741,0,15.55,0,15V1c0-0.55,0.45-1,1-1h12c0.55,0,1,0.45,1,1V15z"/>
+</svg>
+                    <a href="">Закладки: <span class="bookmarks-count">0</span></a>
+                </li>
+                <li class="menu-basket">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                         width="15px" height="15px" viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
+<g>
+	<circle cx="4.5" cy="13.5" r="1.5"/>
+    <circle cx="12.5" cy="13.5" r="1.5"/>
+    <polygon points="15,2 4.07,2 3.648,0 0,0 0,2 2.031,2 4.016,11 15,11 15,9 9.441,9 15,6.951 	"/>
+</g>
+</svg>
+                    <a href="">Корзина: <span class="basket-count">0</span></a>
+                </li>
+                <li class="menu-order">
+                    <a href="">Оформить заказ</a>
+                </li>
             </ul>
         </div>
     </nav>
@@ -33,26 +64,28 @@
         <p class="header-description">Интернет-магазин строительных материалов и инструментов для ремонта</p>
 
         <div class="header-phone-address">
-            <a class="header-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
+            <a class="header-phone" href="tel:+78125550555">
+                <img src="img/icon-phone.svg">
+                +7 (812) 555-05-55
+            </a>
             <p class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </div>
 
-        <div class="user-panel">
-            <a href="" class="user-panel-profile">Равшан Джамшутович</a>
-            <a href="" class="user-panel-orders">Мои заказы</a>
-            <a href="" class="user-panel-member">Личный кабинет</a>
+        <div class="header-buttons-user">
+            <a class="button-user button-login" href="">Войти</a>
+            <a class="button-user button-register" href="">Регистрация</a>
         </div>
     </section>
 
     <nav class="header-menu container">
         <ul class="header-menu-list">
-            <li>Главная</li>
-            <li>Компания</li>
-            <li>Каталог</li>
-            <li>Новости</li>
-            <li>Спецпредложения</li>
-            <li>Доставка</li>
-            <li>Контакты</li>
+            <li><a href="">Главная</a></li>
+            <li><a href="">Компания</a></li>
+            <li><a href="">Каталог</a></li>
+            <li><a href="">Новости</a></li>
+            <li><a href="">Спецпредложения</a></li>
+            <li><a href="">Доставка</a></li>
+            <li><a href="">Контакты</a></li>
         </ul>
     </nav>
 </header>
@@ -185,11 +218,11 @@
             <a class="footer-logo">Техномарт</a>
 
             <ul class="footer-top-menu">
-                <li>Компания</li>
-                <li>Новости</li>
-                <li>Каталог</li>
-                <li>Доставка</li>
-                <li>Контакты</li>
+                <li><a href="">Компания</a></li>
+                <li><a href="">Новости</a></li>
+                <li><a href="">Каталог</a></li>
+                <li><a href="">Доставка</a></li>
+                <li><a href="">Контакты</a></li>
             </ul>
         </div>
     </section>
@@ -200,10 +233,10 @@
                 +7 (812) 555-05-55
             </p>
             <ul class="footer-main-menu">
-                <li>Материалы</li>
-                <li>Техника</li>
-                <li>Инструмент</li>
-                <li>Спецпредложения</li>
+                <li><a href="">Материалы</a></li>
+                <li><a href="">Техника</a></li>
+                <li><a href="">Инструмент</a></li>
+                <li><a href="">Спецпредложения</a></li>
             </ul>
         </div>
     </section>

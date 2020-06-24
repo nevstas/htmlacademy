@@ -70,12 +70,57 @@ img {
 .header-logo {
     font-size: 24px;
     background-color: #ee3643;
+    width: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.header-logo:hover {
+    background-color: #ca2c37;
 }
 
 .header-search {
     list-style: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-search input {
+    height: 40px;
+    padding: 0px;
+    border: none;
+    background-color: #293449;
+    color: #FFFFFF;
+}
+
+.header-search svg {
+    padding: 0px 20px;
+    fill: #FFFFFF;
+    opacity: 30%;
+}
+
+.header-search input::placeholder {
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.header-search input:focus {
+    outline: none;
+}
+
+.header-search:hover svg {
+    opacity: 100%;
+}
+
+.header-search input:focus ~ svg {
+    fill: #ee3643 !important;
 }
 
 .header-user-menu {
@@ -83,14 +128,47 @@ img {
     margin: 0;
     padding: 0;
     margin-left: auto;
+
+    display: flex;
+    justify-content: start;
+    width: 460px;
 }
 
 .header-user-menu li {
-    display: inline;
+    width: 140px;
 }
 
-.header-user-menu .mark {
+.header-user-menu a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 40px;
+    color: #FFFFFF;
+}
+
+.menu-bookmarks, .menu-basket {
+    position: relative;
+}
+
+.menu-bookmarks svg, .menu-basket svg {
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    fill: #FFFFFF;
+    opacity: 30%;
+}
+
+.header-user-menu li:hover svg {
+    opacity: 100%;
+}
+
+.menu-order {
     background-color: #63a63e;
+}
+
+.menu-order:hover {
+    background-color: #5fbb2d;
 }
 
 .header-desc {
@@ -101,6 +179,9 @@ img {
 }
 
 .header-description {
+    font-size: 16px;
+    line-height: 23px;
+
     font-style: italic;
     color: #ee3643;
     width: 300px;
@@ -115,17 +196,28 @@ img {
     width: 300px;
 }
 
-.header-buttons-user {
-    width: 300px;
+.header-phone {
+    display: block;
+    border: 3px solid #FFFFFF;
+    padding: 10px;
+    color: #ee3643;
+    width: 270px;
+    text-align: center;
+    position: relative;
 }
 
-.header-phone {
-    color: #ee3643;
+.header-phone img {
+    position: absolute;
+    top: 12px;
+    left: 19px;
 }
 
 .header-address {
+    font-family: "Cuprum", Arial, sans-serif;
     font-size: 14px;
+    line-height: 24px;
     color: #32425c;
+    text-align: center;
 }
 
 .user-panel {
@@ -146,9 +238,40 @@ img {
 
 }
 
+.header-buttons-user {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
 .button-user {
     background-color: #FFFFFF;
     color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 45px;
+}
+
+.button-user:hover {
+    color: #ee3643;
+}
+
+.button-login:hover:before  {
+    opacity: 100%;
+}
+
+.button-login {
+    position: relative;
+}
+
+.button-login:before {
+    content: url('../img/icon-login.svg');
+    position: absolute;
+    top: 12px;
+    left: 15px;
+    opacity: 50%;
 }
 
 .header-menu-list {
@@ -159,10 +282,22 @@ img {
 
     display: flex;
     justify-content: space-between;
+
+    min-height: 60px;
 }
 
-.header-menu-list li {
-    display: inline;
+.header-menu-list a {
+    color: #FFFFFF;
+    height: 60px;
+
+    padding: 0px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-menu-list a:hover {
+    background-color: #293449;
 }
 
 /* Шапка конец */
@@ -612,6 +747,12 @@ img {
     font-size: 30px;
     line-height: 30px;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-transform: uppercase;
+
     width: 220px;
 
     background-color: #ee3643;
@@ -623,10 +764,18 @@ img {
     padding: 0;
 
     width: 560px;
+
+    display: flex;
+    justify-content: space-between;
 }
 
-.footer-top-menu li {
-    display: inline;
+.footer-top-menu a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    height: 65px;
+    padding: 0px 20px;
 }
 
 .footer-main {
@@ -643,18 +792,23 @@ img {
 }
 
 .footer-main-menu {
-    line-height: 30px;
-    color: #ffda96;
-
     list-style: none;
     margin: 0;
     padding: 0;
 
-    width: 540px;
+    width: 560px;
+
+    display: flex;
+    justify-content: space-between;
 }
 
-.footer-main-menu li {
-    display: inline;
+.footer-main-menu a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffd180;
+    height: 65px;
+    padding: 0px 20px;
 }
 
 .footer-bottom {
