@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="js/script.js"></script>
+
 </head>
 <body>
 
@@ -95,31 +98,87 @@
 
     <section class="home-catalog container">
         <div class="home-catalog-top">
-            <a href="" class="home-catalog-item">
-                <h2>Материалы</h2>
-                <p class="home-catalog-desc">На любой вкус</p>
+            <a href="" class="home-catalog-item new">
+                <div class="home-catalog-item-flex">
+                    <div class="home-catalog-item-left">
+                        <h2>Материалы</h2>
+                        <p class="home-catalog-desc">На любой вкус</p>
+                    </div>
+                    <div class="home-catalog-item-right">
+                        <img src="img/catalog-icon-1.png">
+                    </div>
+                </div>
             </a>
             <a href="" class="home-catalog-item">
-                <h2>Инструмент</h2>
-                <p class="home-catalog-desc">На все случаи</p>
+                <div class="home-catalog-item-flex">
+                    <div class="home-catalog-item-left">
+                        <h2>Инструмент</h2>
+                        <p class="home-catalog-desc">На все случаи</p>
+                    </div>
+                    <div class="home-catalog-item-right">
+                        <img src="img/catalog-icon-2.png">
+                    </div>
+                </div>
             </a>
             <a href="" class="home-catalog-item">
-                <h2>Техника</h2>
-                <p class="home-catalog-desc">Для стройки</p>
+                <div class="home-catalog-item-flex">
+                    <div class="home-catalog-item-left">
+                        <h2>Техника</h2>
+                        <p class="home-catalog-desc">Для стройки</p>
+                    </div>
+                    <div class="home-catalog-item-right">
+                        <img src="img/catalog-icon-3.png">
+                    </div>
+                </div>
             </a>
         </div>
         <div class="home-catalog-bottom">
             <div class="home-slider">
+                <span class="home-slider-prev"></span>
 
+                <div class="slider-items">
+                    <div class="slider-item active">
+                        <img src="img/slider1.jpg">
+                        <div class="slider-header">
+                            <h2>Перфораторы</h2>
+                            <p>Настоящие мужские игрушки</p>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <img src="img/slider2.jpg">
+                        <div class="slider-header">
+                            <h2>Дрели</h2>
+                            <p>Соседям на радость</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <a href="" class="button">Открыть каталог</a>
+                <span class="home-slider-next"></span>
             </div>
             <div class="home-two-item">
                 <a href="" class="home-catalog-item">
-                    <h2>Скидки 50%</h2>
-                    <p class="home-catalog-desc">На 350 товаров</p>
+                    <div class="home-catalog-item-flex">
+                        <div class="home-catalog-item-left">
+                            <h2>Скидки 50%</h2>
+                            <p class="home-catalog-desc">На 350 товаров</p>
+                        </div>
+                        <div class="home-catalog-item-right">
+                            <img src="img/catalog-icon-4.png">
+                        </div>
+                    </div>
                 </a>
                 <a href="" class="home-catalog-item">
-                    <h2>Доставка</h2>
-                    <p class="home-catalog-desc">Бесплатно</p>
+                    <div class="home-catalog-item-flex">
+                        <div class="home-catalog-item-left">
+                            <h2>Доставка</h2>
+                            <p class="home-catalog-desc">Бесплатно</p>
+                        </div>
+                        <div class="home-catalog-item-right">
+                            <img src="img/catalog-icon-5.png">
+                        </div>
+                    </div>
                 </a>
             </div>
         </div>
@@ -168,14 +227,14 @@
         </div>
 
         <ul class="manufacturer-popular-list">
-            <li class="manufacturer-popular-item"><img src="img/manufacturer.jpg" alt="Производители"></li>
-            <li class="manufacturer-popular-item"><img src="img/manufacturer.jpg" alt="Производители"></li>
-            <li class="manufacturer-popular-item"><img src="img/manufacturer.jpg" alt="Производители"></li>
-            <li class="manufacturer-popular-item"><img src="img/manufacturer.jpg" alt="Производители"></li>
-            <li class="manufacturer-popular-item"><img src="img/manufacturer.jpg" alt="Производители"></li>
-            <li class="manufacturer-popular-item"><img src="img/manufacturer.jpg" alt="Производители"></li>
-            <li class="manufacturer-popular-item"><img src="img/manufacturer.jpg" alt="Производители"></li>
-            <li class="manufacturer-popular-item"><img src="img/manufacturer.jpg" alt="Производители"></li>
+            <li class="manufacturer-popular-item"><a href=""><img src="img/manufacturer.jpg" alt="Производители"></a></li>
+            <li class="manufacturer-popular-item"><a href=""><img src="img/manufacturer.jpg" alt="Производители"></a></li>
+            <li class="manufacturer-popular-item"><a href=""><img src="img/manufacturer.jpg" alt="Производители"></a></li>
+            <li class="manufacturer-popular-item"><a href=""><img src="img/manufacturer.jpg" alt="Производители"></a></li>
+            <li class="manufacturer-popular-item"><a href=""><img src="img/manufacturer.jpg" alt="Производители"></a></li>
+            <li class="manufacturer-popular-item"><a href=""><img src="img/manufacturer.jpg" alt="Производители"></a></li>
+            <li class="manufacturer-popular-item"><a href=""><img src="img/manufacturer.jpg" alt="Производители"></a></li>
+            <li class="manufacturer-popular-item"><a href=""><img src="img/manufacturer.jpg" alt="Производители"></a></li>
         </ul>
     </section>
 
@@ -187,18 +246,42 @@
 
             <div class="services-flex-container">
                 <ul class="services-menu">
-                    <li>Доставка</li>
-                    <li>Гарантия</li>
-                    <li>Кредит</li>
+                    <li class="active" data-id="delivery">Доставка</li>
+                    <li data-id="guarantee">Гарантия</li>
+                    <li data-id="credit">Кредит</li>
                 </ul>
 
-                <div class="services-desc">
-                    <h3>Доставка</h3>
-                    <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы
-                        неплохо заработаем, поднимая его на ваш этаж!</p>
+                <div class="services-content services-content-delivery">
+                    <div class="services-desc">
+                        <h3>Доставка</h3>
+                        <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы
+                            неплохо заработаем, поднимая его на ваш этаж!</p>
+                    </div>
+
+                    <img class="services-img" src="img/services-delivery.png">
                 </div>
 
-                <img class="services-img" src="img/services-delivery.png">
+                <div class="services-content services-content-guarantee">
+                    <div class="services-desc">
+                        <h3>Гарантия</h3>
+                        <p>Если купленный у нас товар поломается или заискрит,
+                            а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.
+                            Дом уж восстановите как-нибудь сами.</p>
+                    </div>
+
+                    <img class="services-img" src="img/services-guarantee.png">
+                </div>
+
+                <div class="services-content services-content-credit">
+                    <div class="services-desc">
+                        <h3>Кредит</h3>
+                        <p>Залезть в долговую яму стало проще!
+                            Кредитные консультанты придут вам на помощь.</p>
+                        <a href="" class="button">Отправить заявку</a>
+                    </div>
+
+                    <img class="services-img" src="img/services-credit.png">
+                </div>
             </div>
         </div>
     </section>
@@ -233,7 +316,7 @@
 
     <section class="footer-top">
         <div class="container">
-            <a class="footer-logo">Техномарт</a>
+            <a href="" class="footer-logo">Техномарт</a>
 
             <ul class="footer-top-menu">
                 <li><a href="">Компания</a></li>
