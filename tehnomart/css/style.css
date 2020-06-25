@@ -558,6 +558,73 @@ img {
     margin-bottom: 20px;
 }
 
+.products-item:hover .products-item-img-href {
+    display: none;
+}
+
+.products-item:hover .products-item-buttons {
+    display: flex;
+}
+
+.products-item-buttons {
+    width: 140px;
+    flex-wrap: wrap;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.products-item-buttons .button {
+    width: 140px;
+}
+
+.products-item a.button-buy {
+    background-color: #63a63e;
+    color: #FFFFFF;
+    margin-top: 15px;
+    position: relative;
+}
+
+.products-item a.button-buy:hover {
+    background-color: #5fbb2d;
+}
+
+.products-item a.button-buy:hover:before {
+    opacity: 100%;
+}
+
+.button-buy:before {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 12px;
+    left: 15px;
+    content: url('../img/icon-basket.png');
+    opacity: 30%;
+}
+
+.products-item a.button-bookmark {
+    color: #32425c;
+    margin-top: 10px;
+    background-color: #FFFFFF;
+    border: 3px solid #63a63e;
+}
+
+.products-item a.button-bookmark:hover {
+    border: 3px solid #32425c;
+}
+
+/*ФИКС1111111111111111111111/*/
+/*.products-item-buttons {*/
+/*    display: flex;*/
+/*}*/
+
+/*.products-item-img-href {*/
+/*    display: none;*/
+/*}*/
+/*ФИКС1111111111111111111111/*/
+
 .products-popular h2 {
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 30px;
@@ -868,6 +935,7 @@ img {
 .page-title {
     padding: 30px;
     margin-bottom: 25px;
+    width: calc(100% - 60px);
 }
 
 .filters-products {
