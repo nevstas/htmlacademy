@@ -33,5 +33,21 @@ $(document).ready(function () {
         $('.slider-item:nth-child(' + index + ')').addClass('active');
     });
 
+    $("#slider-range").slider({
+        range: true,
+        min: 0,
+        max: 500,
+        values: [ 75, 300 ],
+        slide: function( event, ui ) {
+            $("#amount").val(ui.values[0] + "-" + ui.values[1]);
+
+            $('.amount-values-min').text(ui.values[0]);
+            $('.amount-values-max').text(ui.values[1]);
+        }
+    });
+    $("#amount").val($("#slider-range").slider("values", 0) + "-" + $("#slider-range").slider("values", 1));
+
+    $('.amount-values-min').text($("#slider-range").slider("values", 0));
+    $('.amount-values-max').text($("#slider-range").slider("values", 1));
 });
 

@@ -679,6 +679,10 @@ img {
     cursor: pointer;
 }
 
+.services-menu li:hover {
+    background-color: #293449;
+}
+
 .services-menu li.active {
     background-color: #FFFFFF;
     color: #32425c;
@@ -738,6 +742,7 @@ img {
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 30px;
     line-height: 30px;
+    text-transform: uppercase;
 }
 
 .about-partners {
@@ -748,6 +753,28 @@ img {
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 18px;
     line-height: 20px;
+
+    margin-bottom: 30px;
+}
+
+.about-partners li {
+    padding: 7px;
+    padding-left: 32px;
+    position: relative;
+}
+
+.about-partners li:before {
+    position: absolute;
+    top: 15px;
+    left: 0px;
+    content: '';
+    width: 25px;
+    border-bottom: 2px solid #ee3643;
+}
+
+.about .button {
+    display: block;
+    width: 220px;
 }
 
 .contacts {
@@ -764,6 +791,15 @@ img {
     line-height: 30px;
 }
 
+.contacts img {
+    margin-bottom: 35px;
+}
+
+.contacts .button {
+    display: block;
+    width: 100%;
+
+}
 /* Главная конец */
 
 /* Каталог начало */
@@ -790,10 +826,43 @@ img {
 
     font-size: 13px;
     line-height: 18px;
+    display: flex;
+    justify-content: start;
 }
 
 .breadcrumbs li {
-    display: inline;
+    position: relative;
+    text-transform: uppercase;
+    padding-left: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.breadcrumbs li:before {
+    content: '';
+    position: absolute;
+    left: 7px;
+    top: 27px;
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg);
+    border-top: 1px solid #c1c6ce;
+    border-right: 1px solid #c1c6ce;
+
+}
+
+.breadcrumbs li:nth-child(1):before {
+    content: none;
+}
+
+.breadcrumbs li:nth-child(1) {
+    padding-left: 0px;
+}
+
+.breadcrumbs a {
+    color: #000000;
 }
 
 .page-title {
@@ -814,9 +883,15 @@ img {
     font-size: 13px;
     line-height: 18px;
     margin: 0px;
+    text-transform: uppercase;
 
     background-color: #f7f3ec;
-    min-height: 35px;
+    min-height: 40px;
+
+    display: flex;
+    align-items: center;
+
+    padding-left: 15px;
 }
 
 .filters-list {
@@ -830,8 +905,227 @@ img {
     padding: 0;
 }
 
-.filters-more {
+.filters-list h3 {
+    text-transform: uppercase;
 
+}
+
+.amount-range {
+    min-height: 80px;
+    width: 100%;
+    background-color: #f7f3ec;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-range {
+    width: 100%;
+    margin: 0px 30px;
+}
+
+.ui-widget.ui-widget-content {
+    border: none;
+}
+
+.ui-widget.ui-widget-content .ui-state-active {
+    /*border: none;*/
+    /*background: none;*/
+}
+
+.ui-slider .ui-slider-handle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    top: -10px;
+    /*position: relative;*/
+}
+
+.ui-slider .ui-slider-handle:before {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #000000;
+}
+
+.ui-slider .ui-slider-handle:focus {
+    outline: none;
+}
+
+.ui-slider-horizontal {
+    height: 2px;
+}
+
+.ui-slider-horizontal {
+    border: none;
+    background-color: #00ca74;
+}
+
+.ui-widget-header {
+    background-color: #d7dcde;
+}
+
+.amount-values {
+    display: flex;
+    justify-content: start;
+}
+
+.amount-values-min, .amount-values-max {
+    min-height: 40px;
+    width: 95px;
+    background-color: #f7f3ec;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.amount-dash {
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filters p {
+    position: relative;
+}
+
+.filters label {
+    padding-left: 40px;
+    text-transform: uppercase;
+}
+
+.filters input[type=checkbox], .filters input[type=radio] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Крестики начало */
+
+.checkmark-checkbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border: 2px solid #c5c5c5;
+}
+
+.checkmark-cross {
+    position: absolute;
+    display: none;
+}
+
+.filters input[type=checkbox]:checked ~ .checkmark-checkbox .checkmark-cross {
+    display: block;
+}
+
+.checkmark-cross {
+    width: 15px;
+    height: 15px;
+    margin-left: 2px;
+    margin-top: 2px;
+    position: relative;
+    transform:rotate(45deg);
+    -ms-transform:rotate(45deg); /* IE 9 */
+    -webkit-transform:rotate(45deg); /* Safari and Chrome */
+}
+
+.checkmark-cross:before, .checkmark-cross:after {
+    content: "";
+    position: absolute;
+    /*z-index: -1;*/
+    background: #c5c5c5;
+}
+
+.checkmark-cross:before {
+    left: 35%;
+    width: 30%;
+    margin-left: 35%;
+    height: 134%;
+    top: -53%;
+}
+
+.checkmark-cross:after {
+    top: 73%;
+    height: 30%;
+    margin-top: -15%;
+    width: 70%;
+    left: 30%;
+}
+
+/* Крестики конец */
+
+/* Кружки начало */
+
+.checkmark-radio {
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    top: 0px;
+    left: 0px;
+    border-radius: 50%;
+    border: 5px solid #c5c5c5;
+}
+
+.checkmark-circle {
+    position: absolute;
+    display: none;
+}
+
+.filters input[type=radio]:checked ~ .checkmark-radio .checkmark-circle {
+    display: block;
+}
+
+.checkmark-circle {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: #c5c5c5;
+    top: 3px;
+    left: 3px;
+}
+
+.checkmark-circle:before, .checkmark-circle:after {
+    content: "";
+    position: absolute;
+    /*z-index: -1;*/
+    background: #c5c5c5;
+}
+
+.checkmark-circle:before {
+    left: 50%;
+    width: 30%;
+    margin-left: -15%;
+    height: 100%;
+}
+
+.checkmark-circle:after {
+    top: 50%;
+    height: 30%;
+    margin-top: -15%;
+    width: 100%;
+}
+
+/* Кружки конец */
+
+.filters-more {
+    width: 140px;
+    color: #000000;
+    background-color: #FFFFFF;
+    border: 1px solid #e5e5e5;
+    cursor: pointer;
+}
+
+.filters-more:hover, .filters-more:focus {
+    background-color: #FFFFFF;
 }
 
 .products {
@@ -845,17 +1139,19 @@ img {
 
 .sort {
     background-color: #f7f3ec;
-    min-height: 35px;
 
     margin-bottom: 25px;
+    min-height: 40px;
 
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .sort h3 {
     width: 220px;
     margin: 0px;
+    padding-left: 15px;
 }
 
 .products-sort-list {
@@ -867,10 +1163,23 @@ img {
 
     display: flex;
     justify-content: space-between;
+
+    text-transform: uppercase;
 }
 
 .products-sort-list li {
     display: inline;
+}
+
+.products-sort-list a {
+    color: #000000;
+    opacity: 50%;
+    border-bottom: 1px dotted #ee3643;
+}
+
+.products-sort-list a:hover {
+    opacity: 100%;
+    border-bottom: 1px solid #ee3643;
 }
 
 .products-sort-order {
@@ -879,10 +1188,36 @@ img {
     padding: 0;
 
     width: 60px;
+    display: inline;
+}
+.products-sort-order a {
+    position: relative;
 }
 
-.products-sort-order {
-    display: inline;
+.products-sort-order a:before {
+    content: '';
+    position: absolute;
+    border: 7px solid transparent;
+}
+
+.products-sort-order .asc a:before {
+    border-bottom: 12px solid #c5c5c5;
+    top: -14px;
+    left: 0px;
+}
+
+.products-sort-order .desc a:before {
+    border-top: 12px solid #c5c5c5;
+    top: -7px;
+    left: 30px;
+}
+
+.products-sort-order .asc a:hover:before {
+    border-bottom-color: #231f20;
+}
+
+.products-sort-order .desc a:hover:before {
+    border-top-color: #231f20;
 }
 
 .pagination-list {
@@ -896,17 +1231,34 @@ img {
 
 .pagination-item {
     border: 1px solid #e5e5e5;
-    min-height: 36px;
-    min-width: 36px;
     margin-right: 10px;
+}
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.pagination-item:hover,
+.pagination-item:focus,
+.pagination-item:active {
+    border: 1px solid #bdc6ca;
 }
 
 .pagination-item-current {
     background-color: #ee3643;
+}
+
+.pagination-item-next {
+    padding: 0px 30px;
+}
+
+.pagination-list a {
+    min-height: 36px;
+    min-width: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+}
+
+.pagination-item-current a {
+    color: #FFFFFF;
 }
 
 .catalog-about {
@@ -970,6 +1322,11 @@ img {
     width: 220px;
     color: #FFFFFF;
     background-color: #ee3643;
+}
+
+.footer-logo:hover,
+.footer-logo:focus {
+    background-color: #ca2c37;
 }
 
 .footer-top-menu {

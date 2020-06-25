@@ -6,8 +6,15 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital@0;1&family=PT+Sans&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+    <script src="js/script.js"></script>
 
 </head>
 <body class="inner-page">
@@ -93,7 +100,7 @@
 <main class="container-shop">
 
     <ul class="breadcrumbs container">
-        <li><a href=""><img class=breadcrumbs-home></a></li>
+        <li><a href=""><img class="breadcrumbs-home" src="img/icon-home.svg"></a></li>
         <li><a href="">Каталог</a></li>
         <li><a href="">Инструмент</a></li>
         <li class="breadcrumbs-current">Перформаторы</li>
@@ -107,19 +114,87 @@
         <section class="filters">
             <h2>Фильтр</h2>
 
-            <ul class="filters-list">
-                <li>
-                    <h3>Цена:</h3>
-                </li>
-                <li>
-                    <h3>Производители:</h3>
-                </li>
-                <li>
-                    <h3>Питание:</h3>
-                </li>
-            </ul>
+            <form>
+                <ul class="filters-list">
+                    <li>
+                        <h3>Цена:</h3>
 
-            <button class="filters-more">Показать</button>
+                        <div class="amount-range">
+                            <input type="hidden" id="amount" value="">
+                            <div id="slider-range" class="slider-range"></div>
+                        </div>
+
+                        <div class="amount-values">
+                            <p class="amount-values-min"></p>
+                            <p class="amount-dash">-</p>
+                            <p class="amount-values-max"></p>
+                        </div>
+
+                    </li>
+                    <li>
+                        <h3>Производители:</h3>
+
+                        <p>
+                            <label for="manufacturer_1">
+                                Bosch
+                                <input id="manufacturer_1" type="checkbox" name="manufacturer" value="1" checked>
+                                <span class="checkmark-checkbox"><span class="checkmark-cross"></span></span>
+                            </label>
+                        </p>
+                        <p>
+                            <label for="manufacturer_2">
+                                Интерскол
+                                <input id="manufacturer_2" type="checkbox" name="manufacturer" value="1">
+                                <span class="checkmark-checkbox"><span class="checkmark-cross"></span></span>
+                            </label>
+                        </p>
+                        <p>
+                            <label for="manufacturer_3">
+                                Makita
+                                <input id="manufacturer_3" type="checkbox" name="manufacturer" value="1" checked>
+                                <span class="checkmark-checkbox"><span class="checkmark-cross"></span></span>
+                            </label>
+                        </p>
+                        <p>
+                            <label for="manufacturer_4">
+                                Dewalt
+                                <input id="manufacturer_4" type="checkbox" name="manufacturer" value="1">
+                                <span class="checkmark-checkbox"><span class="checkmark-cross"></span></span>
+                            </label>
+                        </p>
+                        <p>
+                            <label for="manufacturer_5">
+                                Hitachi
+                                <input id="manufacturer_5" type="checkbox" name="manufacturer" value="1">
+                                <span class="checkmark-checkbox"><span class="checkmark-cross"></span></span>
+                            </label>
+                        </p>
+
+                    </li>
+                    <li>
+                        <h3>Питание:</h3>
+
+                        <p>
+                            <label for="group_1">
+                                Аккумуляторные
+                                <input id="group_1" type="radio" name="group" value="1" checked>
+                                <span class="checkmark-radio"><span class="checkmark-circle"></span></span>
+                            </label>
+                        </p>
+                        <p>
+                            <label for="group_2">
+                                Сетевые
+                                <input id="group_2" type="radio" name="group" value="2">
+                                <span class="checkmark-radio"><span class="checkmark-circle"></span></span>
+                            </label>
+                        </p>
+
+                    </li>
+                </ul>
+
+                <button type="submit" class="button filters-more">Показать</button>
+            </form>
+
         </section>
 
         <section class="products">
@@ -127,13 +202,13 @@
             <nav class="sort">
                 <h3>Сортировка:</h3>
                 <ul class="products-sort-list">
-                    <li>По цене</li>
-                    <li>По типу</li>
-                    <li>По функционалу</li>
+                    <li><a href="">По цене</a></li>
+                    <li><a href="">По типу</a></li>
+                    <li><a href="">По функционалу</a></li>
                 </ul>
                 <ul class="products-sort-order">
-                    <li class="asc"></li>
-                    <li class="desc"></li>
+                    <li class="asc"><a href=""></a></li>
+                    <li class="desc"><a href=""></a></li>
                 </ul>
             </nav>
 
@@ -198,7 +273,7 @@
                 <li class="pagination-item pagination-item-current"><a>1</a></li>
                 <li class="pagination-item"><a href="">2</a></li>
                 <li class="pagination-item"><a href="">3</a></li>
-                <li class="pagination-item"><a href="">Следующая</a></li>
+                <li class="pagination-item pagination-item-next"><a href="">Следующая</a></li>
             </ul>
         </section>
     </div>
