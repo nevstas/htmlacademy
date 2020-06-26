@@ -134,7 +134,7 @@ img {
 }
 
 .header-search input:focus ~ svg {
-    fill: #ee3643 !important;
+    fill: #ee3643;
 }
 
 .header-user-menu {
@@ -615,16 +615,6 @@ img {
     border: 3px solid #32425c;
 }
 
-/*ФИКС1111111111111111111111/*/
-/*.products-item-buttons {*/
-/*    display: flex;*/
-/*}*/
-
-/*.products-item-img-href {*/
-/*    display: none;*/
-/*}*/
-/*ФИКС1111111111111111111111/*/
-
 .products-popular h2 {
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 30px;
@@ -777,7 +767,7 @@ img {
 }
 
 .services-img {
-    width: 300px;
+    height: 200px;
 }
 
 .services-desc h3 {
@@ -997,11 +987,6 @@ img {
     border: none;
 }
 
-.ui-widget.ui-widget-content .ui-state-active {
-    /*border: none;*/
-    /*background: none;*/
-}
-
 .ui-slider .ui-slider-handle {
     width: 20px;
     height: 20px;
@@ -1095,6 +1080,10 @@ img {
     display: block;
 }
 
+.filters input[type=checkbox]:focus ~ .checkmark-checkbox {
+    outline: 1px solid #879ece;
+}
+
 .checkmark-cross {
     width: 15px;
     height: 15px;
@@ -1150,6 +1139,10 @@ img {
 
 .filters input[type=radio]:checked ~ .checkmark-radio .checkmark-circle {
     display: block;
+}
+
+.filters input[type=radio]:focus ~ .checkmark-radio {
+    outline: 1px solid #879ece;
 }
 
 .checkmark-circle {
