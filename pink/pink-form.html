@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Pink</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="main-header">
+    <nav class="top-nav">
+        <ul class="top-nav__list">
+            <li class="top-nav__item"><a href="" class="top-nav__link">Главная</a></li>
+            <li class="top-nav__item"><a href="" class="top-nav__link">Фотографии</a></li>
+            <li class="top-nav__item"><a href="" class="top-nav__link">Конкурс</a></li>
+            <li class="top-nav__item"><a href="" class="top-nav__link">HTML Academy</a></li>
+        </ul>
+    </nav>
+
+    <section class="header-inner">
+        <h2 class="header-inner__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
+    </section>
+</header>
+
+<main>
+    <h1 class="visually-hidden">Конкурс</h1>
+
+    <form class="prize">
+        <p class="prize__desc">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
+
+        <div class="prize-wrapper">
+            <div class="prize__person">
+                <p class="prize__person-item">
+                    <label class="prize__person-label" for="first_name">Фамилия</label>
+                    <input class="prize__person-input" id="first_name" type="text" placeholder="Укажите фамилию *">
+                </p>
+                <p class="prize__person-item">
+                    <label class="prize__person-label" for="last_name">Имя</label>
+                    <input class="prize__person-input" id="last_name" type="text" placeholder="Введите ваше имя *">
+                </p>
+                <p class="prize__person-item">
+                    <label class="prize__person-label" for="middle_name">Отчество</label>
+                    <input class="prize__person-input" id="middle_name" type="text" placeholder="Ну и отчество тоже">
+                </p>
+            </div>
+            <div class="prize__app prize__block">
+                <h2 class="prize__title">С каким приложением путешествовали?</h2>
+                <p class="prize__app-item">
+                    <label class="prize__app-label" for="app_ios">Pink для IOS</label>
+                    <input class="prize__app-input" type="radio" id="app_ios" name="app" checked>
+                </p>
+                <p class="prize__app-item">
+                    <label class="prize__app-label" for="app_android">Pink на Android</label>
+                    <input class="prize__app-input" type="radio" id="app_android" name="app">
+                </p>
+                <p class="prize__app-item">
+                    <label class="prize__app-label" for="app_windows">Windows Phone</label>
+                    <input class="prize__app-input" type="radio" id="app_windows" name="app">
+                </p>
+            </div>
+            <div class="prize__contacts prize__block">
+                <h2 class="prize__title">Контактная информация</h2>
+                <p class="prize__contacts-item">
+                    <input class="prize__contacts-input" id="phone" type="text" placeholder="Номер, пожалуйста">
+                    <label class="prize__contacts-label" for="phone">Номер телефона</label>
+                </p>
+                <p class="prize__contacts-item">
+                <input class="prize__contacts-input" id="email" type="text" placeholder="Введите почту *">
+                <label class="prize__contacts-label" for="email">Адрес почты</label>
+                </p>
+            </div>
+            <div class="prize__achievements prize__block">
+                <h2 class="prize__title">Ваши безбашенные достижения в путешествии</h2>
+                <p class="prize__achievements-item">
+                    <label class="prize__achievements-label" for="achievements_1">Сделал селфи с акулой</label>
+                    <input class="prize__achievements-input" type="checkbox" id="achievements_1" name="achievements" checked>
+                </p>
+                <p class="prize__achievements-item">
+                    <label class="prize__achievements-label" for="achievements_2">Видел Чака Норриса</label>
+                    <input class="prize__achievements-input" type="checkbox" id="achievements_2" name="achievements" checked>
+                </p>
+                <p class="prize__achievements-item">
+                    <label class="prize__achievements-label" for="achievements_3">Удержал башню</label>
+                    <input class="prize__achievements-input" type="checkbox" id="achievements_3" name="achievements" checked>
+                </p>
+                <p class="prize__achievements-item">
+                    <label class="prize__achievements-label" for="achievements_4">Обгорел на пляже</label>
+                    <input class="prize__achievements-input" type="checkbox" id="achievements_4" name="achievements" checked>
+                </p>
+                <p class="prize__achievements-item">
+                    <label class="prize__achievements-label" for="achievements_5">Накупил сувениров</label>
+                    <input class="prize__achievements-input" type="checkbox" id="achievements_5" name="achievements" checked>
+                </p>
+                <p class="prize__achievements-item">
+                    <label class="prize__achievements-label" for="achievements_6">Разгромил отель</label>
+                    <input class="prize__achievements-input" type="checkbox" id="achievements_6" name="achievements" checked>
+                </p>
+            </div>
+            <div class="prize__emotions prize__block">
+                <h2 class="prize__title">Опишите свои эмоции</h2>
+                <textarea class="prize__emotions-input" id="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            </div>
+            <button class="prize__submit">Отправить форму</button>
+            <p class="prize__required"><span class="required_text">*</span> — обязательные для заполнения поля</p>
+        </div>
+    </form>
+</main>
+
+<footer class="footer">
+    <img class="footer__logo" src="" alt="Лого в футере">
+    <ul class="footer__social-list social-list">
+        <li class="social-list__item"><a class="social-list__link"><img class="social-list__img" src="" alt="Твиттер"></a></li>
+        <li class="social-list__item"><a class="social-list__link"><img class="social-list__img" src="" alt="Фейсбук"></a></li>
+        <li class="social-list__item"><a class="social-list__link"><img class="social-list__img" src="" alt="Ютуб"></a></li>
+    </ul>
+    <p class="footer__develop">Разработано <img class="footer__develop-img" src="" alt="HTML Academy"></p>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
