@@ -1,0 +1,120 @@
+@font-face {
+  font-family: "MyriadProBold";
+  src: url("../fonts/MyriadProBold.eot");
+  src: url("../fonts/MyriadProBold.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadProBold.woff") format("woff"), url("../fonts/MyriadProBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+/* font-family: "MyriadProBoldItalic"; */
+@font-face {
+  font-family: "MyriadProBoldItalic";
+  src: url("../fonts/MyriadProBoldItalic.eot");
+  src: url("../fonts/MyriadProBoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadProBoldItalic.woff") format("woff"), url("../fonts/MyriadProBoldItalic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+/* font-family: "MyriadProItalic"; */
+@font-face {
+  font-family: "MyriadProItalic";
+  src: url("../fonts/MyriadProItalic.eot");
+  src: url("../fonts/MyriadProItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadProItalic.woff") format("woff"), url("../fonts/MyriadProItalic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+/* font-family: "MyriadProRegular"; */
+@font-face {
+  font-family: "MyriadProRegular";
+  src: url("../fonts/MyriadProRegular.eot");
+  src: url("../fonts/MyriadProRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadProRegular.woff") format("woff"), url("../fonts/MyriadProRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+.button__type1 {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border: none;
+  border-radius: 3px;
+}
+.top-nav {
+  font-family: "MyriadProRegular", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  color: #FFFFFF;
+}
+.cta {
+  font-family: "MyriadProRegular", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+.cta__slogan {
+  font-size: 50px;
+  line-height: 50px;
+}
+.description {
+  font-family: "MyriadProRegular", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
+}
+.description__title {
+  font-size: 50px;
+  line-height: 50px;
+}
+.description__item-title,
+.description__effect-title {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 30px;
+}
+.description__effect-link {
+  color: #d22856;
+}
+.rewiews {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
+}
+.rewiews__author {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #000000;
+}
+.rewiews__author-info {
+  font-family: "MyriadProRegular", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "MyriadProRegular", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
+  background-color: #FFFFFF;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+/*# sourceMappingURL=style.css.map */

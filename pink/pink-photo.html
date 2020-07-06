@@ -6,7 +6,7 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="less/style.css">
 </head>
 <body>
 
@@ -29,23 +29,22 @@
     <h1 class="visually-hidden">Фотографии</h1>
 
     <div class="main-photo">
-        <img class="main-photo__img" src="" alt="Фото">
-        <div class="main-photo__data photo-data">
-            <p class="main-photo__author photo__author">
-                <span class="main-photo__author_name photo__author_name">Анна</span>
-                <time class="main-photo__author_time photo__author_time" datetime="2020-01-01 12:12:12">(5 минут назад)</time>
+        <img class="photo__img" src="" alt="Фото">
+        <div class="photo-data">
+            <p class="photo__author">
+                <span class="photo__author_name">Анна</span>
+                <time class="photo__author_time" datetime="2020-01-01 12:12:12">(5 минут назад)</time>
             </p>
-            <div class="main-photo__like photo__like">
-                <p class="main-photo__like-text photo__like-text">Нравится: 215</p>
-                <img class="main-photo__like-img photo__like-img" src="" alt="Лайк">
+            <div class="photo__like">
+                <p class="photo__like-text">Нравится: 215</p>
+                <img class="photo__like-img" src="" alt="Лайк">
             </div>
-            <p class="main-photo__desc photo__desc">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            <p class="photo__desc">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
         </div>
-        <a class="main-photo__button" href="">Панорама дня</a>
+        <a class="main-photo__button button__type3" href="">Панорама дня</a>
     </div>
 
     <div class="photo__list">
-
         <div class="photo__item">
             <img class="photo__img" src="" alt="Фото">
             <div class="photo-data">
@@ -152,15 +151,15 @@
                 </p>
                 <p class="write__block-setting">
                     <label class="write__label" for="fill"></label>
-                    <input class="write__input" id="fill" type="range" value="50">
+                    <input class="write__input" id="fill" type="range" value="70">
                 </p>
                 <p class="write__block-setting">
                     <label class="write__label" for="contrast"></label>
-                    <input class="write__input" id="contrast" type="range" value="70">
+                    <input class="write__input" id="contrast" type="range" value="60">
                 </p>
                 <div class="write__buttons">
-                    <button class="write__button">Запостить</button>
-                    <button class="write__button write__button--disable">Отмена</button>
+                    <button class="write__button button__type4">Запостить</button>
+                    <button class="write__button button__type4--disable">Отмена</button>
                 </div>
             </form>
         </div>

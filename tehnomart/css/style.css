@@ -275,8 +275,8 @@ img {
     color: #ee3643;
 }
 
-.button-login:hover:before,
-.button-login:focus:before {
+.button-login:hover::before,
+.button-login:focus::before {
     opacity: 100%;
 }
 
@@ -284,7 +284,7 @@ img {
     position: relative;
 }
 
-.button-login:before {
+.button-login::before {
     content: url('../img/icon-login.svg');
     position: absolute;
     top: 12px;
@@ -394,13 +394,13 @@ img {
     padding-top: 30px;
 }
 
-.home-catalog-item.new:before {
+.home-catalog-item.new::before {
     content: url(../img/new.png);
     position: absolute;
     right: 0px;
 }
 
-.home-catalog-item.new:after {
+.home-catalog-item.new::after {
     content: "new";
     position: absolute;
     right: 6px;
@@ -590,11 +590,11 @@ img {
     background-color: #5fbb2d;
 }
 
-.products-item a.button-buy:hover:before {
+.products-item a.button-buy:hover::before {
     opacity: 100%;
 }
 
-.button-buy:before {
+.button-buy::before {
     position: absolute;
     width: 20px;
     height: 20px;
@@ -820,7 +820,7 @@ img {
     position: relative;
 }
 
-.about-partners li:before {
+.about-partners li::before {
     position: absolute;
     top: 15px;
     left: 0px;
@@ -898,7 +898,7 @@ img {
     align-items: center;
 }
 
-.breadcrumbs li:before {
+.breadcrumbs li::before {
     content: '';
     position: absolute;
     left: 7px;
@@ -911,7 +911,7 @@ img {
 
 }
 
-.breadcrumbs li:nth-child(1):before {
+.breadcrumbs li:nth-child(1)::before {
     content: none;
 }
 
@@ -997,7 +997,7 @@ img {
     /*position: relative;*/
 }
 
-.ui-slider .ui-slider-handle:before {
+.ui-slider .ui-slider-handle::before {
     position: absolute;
     width: 4px;
     height: 4px;
@@ -1096,14 +1096,14 @@ img {
     -webkit-transform:rotate(45deg); /* Safari and Chrome */
 }
 
-.checkmark-cross:before, .checkmark-cross:after {
+.checkmark-cross::before, .checkmark-cross::after {
     content: "";
     position: absolute;
     /*z-index: -1;*/
     background: #c5c5c5;
 }
 
-.checkmark-cross:before {
+.checkmark-cross::before {
     left: 35%;
     width: 30%;
     margin-left: 35%;
@@ -1111,7 +1111,7 @@ img {
     top: -53%;
 }
 
-.checkmark-cross:after {
+.checkmark-cross::after {
     top: 73%;
     height: 30%;
     margin-top: -15%;
@@ -1155,21 +1155,21 @@ img {
     left: 3px;
 }
 
-.checkmark-circle:before, .checkmark-circle:after {
+.checkmark-circle::before, .checkmark-circle::after {
     content: "";
     position: absolute;
     /*z-index: -1;*/
     background: #c5c5c5;
 }
 
-.checkmark-circle:before {
+.checkmark-circle::before {
     left: 50%;
     width: 30%;
     margin-left: -15%;
     height: 100%;
 }
 
-.checkmark-circle:after {
+.checkmark-circle::after {
     top: 50%;
     height: 30%;
     margin-top: -15%;
@@ -1256,29 +1256,29 @@ img {
     position: relative;
 }
 
-.products-sort-order a:before {
+.products-sort-order a::before {
     content: '';
     position: absolute;
     border: 7px solid transparent;
 }
 
-.products-sort-order .asc a:before {
+.products-sort-order .asc a::before {
     border-bottom: 12px solid #c5c5c5;
     top: -14px;
     left: 0px;
 }
 
-.products-sort-order .desc a:before {
+.products-sort-order .desc a::before {
     border-top: 12px solid #c5c5c5;
     top: -7px;
     left: 30px;
 }
 
-.products-sort-order .asc a:hover:before {
+.products-sort-order .asc a:hover::before {
     border-bottom-color: #231f20;
 }
 
-.products-sort-order .desc a:hover:before {
+.products-sort-order .desc a:hover::before {
     border-top-color: #231f20;
 }
 
@@ -1556,7 +1556,7 @@ img {
     /*display: block;*/
 }
 
-.modal-write:before {
+.modal-write::before {
     content: "";
     height: 7px;
     background-color: #ff5257;
