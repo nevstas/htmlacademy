@@ -1,36 +1,4 @@
-@font-face {
-  font-family: "MyriadProBold";
-  src: url("../fonts/MyriadProBold.eot");
-  src: url("../fonts/MyriadProBold.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadProBold.woff") format("woff"), url("../fonts/MyriadProBold.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
-}
-/* font-family: "MyriadProBoldItalic"; */
-@font-face {
-  font-family: "MyriadProBoldItalic";
-  src: url("../fonts/MyriadProBoldItalic.eot");
-  src: url("../fonts/MyriadProBoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadProBoldItalic.woff") format("woff"), url("../fonts/MyriadProBoldItalic.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
-}
-/* font-family: "MyriadProItalic"; */
-@font-face {
-  font-family: "MyriadProItalic";
-  src: url("../fonts/MyriadProItalic.eot");
-  src: url("../fonts/MyriadProItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadProItalic.woff") format("woff"), url("../fonts/MyriadProItalic.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
-}
-/* font-family: "MyriadProRegular"; */
-@font-face {
-  font-family: "MyriadProRegular";
-  src: url("../fonts/MyriadProRegular.eot");
-  src: url("../fonts/MyriadProRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadProRegular.woff") format("woff"), url("../fonts/MyriadProRegular.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
-}
 .button__type1 {
-  font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
   text-align: center;
@@ -40,14 +8,17 @@
   border: none;
   border-radius: 3px;
 }
+.main-header__inner-title {
+  font-size: 50px;
+  line-height: 50px;
+  color: #FFFFFF;
+}
 .top-nav {
-  font-family: "MyriadProRegular", Arial, sans-serif;
   font-size: 18px;
   line-height: 18px;
   color: #FFFFFF;
 }
 .cta {
-  font-family: "MyriadProRegular", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
   color: #FFFFFF;
@@ -55,9 +26,12 @@
 .cta__slogan {
   font-size: 50px;
   line-height: 50px;
+  font-weight: 300;
+}
+.cta__available {
+  font-weight: 300;
 }
 .description {
-  font-family: "MyriadProRegular", Arial, sans-serif;
   font-size: 18px;
   line-height: 30px;
   color: #283645;
@@ -65,10 +39,10 @@
 .description__title {
   font-size: 50px;
   line-height: 50px;
+  font-weight: 300;
 }
 .description__item-title,
 .description__effect-title {
-  font-family: "Open Sans", Arial, sans-serif;
   font-weight: 700;
   font-size: 30px;
   line-height: 30px;
@@ -77,29 +51,105 @@
   color: #d22856;
 }
 .rewiews {
-  font-family: "Open Sans", Arial, sans-serif;
   font-size: 18px;
   line-height: 30px;
   color: #283645;
 }
 .rewiews__author {
-  font-family: "Open Sans", Arial, sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
   color: #000000;
 }
 .rewiews__author-info {
-  font-family: "MyriadProRegular", Arial, sans-serif;
   font-size: 18px;
   line-height: 30px;
+}
+.pricelist {
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
+}
+.pricelist__name {
+  font-weight: 700;
+  color: #FFFFFF;
+}
+.pricelist__price {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #FFFFFF;
+}
+.contacts {
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
+}
+.contacts__title {
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: 300;
+}
+.contacts__description {
+  font-weight: 700;
+}
+.contacts__value,
+.contacts__value .contacts__link {
+  font-size: 24px;
+  line-height: 24px;
+  color: #d22856;
+  font-weight: 300;
+}
+.footer {
+  font-size: 18px;
+  line-height: 18px;
+  color: #283645;
+}
+.prize {
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
+}
+.prize__person-label {
+  font-size: 14px;
+  line-height: 30px;
+  color: #d22856;
+}
+.prize__title {
+  font-size: 14px;
+  line-height: 30px;
+  color: #d22856;
+}
+.photo {
+  font-size: 14px;
+  line-height: 24px;
+  color: #283645;
+}
+.photo__author_name {
+  font-weight: 700;
+}
+.photo__author_time {
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 300;
+}
+.photo__like-text {
+  font-size: 12px;
+  line-height: 24px;
+  color: #d22856;
+}
+.write {
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
 }
 body {
   margin: 0;
   padding: 0;
-  font-family: "MyriadProRegular", Arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 18px;
   line-height: 30px;
+  font-weight: 400;
   color: #283645;
   background-color: #FFFFFF;
 }
