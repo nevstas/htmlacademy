@@ -4,21 +4,36 @@
     <meta charset="UTF-8">
     <title>Pink</title>
 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="less/normalize.css">
     <link rel="stylesheet" href="less/style.css">
 </head>
 <body>
 
 <header class="main-header">
-    <nav class="main-header__top-nav top-nav">
-        <ul class="top-nav__list">
-            <li class="top-nav__item"><a href="" class="top-nav__link">Главная</a></li>
-            <li class="top-nav__item"><a href="" class="top-nav__link">Фотографии</a></li>
-            <li class="top-nav__item"><a href="" class="top-nav__link">Конкурс</a></li>
-            <li class="top-nav__item"><a href="" class="top-nav__link">HTML Academy</a></li>
-        </ul>
-    </nav>
+
+    <div class="main-header__wrapper">
+        <div class="main-header__wrapper-flex">
+            <a class="main-header__logo" href="">
+                <div class="main-header__logo-img-block">
+                    <div class="main-header__logo-img"></div>
+                </div>
+            </a>
+
+            <nav class="main-header__top-nav top-nav">
+                <ul class="top-nav__list">
+                    <li class="top-nav__item"><a href="" class="top-nav__link">Главная</a></li>
+                    <li class="top-nav__item"><a href="" class="top-nav__link">Фотографии</a></li>
+                    <li class="top-nav__item"><a href="" class="top-nav__link">Конкурс</a></li>
+                    <li class="top-nav__item"><a href="" class="top-nav__link">HTML Academy</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
 
     <section class="main-header__cta-wrapper">
         <div class="main-header__cta cta">
