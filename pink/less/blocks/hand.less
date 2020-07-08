@@ -1,11 +1,67 @@
 .hand {
+  position: relative;
+  width: 100%;
+}
 
+.hand__phone {
+  position: absolute;
+  bottom: 0px;
+  left: calc(50% - 127px);
+
+  height: 290px;
+}
+
+.hand__screen {
+  position: absolute;
+  bottom: 77px;
+  left: calc(50% - 17px);
+  height: 185px;
 }
 
 @media (min-width: @width-tablet) {
+  .hand {
+    position: absolute;
+  }
 
+  .hand {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    min-height: 620px;
+  }
+
+  .hand__phone {
+    left: auto;
+    right: 40px;
+    height: 550px;
+  }
+
+  .hand__screen {
+    bottom: 147px;
+    left: auto;
+    right: 117px;
+    height: 349px;
+  }
 }
 
 @media (min-width: @width-desktop) {
+  .hand {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    min-height: 715px;
+  }
 
+  .hand__phone {
+    left: auto;
+    right: 40px;
+    height: 650px;
+  }
+
+  .hand__screen {
+    bottom: 173px;
+    left: auto;
+    right: 131px;
+    height: 414px;
+  }
 }

@@ -1,5 +1,7 @@
 .main-header {
   background: @color url("../img/header-background.jpg") no-repeat 0;
+  background-position: center top;
+  background-size: cover;
 }
 
 .main-header__wrapper {
@@ -31,6 +33,22 @@
   background: url("../img/logo-top-mobile.png") no-repeat 0;
 }
 
+.main-header__cta-wrapper {
+
+}
+
+.main-header__hand {
+  min-height: 400px;
+}
+
+.main-header__cta {
+  display: none;
+}
+
+//////////////////////////////////////////
+/// Media
+//////////////////////////////////////////
+
 @media (min-width: @width-tablet) {
 
   .main-header__logo-img-block {
@@ -41,6 +59,13 @@
   .main-header__logo-img {
     background: url("../img/logo-top-tablet.png") no-repeat 0;
   }
+
+  .main-header__cta-wrapper {
+    position: relative;
+    min-height: 620px;
+    padding: 20px;
+  }
+
 }
 
 @media (min-width: @width-desktop) {
@@ -49,9 +74,13 @@
   }
 
   .main-header__wrapper-flex {
+
+    //стили контейнера-центровщика - начало
     margin: 0 auto;
     width: @width-desktop - 10 - 10;
     padding: 0 10px;
+    //стили контейнера-центровщика - конец
+
     display: flex;
     justify-content: space-between;
   }
@@ -86,4 +115,15 @@
     display: flex;
     justify-content: space-between;
   }
+
+  .main-header__cta-wrapper {
+    //стили контейнера-центровщика - начало
+    margin: 0 auto;
+    width: @width-desktop - 10 - 10;
+    padding: 0 10px;
+    //стили контейнера-центровщика - конец
+
+    min-height: 715px;
+  }
+
 }

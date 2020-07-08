@@ -10,6 +10,8 @@
 }
 .main-header {
   background: #283645 url("../img/header-background.jpg") no-repeat 0;
+  background-position: center top;
+  background-size: cover;
 }
 .main-header__inner-title {
   font-size: 50px;
@@ -31,6 +33,12 @@
   height: 70px;
   background: url("../img/logo-top-mobile.png") no-repeat 0;
 }
+.main-header__hand {
+  min-height: 400px;
+}
+.main-header__cta {
+  display: none;
+}
 @media (min-width: 660px) {
   .main-header__logo-img-block {
     width: 660px;
@@ -38,6 +46,11 @@
   }
   .main-header__logo-img {
     background: url("../img/logo-top-tablet.png") no-repeat 0;
+  }
+  .main-header__cta-wrapper {
+    position: relative;
+    min-height: 620px;
+    padding: 20px;
   }
 }
 @media (min-width: 960px) {
@@ -75,6 +88,12 @@
     display: flex;
     justify-content: space-between;
   }
+  .main-header__cta-wrapper {
+    margin: 0 auto;
+    width: 940px;
+    padding: 0 10px;
+    min-height: 715px;
+  }
 }
 .top-nav {
   font-size: 18px;
@@ -82,6 +101,7 @@
   font-weight: 700;
   text-transform: uppercase;
   color: #FFFFFF;
+  display: none;
 }
 .top-nav__list {
   list-style: none;
@@ -103,6 +123,7 @@
     line-height: 18px;
     font-weight: 400;
     text-transform: none;
+    display: block;
   }
   .top-nav__link {
     background: none;
@@ -123,6 +144,71 @@
 }
 .cta__available {
   font-weight: 300;
+}
+@media (min-width: 660px) {
+  .cta {
+    display: block;
+    width: 300px;
+    text-align: center;
+    position: absolute;
+  }
+}
+.hand {
+  position: relative;
+  width: 100%;
+}
+.hand__phone {
+  position: absolute;
+  bottom: 0px;
+  left: calc(50% - 127px);
+  height: 290px;
+}
+.hand__screen {
+  position: absolute;
+  bottom: 77px;
+  left: calc(50% - 17px);
+  height: 185px;
+}
+@media (min-width: 660px) {
+  .hand {
+    position: absolute;
+  }
+  .hand {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    min-height: 620px;
+  }
+  .hand__phone {
+    left: auto;
+    right: 40px;
+    height: 550px;
+  }
+  .hand__screen {
+    bottom: 147px;
+    left: auto;
+    right: 117px;
+    height: 349px;
+  }
+}
+@media (min-width: 960px) {
+  .hand {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    min-height: 715px;
+  }
+  .hand__phone {
+    left: auto;
+    right: 40px;
+    height: 650px;
+  }
+  .hand__screen {
+    bottom: 173px;
+    left: auto;
+    right: 131px;
+    height: 414px;
+  }
 }
 .description {
   font-size: 18px;
