@@ -8,12 +8,6 @@
 
 }
 
-.main-header__inner-title {
-  font-size: 50px;
-  line-height: 50px;
-  color: @color-white;
-}
-
 .main-header__logo {
   display: block;
   background-color: @color;
@@ -21,9 +15,11 @@
 }
 
 .main-header__logo-img-block {
-  width: @width-mobile;
+  //стили контейнера-центровщика - начало
   margin: 0 auto;
+  width: @width-mobile - 20 - 20;
   padding: 0 20px;
+  //стили контейнера-центровщика - конец
 }
 
 .main-header__logo-img {
@@ -45,6 +41,26 @@
   display: none;
 }
 
+.main-header__inner {
+  min-height: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  //стили контейнера-центровщика - начало
+  margin: 0 auto;
+  width: @width-mobile - 20 - 20;
+  padding: 0 20px;
+  //стили контейнера-центровщика - конец
+}
+
+.main-header__inner-title {
+  font-size: 50px;
+  line-height: 50px;
+  color: @color-white;
+  text-align: center;
+}
+
 //////////////////////////////////////////
 /// Media
 //////////////////////////////////////////
@@ -52,8 +68,11 @@
 @media (min-width: @width-tablet) {
 
   .main-header__logo-img-block {
-    width: @width-tablet;
+    //стили контейнера-центровщика - начало
+    margin: 0 auto;
+    width: @width-tablet - 20 - 20;
     padding: 0 20px;
+    //стили контейнера-центровщика - конец
   }
 
   .main-header__logo-img {
@@ -66,6 +85,15 @@
     padding: 20px;
   }
 
+  .main-header__inner {
+    min-height: 330px;
+
+    //стили контейнера-центровщика - начало
+    margin: 0 auto;
+    width: @width-tablet - 20 - 20;
+    padding: 0 20px;
+    //стили контейнера-центровщика - конец
+  }
 }
 
 @media (min-width: @width-desktop) {
@@ -124,6 +152,16 @@
     //стили контейнера-центровщика - конец
 
     min-height: 715px;
+  }
+
+  .main-header__inner {
+    min-height: 285px;
+
+    //стили контейнера-центровщика - начало
+    margin: 0 auto;
+    width: @width-desktop - 10 - 10;
+    padding: 0 10px;
+    //стили контейнера-центровщика - конец
   }
 
 }

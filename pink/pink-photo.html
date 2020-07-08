@@ -14,14 +14,25 @@
 <body>
 
 <header class="main-header">
-    <nav class="main-header__top-nav top-nav">
-        <ul class="top-nav__list">
-            <li class="top-nav__item"><a href="" class="top-nav__link">Главная</a></li>
-            <li class="top-nav__item"><a href="" class="top-nav__link">Фотографии</a></li>
-            <li class="top-nav__item"><a href="" class="top-nav__link">Конкурс</a></li>
-            <li class="top-nav__item"><a href="" class="top-nav__link">HTML Academy</a></li>
-        </ul>
-    </nav>
+
+    <div class="main-header__wrapper">
+        <div class="main-header__wrapper-flex">
+            <a class="main-header__logo" href="">
+                <div class="main-header__logo-img-block">
+                    <div class="main-header__logo-img"></div>
+                </div>
+            </a>
+
+            <nav class="main-header__top-nav top-nav">
+                <ul class="top-nav__list">
+                    <li class="top-nav__item"><a href="pink-index.html" class="top-nav__link">Главная</a></li>
+                    <li class="top-nav__item"><a class="top-nav__link top-nav__link--active">Фотографии</a></li>
+                    <li class="top-nav__item"><a href="pink-form.html" class="top-nav__link">Конкурс</a></li>
+                    <li class="top-nav__item"><a href="https://htmlacademy.ru/" target="_blank" class="top-nav__link">HTML Academy</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
 
     <section class="main-header__inner">
         <h2 class="main-header__inner-title">Фотографии пользователей</h2>
