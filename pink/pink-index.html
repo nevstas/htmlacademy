@@ -56,31 +56,56 @@
 <main>
     <h1 class="visually-hidden">Приложение Pink</h1>
     <section class="description">
-        <h2 class="description__title">Устали от серости мегаполиса? Нам есть, что вам предложить!</h2>
-        <ul class="description__list">
-            <li class="description_item">
-                <img class="description__img" src="" alt="Поднимает настроение">
-                <h3 class="description__item-title">Поднимает настроение</h3>
-                <p class="description__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-            </li>
-            <li class="description__item">
-                <img class="description__img" src="" alt="Меняет мир вокруг">
-                <h3 class="description__item-title">Меняет мир вокруг</h3>
-                <p class="description__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-            </li>
-            <li class="description__item">
-                <img class="description__img" src="" alt="Заводит новых друзей">
-                <h3 class="description__item-title">Заводит новых друзей</h3>
-                <p class="description__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-            </li>
-        </ul>
-
-        <div class="description__effect">
-            <img class="description__effect-img" src="" alt="Эффект на 24 часа!">
-            <h3 class="description__effect-title">Эффект на 24 часа!</h3>
-            <p class="description__effect-text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
-            <a class="description__effect-link" href="">Узнать больше об исследовании</a>
+        <div class="description__container">
+            <h2 class="description__title">Устали от серости мегаполиса? Нам есть, что вам предложить!</h2>
+            <div class="description__list-wrapper">
+                <div class="description__img description__img__addition">
+                    <img class="description__iphone" src="img/description-iphone.png" alt="iPhone">
+                    <img class="description__screen" src="img/description-screen3.jpg" alt="Заводит новых друзей">
+                </div>
+                <ul class="description__list">
+                    <li class="description__item">
+                        <div class="description__img">
+                            <img class="description__iphone" src="img/description-iphone.png" alt="iPhone">
+                            <img class="description__screen" src="img/description-screen1.jpg" alt="Поднимает настроение">
+                        </div>
+                        <h3 class="description__item-title">Поднимает настроение</h3>
+                        <p class="description__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+                    </li>
+                    <li class="description__item">
+                        <div class="description__img">
+                            <img class="description__iphone" src="img/description-iphone.png" alt="iPhone">
+                            <img class="description__screen" src="img/description-screen2.jpg" alt="Меняет мир вокруг">
+                        </div>
+                        <h3 class="description__item-title">Меняет мир вокруг</h3>
+                        <p class="description__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+                    </li>
+                    <li class="description__item">
+                        <div class="description__img">
+                            <img class="description__iphone" src="img/description-iphone.png" alt="iPhone">
+                            <img class="description__screen" src="img/description-screen3.jpg" alt="Заводит новых друзей">
+                        </div>
+                        <h3 class="description__item-title">Заводит новых друзей</h3>
+                        <p class="description__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+                    </li>
+                </ul>
+            </div>
         </div>
+
+
+        <div class="description__effect-container">
+            <div class="description__effect">
+                <div class="description__effect-block-img">
+                    <img class="description__effect-img" src="img/description-effect.png" alt="Эффект на 24 часа!">
+                </div>
+                <div class="description__effect-block-desc">
+                    <h3 class="description__effect-title">Эффект на 24 часа!</h3>
+                    <p class="description__effect-text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+                    <a class="description__effect-link" href="">Узнать больше об исследовании</a>
+                </div>
+            </div>
+        </div>
+
     </section>
 
     <section class="rewiews">
@@ -90,60 +115,80 @@
                 <p class="rewiews__author">Николай Петров</p>
                 <p class="rewiews__author-info">25 лет, водитель трамвая</p>
             </li>
-            <li class="rewiews__item">
-                <p class="rewiews__text">«Установил приложение. Очень доволен функционалом. Даже и не представляю как без него раньше жил. Всем своим друзьям теперь советую»</p>
-                <p class="rewiews__author">Екатерина Толстки</p>
-                <p class="rewiews__author-info">21 лет, менеджер</p>
-            </li>
-            <li class="rewiews__item">
-                <p class="rewiews__text">«Интересное приложение. Затянуло на долго. Сначала не поверил что такое возможно, но это дейтвительно возможно»</p>
-                <p class="rewiews__author">Илья Комар</p>
-                <p class="rewiews__author-info">21 лет, инженер</p>
-            </li>
+<!--            <li class="rewiews__item">-->
+<!--                <p class="rewiews__text">«Установил приложение. Очень доволен функционалом. Даже и не представляю как без него раньше жил. Всем своим друзьям теперь советую»</p>-->
+<!--                <p class="rewiews__author">Екатерина Толстки</p>-->
+<!--                <p class="rewiews__author-info">21 лет, менеджер</p>-->
+<!--            </li>-->
+<!--            <li class="rewiews__item">-->
+<!--                <p class="rewiews__text">«Интересное приложение. Затянуло на долго. Сначала не поверил что такое возможно, но это дейтвительно возможно»</p>-->
+<!--                <p class="rewiews__author">Илья Комар</p>-->
+<!--                <p class="rewiews__author-info">21 лет, инженер</p>-->
+<!--            </li>-->
         </ul>
     </section>
 
     <section class="pricelist">
-        <table class="pricelist__table">
-            <tr>
-                <th class="pricelist__head">
+        <div class="pricelist__container">
+            <table class="pricelist__table">
+                <tr>
+                    <th class="pricelist__head">
 
-                </th>
-                <th class="pricelist__head">
-                    <p class="pricelist__name">База</p>
-                    <p class="pricelist__price">1,99 USD</p>
-                </th>
-                <th class="pricelist__head pricelist__head--top">
-                    <p class="pricelist__name">Стандарт</p>
-                    <p class="pricelist__price">3,99 USD</p>
-                </th>
-                <th class="pricelist__head">
-                    <p class="pricelist__name">Анлим</p>
-                    <p class="pricelist__price">9,99 USD</p>
-                </th>
-            </tr>
-            <tr>
-                <td class="pricelist__option-name">Розовый фильтр</td>
-                <td class="pricelist__option-value pricelist__option-value--true"></td>
-                <td class="pricelist__option-value pricelist__option-value--true"></td>
-                <td class="pricelist__option-value pricelist__option-value--true"></td>
-            </tr>
-            <tr>
-                <td class="pricelist__option-name">Смайлики</td>
-                <td class="pricelist__option-value pricelist__option-value--false"></td>
-                <td class="pricelist__option-value pricelist__option-value--true"></td>
-                <td class="pricelist__option-value pricelist__option-value--true"></td>
-            </tr>
-            <tr>
-                <td class="pricelist__option-name">Комментарии</td>
-                <td class="pricelist__option-value pricelist__option-value--false"></td>
-                <td class="pricelist__option-value pricelist__option-value--false"></td>
-                <td class="pricelist__option-value pricelist__option-value--true"></td>
-            </tr>
-        </table>
+                    </th>
+                    <th class="pricelist__head">
+                        <p class="pricelist__name">База</p>
+                        <p class="pricelist__price">1,99 USD</p>
+                    </th>
+                    <th class="pricelist__head pricelist__head--hit">
+                        <p class="pricelist__name">Стандарт</p>
+                        <p class="pricelist__price">3,99 USD</p>
+                    </th>
+                    <th class="pricelist__head">
+                        <p class="pricelist__name">Анлим</p>
+                        <p class="pricelist__price">9,99 USD</p>
+                    </th>
+                </tr>
+                <tr>
+                    <td class="pricelist__option-name">Розовый фильтр</td>
+                    <td class="pricelist__option-value pricelist__option-value--true">
+                        <span class="pricelist__option-value-name">Розовый фильтр</span>
+                    </td>
+                    <td class="pricelist__option-value pricelist__option-value--true">
+                        <span class="pricelist__option-value-name">Розовый фильтр</span>
+                    </td>
+                    <td class="pricelist__option-value pricelist__option-value--true">
+                        <span class="pricelist__option-value-name">Розовый фильтр</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pricelist__option-name">Смайлики</td>
+                    <td class="pricelist__option-value pricelist__option-value--false">
+                        <span class="pricelist__option-value-name">Смайлики</span>
+                    </td>
+                    <td class="pricelist__option-value pricelist__option-value--true">
+                        <span class="pricelist__option-value-name">Смайлики</span>
+                    </td>
+                    <td class="pricelist__option-value pricelist__option-value--true">
+                        <span class="pricelist__option-value-name">Смайлики</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pricelist__option-name">Комментарии</td>
+                    <td class="pricelist__option-value pricelist__option-value--false">
+                        <span class="pricelist__option-value-name">Комментарии</span>
+                    </td>
+                    <td class="pricelist__option-value pricelist__option-value--false">
+                        <span class="pricelist__option-value-name">Комментарии</span>
+                    </td>
+                    <td class="pricelist__option-value pricelist__option-value--true">
+                        <span class="pricelist__option-value-name">Комментарии</span>
+                    </td>
+                </tr>
+            </table>
+        </div>
     </section>
 
-    <section class="contacts">
+    <section class="contacts container">
         <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
         <ul class="contacts__list">
             <li class="contacts__item">
@@ -162,6 +207,9 @@
     </section>
 
     <section class="map">
+        <img class="map__background" src="img/map-background.png" alt="Бекграунд">
+<!--        <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1188.3752116042735!2d30.321839294134737!3d59.93876420845227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1594316067670!5m2!1sru!2sby" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>-->
+        <iframe class="map__iframe" src="https://yandex.by/map-widget/v1/-/CCQlUFBV0A" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
     </section>
 </main>
 

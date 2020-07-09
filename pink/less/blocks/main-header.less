@@ -1,5 +1,5 @@
 .main-header {
-  background: @color url("../img/header-background.jpg") no-repeat 0;
+  background: @color-blue url("../img/header-background.jpg") no-repeat 0;
   background-position: center top;
   background-size: cover;
 }
@@ -10,16 +10,12 @@
 
 .main-header__logo {
   display: block;
-  background-color: @color;
+  background-color: @color-blue;
   border-bottom: 1px solid @color-black;
 }
 
 .main-header__logo-img-block {
-  //стили контейнера-центровщика - начало
-  margin: 0 auto;
-  width: @width-mobile - 20 - 20;
-  padding: 0 20px;
-  //стили контейнера-центровщика - конец
+  .container-mobile();
 }
 
 .main-header__logo-img {
@@ -38,6 +34,10 @@
 }
 
 .main-header__cta {
+  background-color: @color-blue-dark;
+}
+
+.cta__slogan {
   display: none;
 }
 
@@ -47,11 +47,7 @@
   align-items: center;
   justify-content: center;
 
-  //стили контейнера-центровщика - начало
-  margin: 0 auto;
-  width: @width-mobile - 20 - 20;
-  padding: 0 20px;
-  //стили контейнера-центровщика - конец
+  .container-mobile();
 }
 
 .main-header__inner-title {
@@ -68,11 +64,7 @@
 @media (min-width: @width-tablet) {
 
   .main-header__logo-img-block {
-    //стили контейнера-центровщика - начало
-    margin: 0 auto;
-    width: @width-tablet - 20 - 20;
-    padding: 0 20px;
-    //стили контейнера-центровщика - конец
+    .container-tablet();
   }
 
   .main-header__logo-img {
@@ -85,14 +77,18 @@
     padding: 20px;
   }
 
+  .main-header__cta {
+    background-color: transparent;
+  }
+
+  .cta__slogan {
+    display: block;
+  }
+
   .main-header__inner {
     min-height: 330px;
 
-    //стили контейнера-центровщика - начало
-    margin: 0 auto;
-    width: @width-tablet - 20 - 20;
-    padding: 0 20px;
-    //стили контейнера-центровщика - конец
+    .container-tablet();
   }
 }
 
@@ -103,11 +99,7 @@
 
   .main-header__wrapper-flex {
 
-    //стили контейнера-центровщика - начало
-    margin: 0 auto;
-    width: @width-desktop - 10 - 10;
-    padding: 0 10px;
-    //стили контейнера-центровщика - конец
+    .container-desktop();
 
     display: flex;
     justify-content: space-between;
@@ -145,11 +137,7 @@
   }
 
   .main-header__cta-wrapper {
-    //стили контейнера-центровщика - начало
-    margin: 0 auto;
-    width: @width-desktop - 10 - 10;
-    padding: 0 10px;
-    //стили контейнера-центровщика - конец
+    .container-desktop();
 
     min-height: 715px;
   }
@@ -157,11 +145,7 @@
   .main-header__inner {
     min-height: 285px;
 
-    //стили контейнера-центровщика - начало
-    margin: 0 auto;
-    width: @width-desktop - 10 - 10;
-    padding: 0 10px;
-    //стили контейнера-центровщика - конец
+    .container-desktop();
   }
 
 }

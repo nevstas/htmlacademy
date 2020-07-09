@@ -1,7 +1,24 @@
 .rewiews {
   font-size: 18px;
   line-height: 30px;
-  color: @color;
+  color: @color-blue;
+
+  .container-mobile();
+}
+
+.rewiews__list {
+  .reset-list();
+
+  text-align: center;
+}
+
+.rewiews__item {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.rewiews__text {
+  order: 20;
 }
 
 .rewiews__author {
@@ -9,17 +26,36 @@
   font-size: 24px;
   line-height: 30px;
   color: @color-black;
+
+  width: 100%;
+  order: 10;
 }
 
 .rewiews__author-info {
   font-size: 18px;
   line-height: 30px;
+
+  width: 100%;
+  display: none;
+  order: 30;
 }
 
 @media (min-width: @width-tablet) {
+  .rewiews {
+    .container-tablet();
+  }
 
+  .rewiews__author {
+    order: 25;
+  }
+
+  .rewiews__author-info {
+    display: block;
+  }
 }
 
 @media (min-width: @width-desktop) {
-
+  .rewiews {
+    .container-desktop();
+  }
 }

@@ -1,13 +1,27 @@
 .contacts {
   font-size: 18px;
   line-height: 30px;
-  color: @color;
+  color: @color-blue;
+
+  text-align: center;
 }
 
 .contacts__title {
   font-size: 50px;
   line-height: 50px;
   font-weight: @font-weight-light;
+}
+
+.contacts__list {
+  .reset-list();
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.contacts__item {
+  width: 100%;
 }
 
 .contacts__description {
@@ -22,9 +36,13 @@
 }
 
 @media (min-width: @width-tablet) {
-
+  .contacts__item {
+    width: 50%;
+  }
 }
 
 @media (min-width: @width-desktop) {
-
+  .contacts__item {
+    width: calc(100% / 3);
+  }
 }

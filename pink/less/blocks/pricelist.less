@@ -1,7 +1,39 @@
 .pricelist {
   font-size: 18px;
   line-height: 30px;
-  color: @color;
+  color: @color-blue;
+
+  background: url("../img/pricelist-background.png") no-repeat 0;
+  background-position: center top;
+  background-size: cover;
+
+  padding-top: 190px;
+}
+
+.pricelist__container {
+  //слайдер
+  overflow: hidden;
+  position: relative;
+  min-height: 280px;
+  //слайдер
+}
+
+.pricelist__table {
+  border-collapse: collapse;
+
+  //слайдер
+  position: absolute;
+  width: calc(100vw * 4 - 40px * 4);
+  left: calc(-100vw + 60px);
+  //слайдер
+}
+
+.pricelist__table td, .pricelist__table th {
+  border: 2px solid @color-red-super-light;
+}
+
+.pricelist__head {
+  background-color: @color-blue;
 }
 
 .pricelist__name {
@@ -16,10 +48,39 @@
   color: @color-white;
 }
 
+.pricelist__option-name {
+  background-color: @color-white;
+}
+
+.pricelist__option-value {
+  background-color: @color-white;
+}
+
 @media (min-width: @width-tablet) {
+  .pricelist__container {
+    .container-tablet();
+
+    //сброс слайдера
+    overflow: auto;
+    position: static;
+    min-height: 280px;
+    //сброс слайдера
+  }
+
+  .pricelist__table {
+
+
+    //сброс слайдера
+    position: static;
+    border-collapse: collapse;
+    width: 100%;
+    //сброс слайдера
+  }
 
 }
 
 @media (min-width: @width-desktop) {
-
+  .pricelist__container {
+    .container-desktop();
+  }
 }
