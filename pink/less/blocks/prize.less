@@ -4,6 +4,61 @@
   color: @color-blue;
 }
 
+.prize__desc {
+  text-align: center;
+  width: 100%;
+}
+
+.prize-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.prize__person {
+  width: 100%;
+  order: 10;
+}
+
+.prize__app {
+  width: 100%;
+  order: 40;
+}
+
+.prize__contacts {
+  width: 100%;
+  order: 30;
+}
+
+.prize__contacts-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.prize__contacts-item {
+  width: 100%;
+}
+
+.prize__achievements {
+  width: 100%;
+  order: 20;
+}
+
+.prize__emotions {
+  width: 100%;
+  order: 50;
+}
+
+.prize__submit-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  width: 100%;
+  order: 60;
+}
+
 .prize__person-label {
   font-size: 14px;
   line-height: 30px;
@@ -17,9 +72,57 @@
 }
 
 @media (min-width: @width-tablet) {
+  .prize__person {
+    order: 10;
+  }
 
+  .prize__app {
+    order: 20;
+  }
+
+  .prize__contacts {
+    order: 30;
+  }
+
+  .prize__achievements {
+    order: 40;
+  }
+
+  .prize__emotions {
+    order: 50;
+  }
+
+  .prize__submit-wrapper {
+    order: 60;
+  }
 }
 
 @media (min-width: @width-desktop) {
+  .prize__person {
+    width: 435px;
+  }
 
+  .prize__app {
+    width: 435px;
+  }
+
+  .prize__contacts {
+
+  }
+
+  .prize__contacts-item {
+    width: 375px;
+  }
+
+  .prize__achievements {
+
+  }
+
+  .prize__emotions {
+
+  }
+
+  .prize__submit-wrapper {
+
+  }
 }

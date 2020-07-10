@@ -4,6 +4,45 @@
   color: @color-blue;
 }
 
+.photo-title {
+  text-align: center;
+}
+
+.main-photo {
+
+}
+
+.photo__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.photo__item {
+  width: 100%;
+}
+
+.photo-data {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.photo__author {
+  width: 100%;
+  order: 10;
+}
+
+.photo__desc {
+  width: 100%;
+  order: 20;
+}
+
+.photo__like {
+  width: 100%;
+  order: 30;
+}
+
 .photo__author_name {
   font-weight: @font-weight-bold;
 }
@@ -14,16 +53,45 @@
   font-weight: @font-weight-light;
 }
 
+.photo__like {
+  display: flex;
+  justify-content: space-between;
+}
+
 .photo__like-text {
   font-size: 12px;
   line-height: 24px;
   color: @color-red;
 }
 
+.photo__like-img {
+  width: 20px;
+}
+
 @media (min-width: @width-tablet) {
 
+  .photo__item {
+    width: 300px;
+  }
+
+  .main-photo .photo__author {
+      width: 300px;
+      order: 10;
+    }
+
+  .main-photo .photo__desc {
+      width: 100%;
+      order: 30;
+    }
+
+  .main-photo .photo__like {
+      width: 150px;
+      order: 20;
+    }
 }
 
 @media (min-width: @width-desktop) {
-
+  .photo__item {
+    width: 300px;
+  }
 }

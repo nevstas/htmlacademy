@@ -8,6 +8,8 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=d8714aa0-7b82-44b9-97f5-3decbcc5bf22&lang=ru_RU" type="text/javascript"></script>
+
     <link rel="stylesheet" href="less/normalize.css">
     <link rel="stylesheet" href="less/style.css">
 </head>
@@ -42,7 +44,7 @@
 <main>
     <h1 class="visually-hidden">Конкурс</h1>
 
-    <form class="prize">
+    <form class="prize container">
         <p class="prize__desc">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
 
         <div class="prize-wrapper">
@@ -77,14 +79,16 @@
             </div>
             <div class="prize__contacts prize__block">
                 <h2 class="prize__title">Контактная информация</h2>
-                <p class="prize__contacts-item">
-                    <input class="prize__contacts-input" id="phone" type="text" placeholder="Номер, пожалуйста">
-                    <label class="prize__contacts-label" for="phone">Номер телефона</label>
-                </p>
-                <p class="prize__contacts-item">
-                <input class="prize__contacts-input" id="email" type="text" placeholder="Введите почту *">
-                <label class="prize__contacts-label" for="email">Адрес почты</label>
-                </p>
+                <div class="prize__contacts-wrapper">
+                    <p class="prize__contacts-item">
+                        <input class="prize__contacts-input" id="phone" type="text" placeholder="Номер, пожалуйста">
+                        <label class="prize__contacts-label" for="phone">Номер телефона</label>
+                    </p>
+                    <p class="prize__contacts-item">
+                        <input class="prize__contacts-input" id="email" type="text" placeholder="Введите почту *">
+                        <label class="prize__contacts-label" for="email">Адрес почты</label>
+                    </p>
+                </div>
             </div>
             <div class="prize__achievements prize__block">
                 <h2 class="prize__title">Ваши безбашенные достижения в путешествии</h2>
@@ -117,8 +121,10 @@
                 <h2 class="prize__title">Опишите свои эмоции</h2>
                 <textarea class="prize__emotions-input" id="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </div>
-            <button class="prize__submit button__type2">Отправить форму</button>
-            <p class="prize__required"><span class="required_text">*</span> — обязательные для заполнения поля</p>
+            <div class="prize__submit-wrapper">
+                <button class="prize__submit button__type2">Отправить форму</button>
+                <p class="prize__required"><span class="required_text">*</span> — обязательные для заполнения поля</p>
+            </div>
         </div>
     </form>
 </main>

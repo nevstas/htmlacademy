@@ -8,6 +8,8 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=d8714aa0-7b82-44b9-97f5-3decbcc5bf22&lang=ru_RU" type="text/javascript"></script>
+
     <link rel="stylesheet" href="less/normalize.css">
     <link rel="stylesheet" href="less/style.css">
 </head>
@@ -42,10 +44,13 @@
 <main>
     <h1 class="visually-hidden">Фотографии</h1>
 
-    <div class="photo">
+    <section class="photo">
+
+        <p class="photo-title">Взгляните на фотографии, которые выкладывают пользователи!<br> Видите, как не хватает ваших?</p>
+
         <div class="main-photo">
-            <img class="photo__img" src="" alt="Фото">
-            <div class="photo-data">
+            <img class="photo__img" src="img/photo-1.jpg" alt="Фото">
+            <div class="photo-data container">
                 <p class="photo__author">
                     <span class="photo__author_name">Анна</span>
                     <time class="photo__author_time" datetime="2020-01-01 12:12:12">(5 минут назад)</time>
@@ -59,9 +64,9 @@
             <a class="main-photo__button button__type3" href="">Панорама дня</a>
         </div>
 
-        <div class="photo__list">
+        <div class="photo__list container">
             <div class="photo__item">
-                <img class="photo__img" src="" alt="Фото">
+                <img class="photo__img" src="img/photo-2.jpg" alt="Фото">
                 <div class="photo-data">
                     <p class="photo__author">
                         <span class="photo__author_name">Левон</span>
@@ -76,7 +81,7 @@
             </div>
 
             <div class="photo__item">
-                <img class="photo__img" src="" alt="Фото">
+                <img class="photo__img" src="img/photo-3.jpg" alt="Фото">
                 <div class="photo-data">
                     <p class="photo__author">
                         <span class="photo__author_name">Антон</span>
@@ -91,7 +96,7 @@
             </div>
 
             <div class="photo__item">
-                <img class="photo__img" src="" alt="Фото">
+                <img class="photo__img" src="img/photo-4.jpg" alt="Фото">
                 <div class="photo-data">
                     <p class="photo__author">
                         <span class="photo__author_name">Борис</span>
@@ -106,7 +111,7 @@
             </div>
 
             <div class="photo__item">
-                <img class="photo__img" src="" alt="Фото">
+                <img class="photo__img" src="img/photo-5.jpg" alt="Фото">
                 <div class="photo-data">
                     <p class="photo__author">
                         <span class="photo__author_name">Сергей</span>
@@ -121,7 +126,7 @@
             </div>
 
             <div class="photo__item">
-                <img class="photo__img" src="" alt="Фото">
+                <img class="photo__img" src="img/photo-6.jpg" alt="Фото">
                 <div class="photo-data">
                     <p class="photo__author">
                         <span class="photo__author_name">Максим</span>
@@ -136,7 +141,7 @@
             </div>
 
             <div class="photo__item">
-                <img class="photo__img" src="" alt="Фото">
+                <img class="photo__img" src="img/photo-7.jpg" alt="Фото">
                 <div class="photo-data">
                     <p class="photo__author">
                         <span class="photo__author_name">Надежда</span>
@@ -150,14 +155,14 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="write">
+    <section class="write container">
         <h2 class="write__title">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</h2>
 
         <div class="write__wrapper">
             <div class="write__block-img">
-                <img class="write__img" src="" alt="Загруженное фото">
+                <img class="write__img" src="img/photo-write.jpg" alt="Загруженное фото">
             </div>
             <form class="write__block-settings">
                 <p class="write__block-setting">
@@ -178,7 +183,7 @@
                 </div>
             </form>
         </div>
-    </div>
+    </section>
 </main>
 
 <footer class="footer">

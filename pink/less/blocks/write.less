@@ -5,13 +5,50 @@
 }
 
 .write__title {
+  text-align: center;
+}
 
+.write__wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.write__block-img {
+  width: 100%;
+}
+
+.write__block-settings {
+  width: 100%;
+}
+
+.write__buttons {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.write__button {
+  width: 100%;
 }
 
 @media (min-width: @width-tablet) {
+  .write__block-img {
+    width: 300px
+  }
 
+  .write__block-settings {
+    width: 300px
+  }
 }
 
 @media (min-width: @width-desktop) {
+  .write__block-settings {
+    width: 410px
+  }
+
+  .write__button {
+    width: auto;
+  }
 
 }
