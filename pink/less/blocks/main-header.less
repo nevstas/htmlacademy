@@ -5,25 +5,90 @@
 }
 
 .main-header__wrapper {
-
+  background-color:rgba(0, 0, 0, 0.5);
 }
 
 .main-header__logo {
   display: block;
-  background-color: @color-blue;
   border-bottom: 1px solid @color-black;
 }
 
 .main-header__logo-img-block {
   .container-mobile();
+
+  display: flex;
+  justify-content: space-between;
+  position: relative;
 }
 
 .main-header__logo-img {
   display: block;
   height: 70px;
+  width: 300px;
 
   background: url("../img/logo-top-mobile.png") no-repeat 0;
 }
+
+.main-header__wrapper--closed {
+  .main-header__logo-burger-block {
+    width: 50px;
+    cursor: pointer;
+  }
+
+  .main-header__logo-burger {
+    top: 22px;
+    right: 20px;
+  }
+
+  .main-header__logo-burger, .main-header__logo-burger::before, .main-header__logo-burger::after {
+    position: absolute;
+    width: 50px;
+    height: 5px;
+    background-color: @color-white;
+  }
+
+  .main-header__logo-burger::before {
+    content: "";
+    top: 10px;
+    right: 0px;
+  }
+
+  .main-header__logo-burger::after {
+    content: "";
+    top: 20px;
+    right: 0px;
+  }
+}
+
+.main-header__wrapper--opened {
+  .main-header__logo-burger-block {
+    width: 50px;
+    cursor: pointer;
+  }
+
+  .main-header__logo-burger::before, .main-header__logo-burger::after {
+    position: absolute;
+    content: "";
+    width: 35px;
+    height: 5px;
+    background-color: @color-white;
+  }
+
+  .main-header__logo-burger::before {
+    top: 32px;
+    transform: rotate(45deg);
+  }
+
+  .main-header__logo-burger::after {
+    top: 32px;
+    transform: rotate(135deg);
+  }
+
+}
+
+
+
+
 
 .main-header__cta-wrapper {
 
@@ -61,6 +126,16 @@
 /// Media
 //////////////////////////////////////////
 
+@media (max-width: @width-only-tablet) {
+  .main-header__wrapper--closed {
+    background-color:rgba(0, 0, 0, 0.5);
+  }
+
+  .main-header__wrapper--opened {
+    background-color: @color-blue;
+  }
+}
+
 @media (min-width: @width-tablet) {
 
   .main-header__logo-img-block {
@@ -94,7 +169,7 @@
 
 @media (min-width: @width-desktop) {
   .main-header__wrapper {
-    background-color:rgba(0, 0, 0, 0.5);
+
   }
 
   .main-header__wrapper-flex {
@@ -125,6 +200,10 @@
     width: 160px;
     position: absolute;
     top: 9px;
+  }
+
+  .main-header__logo-burger-block {
+    display: none;
   }
 
   .main-header__top-nav {

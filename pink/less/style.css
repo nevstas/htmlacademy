@@ -1,3 +1,23 @@
+.container-mobile {
+  margin: 0 auto;
+  width: 280px;
+  padding: 0 20px;
+}
+.container-tablet {
+  margin: 0 auto;
+  width: 620px;
+  padding: 0 20px;
+}
+.container-desktop {
+  margin: 0 auto;
+  width: 940px;
+  padding: 0 10px;
+}
+.reset-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 .button__type1 {
   font-size: 14px;
   line-height: 18px;
@@ -13,20 +33,72 @@
   background-position: center top;
   background-size: cover;
 }
+.main-header__wrapper {
+  background-color: rgba(0, 0, 0, 0.5);
+}
 .main-header__logo {
   display: block;
-  background-color: #283645;
   border-bottom: 1px solid #000000;
 }
 .main-header__logo-img-block {
   margin: 0 auto;
   width: 280px;
   padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
 }
 .main-header__logo-img {
   display: block;
   height: 70px;
+  width: 300px;
   background: url("../img/logo-top-mobile.png") no-repeat 0;
+}
+.main-header__wrapper--closed .main-header__logo-burger-block {
+  width: 50px;
+  cursor: pointer;
+}
+.main-header__wrapper--closed .main-header__logo-burger {
+  top: 22px;
+  right: 20px;
+}
+.main-header__wrapper--closed .main-header__logo-burger,
+.main-header__wrapper--closed .main-header__logo-burger::before,
+.main-header__wrapper--closed .main-header__logo-burger::after {
+  position: absolute;
+  width: 50px;
+  height: 5px;
+  background-color: #FFFFFF;
+}
+.main-header__wrapper--closed .main-header__logo-burger::before {
+  content: "";
+  top: 10px;
+  right: 0px;
+}
+.main-header__wrapper--closed .main-header__logo-burger::after {
+  content: "";
+  top: 20px;
+  right: 0px;
+}
+.main-header__wrapper--opened .main-header__logo-burger-block {
+  width: 50px;
+  cursor: pointer;
+}
+.main-header__wrapper--opened .main-header__logo-burger::before,
+.main-header__wrapper--opened .main-header__logo-burger::after {
+  position: absolute;
+  content: "";
+  width: 35px;
+  height: 5px;
+  background-color: #FFFFFF;
+}
+.main-header__wrapper--opened .main-header__logo-burger::before {
+  top: 32px;
+  transform: rotate(45deg);
+}
+.main-header__wrapper--opened .main-header__logo-burger::after {
+  top: 32px;
+  transform: rotate(135deg);
 }
 .main-header__hand {
   min-height: 400px;
@@ -51,6 +123,14 @@
   line-height: 50px;
   color: #FFFFFF;
   text-align: center;
+}
+@media (max-width: 959px) {
+  .main-header__wrapper--closed {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .main-header__wrapper--opened {
+    background-color: #283645;
+  }
 }
 @media (min-width: 660px) {
   .main-header__logo-img-block {
@@ -80,9 +160,6 @@
   }
 }
 @media (min-width: 960px) {
-  .main-header__wrapper {
-    background-color: rgba(0, 0, 0, 0.5);
-  }
   .main-header__wrapper-flex {
     margin: 0 auto;
     width: 940px;
@@ -106,6 +183,9 @@
     width: 160px;
     position: absolute;
     top: 9px;
+  }
+  .main-header__logo-burger-block {
+    display: none;
   }
   .main-header__top-nav {
     width: 620px;
@@ -133,7 +213,6 @@
   font-weight: 700;
   text-transform: uppercase;
   color: #FFFFFF;
-  display: none;
 }
 .top-nav__list {
   list-style: none;
@@ -148,6 +227,14 @@
   color: #FFFFFF;
   height: 70px;
   border-bottom: 1px solid #000000;
+}
+@media (max-width: 959px) {
+  .top-nav--closed {
+    display: none;
+  }
+  .top-nav--opened {
+    display: block;
+  }
 }
 @media (min-width: 960px) {
   .top-nav {
@@ -290,7 +377,7 @@
   height: 280px;
   overflow: hidden;
 }
-.description__img__addition {
+.description__img-addition {
   display: none;
 }
 .description__iphone {
@@ -326,7 +413,7 @@
     display: flex;
     justify-content: space-between;
   }
-  .description__img__addition {
+  .description__img-addition {
     width: 300px;
     display: block;
   }
@@ -386,7 +473,7 @@
   .description__img {
     height: 305px;
   }
-  .description__img__addition {
+  .description__img-addition {
     display: none;
   }
   .description__item:nth-child(1) .description__img,
@@ -772,6 +859,9 @@
   }
 }
 @media (min-width: 960px) {
+  .main-photo .photo__img {
+    width: 100%;
+  }
   .photo__item {
     width: 300px;
   }

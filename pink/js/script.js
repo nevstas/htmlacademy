@@ -1,3 +1,25 @@
+var burger_block = document.querySelector('.main-header__logo-burger-block');
+var main_header_wrapper = document.querySelector('.main-header__wrapper');
+
+burger_block.addEventListener("click", function(e) {
+    var top_nav = document.querySelector(".top-nav");
+    if (top_nav.classList.contains("top-nav--closed")) {
+        top_nav.classList.remove("top-nav--closed");
+        top_nav.classList.add("top-nav--opened");
+
+        main_header_wrapper.classList.remove("main-header__wrapper--closed");
+        main_header_wrapper.classList.add("main-header__wrapper--opened");
+    } else {
+        top_nav.classList.remove("top-nav--opened");
+        top_nav.classList.add("top-nav--closed");
+
+        main_header_wrapper.classList.remove("main-header__wrapper--opened");
+        main_header_wrapper.classList.add("main-header__wrapper--closed");
+    }
+
+
+});
+
 var map = document.getElementById('map');
 if (map) {
     ymaps.ready(init);
@@ -26,4 +48,6 @@ if (map) {
         myMap.geoObjects.add(myGeoObject);
     }
 }
+
+
 

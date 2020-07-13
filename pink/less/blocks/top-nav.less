@@ -6,7 +6,7 @@
   color: @color-white;
 
   //заглущка
-  display: none;
+  //display: none;
 }
 
 .top-nav__list {
@@ -21,6 +21,16 @@
   color: @color-white;
   height: 70px;
   border-bottom: 1px solid @color-black;
+}
+
+@media (max-width: @width-only-tablet) {
+  .top-nav--closed {
+    display: none;
+  }
+
+  .top-nav--opened {
+    display: block;
+  }
 }
 
 @media (min-width: @width-tablet) {
