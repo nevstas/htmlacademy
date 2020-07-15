@@ -26,16 +26,18 @@
   align-items: center;
 
   height: 70px;
+
+  &:hover .main-header__logo-svg-main,
+  &:focus .main-header__logo-svg-main,
+  &:active .main-header__logo-svg-main {
+    fill: @color-red;
+  }
 }
 
 .main-header__logo-svg-main {
   fill: white;
   width: 70px;
   height: 25px;
-
-  &:hover {
-    fill: @color-red;
-  }
 }
 
 .main-header__logo-svg--tablet, .main-header__logo-svg--desktop {
@@ -231,6 +233,7 @@
 
   .main-header__logo-img-block {
     height: 110px;
+    width: 150px;
 
     display: flex;
     align-items: center;

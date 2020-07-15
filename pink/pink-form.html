@@ -23,11 +23,11 @@
                 <div class="main-header__logo-img-block">
                     <a href="" class="main-header__logo-img">
 
-                        <!--Инлайним SVG прямо в HTML, чтобы можно было влиять на fill из CSS при hover -->
+                        <!--Инлайним SVG прямо в HTML, чтобы можно было влиять на fill из CSS при hover, focus, active -->
                         <svg class="main-header__logo-svg-main">
 
 
-                            <svg class="main-header__logo-svg main-header__logo-svg--mobile" viewBox="0 0 99 30">
+                            <symbol id="main-header__logo-svg--mobile" class="main-header__logo-svg main-header__logo-svg--mobile" viewBox="0 0 99 30">
                                 <defs>
                                     <clipPath id="a" clipPathUnits="userSpaceOnUse">
                                         <path d="M0 22.86h74.427V0H0z"/>
@@ -37,9 +37,11 @@
                                     <path d="M8.114 10.432c3.734 0 6.182 1.996 6.182 4.958v.065c0 3.22-2.415 4.895-6.054 4.895H2.544v-9.918zM0 21.41C0 22.12.58 22.7 1.256 22.7h7.18c5.087 0 8.436-2.705 8.436-7.148v-.063c0-4.862-4.057-7.373-8.854-7.373H2.544V1.29c0-.708-.58-1.288-1.288-1.288C.58 0 0 .58 0 1.289zM21.729 21.572c0 .708.579 1.288 1.254 1.288.709 0 1.288-.58 1.288-1.288V1.29c0-.708-.579-1.288-1.288-1.288-.676 0-1.255.58-1.255 1.288v20.283zM30.87 21.54c0 .676.58 1.256 1.256 1.256h.354c.58 0 .934-.29 1.288-.74l13.684-17.45v16.998a1.256 1.256 0 001.255 1.256c.676 0 1.223-.58 1.223-1.256V1.256c0-.676-.482-1.191-1.159-1.191h-.129c-.546 0-.933.322-1.319.772L33.35 18.707V1.257c0-.676-.547-1.256-1.255-1.256-.677 0-1.224.58-1.224 1.256zM56.3 21.572c0 .708.579 1.288 1.257 1.288.707 0 1.286-.58 1.286-1.288V9.242L71.69 22.408c.289.258.58.451.998.451.676 0 1.224-.612 1.224-1.256 0-.354-.161-.644-.42-.9l-7.983-7.92L74.073 2.22c.225-.29.354-.546.354-.933C74.427.612 73.847 0 73.14 0c-.484 0-.807.258-1.031.58l-8.403 10.463-4.861-4.862V1.288C58.846.58 58.266 0 57.559 0c-.678 0-1.257.58-1.257 1.288v20.284z"
                                     />
                                 </g>
-                            </svg>
 
-                            <svg class="main-header__logo-svg main-header__logo-svg--tablet" viewBox="0 0 146 40">
+                            </symbol>
+                            <use xlink:href="#main-header__logo-svg--mobile"/>
+
+                            <symbol id="main-header__logo-svg--tablet" class="main-header__logo-svg main-header__logo-svg--tablet" viewBox="0 0 146 40">
                                 <g>
                                     <defs>
                                         <clipPath id="clip1">
@@ -81,9 +83,10 @@
                                         </g>
                                     </g>
                                 </g>
-                            </svg>
+                            </symbol>
+                            <use xlink:href="#main-header__logo-svg--tablet"/>
 
-                            <svg class="main-header__logo-svg main-header__logo-svg--desktop" viewBox="0 0 195 54">
+                            <symbol id="main-header__logo-svg--desktop" class="main-header__logo-svg main-header__logo-svg--desktop" viewBox="0 0 195 54">
                                 <g>
                                     <defs>
                                         <clipPath id="a2" clipPathUnits="userSpaceOnUse">
@@ -103,7 +106,8 @@
                                               fill="#d22856"/>
                                     </g>
                                 </g>
-                            </svg>
+                            </symbol>
+                            <use xlink:href="#main-header__logo-svg--desktop"/>
 
                         </svg>
 
@@ -220,10 +224,10 @@
 
 <footer class="footer">
     <a href="" class="footer__logo-link">
-        <!--Инлайним SVG прямо в HTML, чтобы можно было влиять на fill из CSS при hover -->
+        <!--Инлайним SVG прямо в HTML, чтобы можно было влиять на fill из CSS при hover, focus, active -->
         <svg class="footer__logo-svg-main">
 
-            <svg class="footer__logo-svg footer__logo-svg--tablet" viewBox="0 0 195 54">
+            <symbol id="footer__logo-svg--tablet" class="footer__logo-svg footer__logo-svg--tablet" viewBox="0 0 195 54">
                 <defs>
                     <clipPath id="a3" clipPathUnits="userSpaceOnUse">
                         <path d="M0 40.376h146.3V0H0z"/>
@@ -235,9 +239,10 @@
                     <path d="M51.99 10.532c-.716-4.272-4.42-7.53-8.896-7.53-4.475 0-8.18 3.258-8.896 7.53a9.035 9.035 0 00-.135 1.5c0 .512.053 1.011.135 1.5.716 4.271 4.421 7.531 8.896 7.531 4.475 0 8.181-3.26 8.896-7.53.082-.49.135-.989.135-1.5 0-.513-.053-1.013-.135-1.5m-25.675 0C25.6 6.26 21.895 3 17.42 3c-4.475 0-8.18 3.26-8.896 7.531a9.035 9.035 0 00-.135 1.5c0 .512.053 1.011.135 1.5.715 4.271 4.421 7.531 8.896 7.531 4.475 0 8.18-3.26 8.896-7.53.082-.49.135-.989.135-1.5 0-.513-.053-1.013-.135-1.5m34.147 1.827l-5.175 21.365c-.36 2.348-2.593 6.651-8.599 6.651a1.5 1.5 0 110-3c4.856 0 5.575-3.729 5.64-4.143l4.766-19.7h-2.073c-.742 5.926-5.802 10.53-11.927 10.53s-11.186-4.604-11.927-10.53h-1.82c-.74 5.926-5.802 10.53-11.927 10.53S6.235 19.46 5.493 13.533H3.42l4.767 19.7c.063.414.783 4.143 5.64 4.143a1.5 1.5 0 110 3c-6.007 0-8.239-4.303-8.6-6.65L.052 12.36c-.266-1.109.531-1.826 1.426-1.826.012 0 .023-.004.036-.004h3.982C6.237 4.604 11.298 0 17.423 0S28.608 4.604 29.35 10.53h1.814C31.906 4.604 36.966 0 43.091 0s11.186 4.604 11.927 10.53H59c.012 0 .023.004.036.004.895 0 1.692.717 1.426 1.826"
                           fill="#d22856"/>
                 </g>
-            </svg>
+            </symbol>
+            <use xlink:href="#footer__logo-svg--tablet"/>
 
-            <svg class="footer__logo-svg footer__logo-svg--desktop" viewBox="0 0 195 54">
+            <symbol id="footer__logo-svg--desktop" class="footer__logo-svg footer__logo-svg--desktop" viewBox="0 0 195 54">
                 <defs>
                     <clipPath id="a4" clipPathUnits="userSpaceOnUse">
                         <path d="M0 40.374h146.3V0H0z"/>
@@ -253,7 +258,8 @@
                     <path d="M50.686 24.249a4.499 4.499 0 00-4.499 4.499 4.499 4.499 0 00-4.499-4.499 4.499 4.499 0 004.499-4.499 4.498 4.498 0 004.499 4.499M37.904 20.748a2.748 2.748 0 00-2.75 2.749 2.748 2.748 0 00-2.748-2.749 2.747 2.747 0 002.749-2.749 2.748 2.748 0 002.749 2.749M10.734 6.302a2.748 2.748 0 00-2.75 2.75c0-1.52-1.23-2.75-2.748-2.75a2.747 2.747 0 002.749-2.748 2.748 2.748 0 002.749 2.748"
                           fill="#283645"/>
                 </g>
-            </svg>
+            </symbol>
+            <use xlink:href="#footer__logo-svg--desktop"/>
 
         </svg>
     </a>

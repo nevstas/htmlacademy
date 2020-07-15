@@ -21,7 +21,15 @@
 
 @media (min-width: @width-tablet) {
   .footer {
-    display: block;
+    display: flex;
+  }
+
+  .footer__logo-link {
+    &:hover .footer__logo-svg-main,
+    &:focus .footer__logo-svg-main,
+    &:active .footer__logo-svg-main {
+      fill: @color-red;
+    }
   }
 
   .footer__logo-svg-main {
@@ -29,10 +37,6 @@
 
     width: 150px;
     height: 55px;
-
-    &:hover {
-      fill: @color-red;
-    }
   }
 
   .footer__logo-svg--tablet {

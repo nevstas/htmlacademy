@@ -53,13 +53,15 @@
   align-items: center;
   height: 70px;
 }
+.main-header__logo-img:hover .main-header__logo-svg-main,
+.main-header__logo-img:focus .main-header__logo-svg-main,
+.main-header__logo-img:active .main-header__logo-svg-main {
+  fill: #d22856;
+}
 .main-header__logo-svg-main {
   fill: white;
   width: 70px;
   height: 25px;
-}
-.main-header__logo-svg-main:hover {
-  fill: #d22856;
 }
 .main-header__logo-svg--tablet,
 .main-header__logo-svg--desktop {
@@ -204,6 +206,7 @@
   }
   .main-header__logo-img-block {
     height: 110px;
+    width: 150px;
     display: flex;
     align-items: center;
   }
@@ -724,15 +727,17 @@
 }
 @media (min-width: 660px) {
   .footer {
-    display: block;
+    display: flex;
+  }
+  .footer__logo-link:hover .footer__logo-svg-main,
+  .footer__logo-link:focus .footer__logo-svg-main,
+  .footer__logo-link:active .footer__logo-svg-main {
+    fill: #d22856;
   }
   .footer__logo-svg-main {
     fill: #283645;
     width: 150px;
     height: 55px;
-  }
-  .footer__logo-svg-main:hover {
-    fill: #d22856;
   }
   .footer__logo-svg--tablet {
     display: block;
