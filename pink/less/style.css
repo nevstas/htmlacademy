@@ -713,14 +713,41 @@
   display: flex;
   justify-content: space-between;
 }
-.footer__logo {
-  width: 150px;
+.footer {
+  display: none;
 }
 .footer__social-list {
   width: 200px;
 }
 .footer__develop {
   width: 150px;
+}
+@media (min-width: 660px) {
+  .footer {
+    display: block;
+  }
+  .footer__logo-svg-main {
+    fill: #283645;
+    width: 150px;
+    height: 55px;
+  }
+  .footer__logo-svg-main:hover {
+    fill: #d22856;
+  }
+  .footer__logo-svg--tablet {
+    display: block;
+  }
+  .footer__logo-svg--desktop {
+    display: none;
+  }
+}
+@media (min-width: 960px) {
+  .footer__logo-svg--desktop {
+    display: block;
+  }
+  .footer__logo-svg--tablet {
+    display: none;
+  }
 }
 .social-list {
   display: flex;
