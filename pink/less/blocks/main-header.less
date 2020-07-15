@@ -22,11 +22,24 @@
 }
 
 .main-header__logo-img {
-  display: block;
-  height: 70px;
-  width: 300px;
+  display: flex;
+  align-items: center;
 
-  background: url("../img/logo-top-mobile.png") no-repeat 0;
+  height: 70px;
+}
+
+.main-header__logo-svg-main {
+  fill: white;
+  width: 70px;
+  height: 25px;
+
+  &:hover {
+    fill: #d22856;
+  }
+}
+
+.main-header__logo-svg--tablet, .main-header__logo-svg--desktop {
+  display: none;
 }
 
 .main-header__wrapper--closed {
@@ -143,7 +156,20 @@
   }
 
   .main-header__logo-img {
-    background: url("../img/logo-top-tablet.png") no-repeat 0;
+    height: 110px;
+  }
+
+  .main-header__logo-svg-main {
+    width: 150px;
+    height: 50px;
+  }
+
+  .main-header__logo-svg--tablet {
+    display: block;
+  }
+
+  .main-header__logo-svg--mobile, .main-header__logo-svg--desktop {
+    display: none;
   }
 
   .main-header__cta-wrapper {
@@ -189,17 +215,29 @@
 
   .main-header__logo-img-block {
     height: 110px;
-    width: 160px;
 
     display: flex;
     align-items: center;
   }
 
   .main-header__logo-img {
-    background: url("../img/logo-top-desktop.png") no-repeat 0;
-    width: 160px;
+
+    width: 210px;
     position: absolute;
     top: 9px;
+  }
+
+  .main-header__logo-svg-main {
+    //width: 150px;
+    //height: 50px;
+  }
+
+  .main-header__logo-svg--desktop {
+    display: block;
+  }
+
+  .main-header__logo-svg--mobile, .main-header__logo-svg--tablet {
+    display: none;
   }
 
   .main-header__logo-burger-block {
