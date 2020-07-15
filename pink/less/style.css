@@ -70,7 +70,7 @@
   cursor: pointer;
 }
 .main-header__wrapper--closed .main-header__logo-burger {
-  top: 22px;
+  top: 23px;
   right: 20px;
 }
 .main-header__wrapper--closed .main-header__logo-burger,
@@ -163,6 +163,14 @@
   .main-header__logo-svg--desktop {
     display: none;
   }
+  .main-header__wrapper--closed .main-header__logo-burger {
+    position: absolute;
+    top: 40px;
+  }
+  .main-header__wrapper--opened .main-header__logo-burger {
+    position: absolute;
+    top: 20px;
+  }
   .main-header__cta-wrapper {
     position: relative;
     min-height: 620px;
@@ -202,7 +210,6 @@
   .main-header__logo-img {
     width: 210px;
     position: absolute;
-    top: 9px;
   }
   .main-header__logo-svg--desktop {
     display: block;
