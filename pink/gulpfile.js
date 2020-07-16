@@ -5,7 +5,7 @@ var autoprefixer = require("autoprefixer");
 var del = require("del");
 var minify = require("gulp-csso");
 var rename = require("gulp-rename");
-var run = require('run-sequence');
+var run = require("run-sequence");
 var imagemin = require("gulp-imagemin");
 
 gulp.task("clean", function () {
@@ -16,8 +16,8 @@ gulp.task("images", function () {
     return gulp.src("source/img/**/*.{png,jpg,svg}")
         .pipe(imagemin([
             imagemin.optipng({optimizationLevel: 3}),
-            imagemin.jpegtran({progressive: true}),
-            imagemin.svgo()
+            imagemin.mozjpeg({progressive: true}),
+            // imagemin.svgo()
         ]))
         .pipe(gulp.dest("source/img"));
 });
@@ -46,4 +46,4 @@ gulp.task("style", function () {
 });
 
 
-gulp.task('build', gulp.series('clean', 'copy', 'style'));
+gulp.task("build", gulp.series("clean", "images", "copy", "style"));
