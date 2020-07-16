@@ -1,3 +1,5 @@
+//Конфиг для Gulp версии 4
+
 var gulp = require("gulp");
 var less = require("gulp-less")
 var postcss = require("gulp-postcss");
@@ -5,7 +7,6 @@ var autoprefixer = require("autoprefixer");
 var del = require("del");
 var minify = require("gulp-csso");
 var rename = require("gulp-rename");
-var run = require("run-sequence");
 var imagemin = require("gulp-imagemin");
 var htmlmin = require("gulp-htmlmin");
 var uglify = require("gulp-uglify");
