@@ -1,5 +1,5 @@
 .rewiews {
-  font-size: 18px;
+  font-size: 14px;
   line-height: 30px;
   color: @color-blue;
 
@@ -22,9 +22,9 @@
 }
 
 .rewiews__author {
-  font-weight: @font-weight-bold;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 30px;
+  font-weight: @font-weight-bold;
   color: @color-black;
 
   width: 100%;
@@ -32,9 +32,6 @@
 }
 
 .rewiews__author-info {
-  font-size: 18px;
-  line-height: 30px;
-
   width: 100%;
   display: none;
   order: 30;
@@ -42,14 +39,22 @@
 
 @media (min-width: @width-tablet) {
   .rewiews {
+    font-size: 18px;
+    line-height: 30px;
+
     .container-tablet();
   }
 
   .rewiews__author {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: @font-weight-bold;
     order: 25;
   }
 
   .rewiews__author-info {
+    font-size: 14px;
+    line-height: 30px;
     display: block;
   }
 }
@@ -57,5 +62,15 @@
 @media (min-width: @width-desktop) {
   .rewiews {
     .container-desktop();
+  }
+
+  .rewiews__author {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .rewiews__author-info {
+    font-size: 18px;
+    line-height: 30px;
   }
 }

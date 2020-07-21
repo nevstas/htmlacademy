@@ -1,6 +1,6 @@
 .description {
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 14px;
+  line-height: 24px;
   color: @color-blue;
 
   background: url("../img/description-background.png") no-repeat 0;
@@ -15,8 +15,8 @@
 }
 
 .description__title {
-  font-size: 50px;
-  line-height: 50px;
+  font-size: 24px;
+  line-height: 24px;
   font-weight: @font-weight-light;
 }
 
@@ -39,10 +39,10 @@
   flex-wrap: wrap;
 }
 
-.description__item-title, .description__effect-title {
+.description__item-title {
+  font-size: 18px;
+  line-height: 10px;
   font-weight: @font-weight-bold;
-  font-size: 30px;
-  line-height: 30px;
 }
 
 .description__img {
@@ -76,6 +76,17 @@
   display: none;
 }
 
+.description__effect-title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: @font-weight-bold;
+}
+
+.description__effect-text {
+  font-size: 14px;
+  line-height: 24px;
+}
+
 .description__effect-link {
   color: @color-red;
 }
@@ -84,6 +95,16 @@
   .description__container {
 
     .container-tablet();
+  }
+
+  .description__title {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .description__item-title {
+    font-size: 18px;
+    line-height: 24px;
   }
 
   .description__img {
@@ -149,8 +170,22 @@
   }
 
   .description__container {
-
     .container-desktop();
+  }
+
+  .description__title {
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  .description__text {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .description__item-title {
+    font-size: 30px;
+    line-height: 30px;
   }
 
   .description__list {
@@ -194,6 +229,16 @@
 
   .description__effect-container {
     background-color: @color-gray;
+  }
+
+  .description__effect-title {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .description__effect-text {
+    font-size: 18px;
+    line-height: 30px;
   }
 
   .description__effect {

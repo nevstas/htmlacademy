@@ -131,8 +131,9 @@
 }
 
 .main-header__inner-title {
-  font-size: 50px;
-  line-height: 50px;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: @font-weight-light;
   color: @color-white;
   text-align: center;
 }
@@ -142,6 +143,11 @@
 //////////////////////////////////////////
 
 @media (max-width: @width-only-tablet) {
+  .main-header__inner-title {
+    font-size: 50px;
+    line-height: 50px;
+  }
+
   .main-header__wrapper--closed {
     background-color:rgba(0, 0, 0, 0.5);
   }

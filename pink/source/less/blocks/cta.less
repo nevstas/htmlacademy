@@ -1,13 +1,14 @@
 .cta {
-  font-size: 18px;
+  font-size: 14px;
   line-height: 24px;
+  font-weight: @font-weight-light;
   color: @color-white;
 }
 
-.cta__slogan {
-  font-size: 50px;
-  line-height: 50px;
-  font-weight: @font-weight-light;
+.cta__button {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: @font-weight-bold;
 }
 
 .cta__available {
@@ -16,14 +17,31 @@
 
 @media (min-width: @width-tablet) {
   .cta {
+    font-size: 18px;
+    line-height: 24px;
+
     display: block;
     width: 300px;
     text-align: center;
     position: absolute;
   }
 
+  .cta__slogan {
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: @font-weight-light;
+  }
+
 }
 
 @media (min-width: @width-desktop) {
+  .cta__button {
+    font-size: 21px;
+    line-height: 18px;
+  }
 
+  .cta__slogan {
+    font-size: 50px;
+    line-height: 50px;
+  }
 }

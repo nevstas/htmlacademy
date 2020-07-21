@@ -1,5 +1,5 @@
 .pricelist {
-  font-size: 18px;
+  font-size: 14px;
   line-height: 30px;
   color: @color-blue;
 
@@ -37,6 +37,8 @@
 }
 
 .pricelist__name {
+  font-size: 18px;
+  line-height: 30px;
   font-weight: @font-weight-bold;
   color: @color-white;
 }
@@ -77,10 +79,36 @@
     //сброс слайдера
   }
 
+  .pricelist__name {
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .pricelist__price {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
 }
 
 @media (min-width: @width-desktop) {
+  .pricelist {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
   .pricelist__container {
     .container-desktop();
   }
+
+  .pricelist__name {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .pricelist__price {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
 }
