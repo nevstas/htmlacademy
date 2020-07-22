@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -117,7 +118,7 @@
             <nav class="main-header__top-nav top-nav top-nav--closed">
                 <ul class="top-nav__list">
                     <li class="top-nav__item"><a href="pink-index.html" class="top-nav__link">Главная</a></li>
-                    <li class="top-nav__item"><a class="top-nav__link top-nav__link--active">Фотографии</a></li>
+                    <li class="top-nav__item top-nav__item--active"><a class="top-nav__link top-nav__link--active">Фотографии</a></li>
                     <li class="top-nav__item"><a href="pink-form.html" class="top-nav__link">Конкурс</a></li>
                     <li class="top-nav__item"><a href="https://htmlacademy.ru/" target="_blank" class="top-nav__link">HTML Academy</a></li>
                 </ul>
@@ -317,14 +318,118 @@
         </svg>
     </a>
     <ul class="footer__social-list social-list">
-        <li class="social-list__item"><a class="social-list__link"><img class="social-list__img" src="111.jpg" alt="Твиттер"></a></li>
-        <li class="social-list__item"><a class="social-list__link"><img class="social-list__img" src="111.jpg" alt="Фейсбук"></a></li>
-        <li class="social-list__item"><a class="social-list__link"><img class="social-list__img" src="111.jpg" alt="Ютуб"></a></li>
+        <li class="social-list__item">
+            <a href="" class="social-list__link">
+                <!--Инлайним SVG прямо в HTML, чтобы можно было влиять на fill из CSS при hover, focus, active -->
+                <svg class="social-list__img social-list__img--twitter" version="1.0" xmlns="http://www.w3.org/2000/svg"
+                     width="56.000000pt" height="56.000000pt" viewBox="0 0 56.000000 56.000000"
+                     preserveAspectRatio="xMidYMid meet">
+                    <metadata>
+                        Created by potrace 1.16, written by Peter Selinger 2001-2019
+                    </metadata>
+                    <g transform="translate(0.000000,56.000000) scale(0.100000,-0.100000)"
+                       stroke="none">
+                        <path d="M175 516 c-119 -56 -173 -185 -134 -317 17 -58 99 -140 155 -157 179
+-53 343 63 344 243 0 70 -30 144 -76 187 -75 70 -196 88 -289 44z m193 -22
+c152 -63 189 -259 71 -371 -142 -135 -378 -35 -379 160 -1 157 165 271 308
+211z"/>
+                        <path fill="#d22856" d="M296 328 c-14 -20 -18 -20 -43 -8 -15 8 -31 16 -35 18 -13 6 0 -59
+17 -84 15 -23 14 -24 -7 -25 l-23 0 22 -11 c28 -13 86 -3 106 20 8 9 22 34 30
+54 15 36 15 38 -3 48 -29 15 -47 12 -64 -12z"/>
+                    </g>
+                </svg>
+            </a>
+        </li>
+        <li class="social-list__item">
+            <a href="" class="social-list__link">
+                <!--Инлайним SVG прямо в HTML, чтобы можно было влиять на fill из CSS при hover, focus, active -->
+                <svg class="social-list__img social-list__img--facebook" version="1.0" xmlns="http://www.w3.org/2000/svg"
+                     width="56.000000pt" height="56.000000pt" viewBox="0 0 56.000000 56.000000"
+                     preserveAspectRatio="xMidYMid meet">
+                    <metadata>
+                        Created by potrace 1.16, written by Peter Selinger 2001-2019
+                    </metadata>
+                    <g transform="translate(0.000000,56.000000) scale(0.100000,-0.100000)"
+                       stroke="none">
+                        <path d="M175 516 c-119 -56 -173 -185 -134 -317 17 -58 99 -140 155 -157 179
+-53 343 63 344 243 0 70 -30 144 -76 187 -75 70 -196 88 -289 44z m193 -22
+c152 -63 189 -259 71 -371 -142 -135 -378 -35 -379 160 -1 157 165 271 308
+211z"/>
+                        <path fill="#d22856" d="M277 373 c-4 -3 -7 -15 -7 -25 0 -10 -4 -18 -10 -18 -5 0 -10 -9 -10
+-20 0 -11 5 -20 10 -20 6 0 10 -21 10 -46 0 -38 3 -45 18 -42 12 2 18 15 20
+46 2 23 7 42 13 42 14 0 11 37 -3 44 -10 5 -10 7 0 12 21 10 13 34 -11 34 -13
+0 -27 -3 -30 -7z"/>
+                    </g>
+                </svg>
+            </a>
+        </li>
+        <li class="social-list__item">
+            <a href="" class="social-list__link">
+                <!--Инлайним SVG прямо в HTML, чтобы можно было влиять на fill из CSS при hover, focus, active -->
+                <svg class="social-list__img social-list__img--youtube" version="1.0" xmlns="http://www.w3.org/2000/svg"
+                     width="56.000000pt" height="56.000000pt" viewBox="0 0 56.000000 56.000000"
+                     preserveAspectRatio="xMidYMid meet">
+                    <metadata>
+                        Created by potrace 1.16, written by Peter Selinger 2001-2019
+                    </metadata>
+                    <g transform="translate(0.000000,56.000000) scale(0.100000,-0.100000)"
+                       stroke="none">
+                        <path d="M175 516 c-119 -56 -173 -185 -134 -317 17 -58 99 -140 155 -157 179
+-53 343 63 344 243 0 70 -30 144 -76 187 -75 70 -196 88 -289 44z m193 -22
+c152 -63 189 -259 71 -371 -142 -135 -378 -35 -379 160 -1 157 165 271 308
+211z"/>
+                        <path fill="#d22856" d="M225 280 c0 -39 4 -70 10 -70 14 0 140 63 140 70 0 7 -126 70 -140
+70 -6 0 -10 -31 -10 -70z"/>
+                    </g>
+                </svg>
+
+            </a>
+        </li>
     </ul>
-    <p class="footer__develop">Разработано <img class="footer__develop-img" src="111.jpg" alt="HTML Academy"></p>
+    <div class="footer__develop">
+        <p class="footer__develop-text">Разработано</p>
+        <!--Инлайним SVG прямо в HTML, чтобы можно было влиять на fill из CSS при hover, focus, active -->
+        <svg class="footer__develop-img"
+                xmlns:dc="http://purl.org/dc/elements/1.1/"
+                xmlns:cc="http://creativecommons.org/ns#"
+                xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                xmlns:svg="http://www.w3.org/2000/svg"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 205.84534 260.43332"
+                height="260.43332"
+                width="205.84534"
+                xml:space="preserve"
+                id="svg2"
+                version="1.1"><metadata
+     id="metadata8"><rdf:RDF><cc:Work
+         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+                rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
+                id="defs6"><clipPath
+       id="clipPath22"
+       clipPathUnits="userSpaceOnUse"><path
+         id="path20"
+         d="M 0,195.325 H 154.384 V 0 H 0 Z" /></clipPath></defs><g
+                transform="matrix(1.3333333,0,0,-1.3333333,0,260.43333)"
+                id="g10"><g
+       transform="translate(143.8521,124.9697)"
+       id="g12"><path
+         id="path14"
+         style="fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 0,0 -67.02,39.508 v 0.01 l -0.008,-0.005 -0.008,0.005 v -0.01 L -133.32,0.046 V 52.777 L -66.659,59.766 0,52.777 Z m -0.054,-6.992 -18.236,-10.744 -8.419,-4.96 -40.149,23.884 -0.066,-6.951 34.317,-20.407 -0.304,-0.18 -0.739,-0.435 -4.876,-2.872 -28.332,16.854 -0.066,-6.951 22.362,-13.298 -5.276,-3.529 -0.128,-0.077 -16.892,9.951 -0.066,-6.95 11.084,-6.528 -11.291,-6.779 -66.044,39.259 66.139,39.755 V 32.043 Z M 0,-73.051 l -66.66,-39.663 -66.66,39.663 v 57.615 l 66.374,-39.505 0.111,-7.16 -45.534,27.1 -0.067,-6.951 45.715,-27.475 0.113,-7.349 -45.7,27.185 -0.066,-6.95 45.714,-27.475 46.152,27.616 v 6.982 l -0.057,-0.034 v 2.386 2.864 17.455 L 0,-14.466 Z m -65.855,142.82 -0.807,0.084 -76.69,-8.04 V -78.755 l 76.692,-45.633 76.692,45.633 V 61.813 Z" /></g><g
+                id="g16"><g
+         clip-path="url(#clipPath22)"
+         id="g18"><g
+           transform="translate(143.8521,124.9697)"
+           id="g24"><path
+             id="path26"
+             style="fill:none;stroke:#231f20;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             d="m 0,0 -67.02,39.508 v 0.01 l -0.008,-0.005 -0.008,0.005 v -0.01 L -133.32,0.046 V 52.777 L -66.659,59.766 0,52.777 Z m -0.054,-6.992 -18.236,-10.744 -8.419,-4.96 -40.149,23.884 -0.066,-6.951 34.317,-20.407 -0.304,-0.18 -0.739,-0.435 -4.876,-2.872 -28.332,16.854 -0.066,-6.951 22.362,-13.298 -5.276,-3.529 -0.128,-0.077 -16.892,9.951 -0.066,-6.95 11.084,-6.528 -11.291,-6.779 -66.044,39.259 66.139,39.755 V 32.043 Z M 0,-73.051 l -66.66,-39.663 -66.66,39.663 v 57.615 l 66.374,-39.505 0.111,-7.16 -45.534,27.1 -0.067,-6.951 45.715,-27.475 0.113,-7.349 -45.7,27.185 -0.066,-6.95 45.714,-27.475 46.152,27.616 v 6.982 l -0.057,-0.034 v 2.386 2.864 17.455 L 0,-14.466 Z m -65.855,142.82 -0.807,0.084 -76.69,-8.04 V -78.755 l 76.692,-45.633 76.692,45.633 V 61.813 Z" /></g></g></g></g></svg>
+    </div>
 </footer>
 
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="https://api-maps.yandex.ru/2.1/?apikey=d8714aa0-7b82-44b9-97f5-3decbcc5bf22&lang=ru_RU"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="js/script.js"></script>
 
 </body>

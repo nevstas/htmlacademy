@@ -13,7 +13,25 @@
   .reset-list();
 }
 
+.top-nav__item {
+
+  &:hover a, &:focus a, &:active a {
+    color: @color-red;
+  }
+
+  &--active a::before {
+    position: absolute;
+    content: "";
+    left: 20px;
+    right: 20px;
+    bottom: 35px;
+    height: 2px;
+    background-color: @color-white;
+  }
+}
+
 .top-nav__link {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;

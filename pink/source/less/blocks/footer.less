@@ -17,11 +17,24 @@
 
 .footer__develop {
   width: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__develop-img {
+  height: 35px;
+  fill: @color-red;
+  &:hover {
+    fill: @color-blue;
+  }
 }
 
 @media (min-width: @width-tablet) {
   .footer {
     display: flex;
+    align-items: center;
+    height: 130px;
   }
 
   .footer__logo-link {
@@ -52,6 +65,7 @@
   .footer {
     font-size: 18px;
     line-height: 18px;
+    height: 200px;
   }
 
   .footer__logo-svg-main {

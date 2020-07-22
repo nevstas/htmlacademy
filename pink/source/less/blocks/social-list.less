@@ -1,12 +1,20 @@
 .social-list {
+  .reset-list();
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .social-list__item {
-  .reset-list();
-
+  margin: 0px 5px;
   width: 50px;
+}
+
+.social-list__img {
+  width: 50px;
+  fill: @color-gray-dark;
+  &:hover {
+    fill: @color-blue;
+  }
 }
 
 @media (min-width: @width-tablet) {

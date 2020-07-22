@@ -9,12 +9,104 @@
 .rewiews__list {
   .reset-list();
 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
   text-align: center;
 }
 
 .rewiews__item {
   display: flex;
   flex-wrap: wrap;
+}
+
+.slick-initialized .slick-slide {
+  display: flex;
+}
+
+.slick-list {
+  width: 100%;
+  //width: calc(100% - 90px);
+}
+
+.slick-prev, .slick-next {
+  display: none !important; //important, потому что плагин слайдер проставляет в атрибут style display: inline-block;
+  width: 45px;
+  height: 45px;
+  //background-color: @color-white;
+  border: none;
+  visibility: hidden;
+  &::before {
+    visibility: visible;
+    position: absolute;
+    content: "";
+    width: 45px;
+    height: 45px;
+    background-color: red;
+    cursor: pointer;
+  }
+}
+
+.slick-prev {
+  &::before {
+    background: url("../img/rewiews-left.svg") no-repeat;
+    left: 0px;
+  }
+}
+
+.slick-next {
+  &::before {
+    background: url("../img/rewiews-left.svg") no-repeat;
+    transform: rotate(180deg);
+    right: 0px;
+  }
+}
+
+.slick-dots {
+  display: flex !important; //important, потому что плагин слайдер проставляет в атрибут style display: block;
+  justify-content: center;
+  width: 100%;
+  .reset-list();
+}
+
+.slick-dots li {
+  position: relative;
+}
+
+.slick-dots button {
+  background-color: @color-white;
+  border: none;
+  visibility: hidden;
+  cursor: pointer;
+  &::before {
+    content: "";
+    position: absolute;
+    visibility: visible;
+    width: 6px;
+    height: 6px;
+    top: 0px;
+    left: 0px;
+    border-radius: 50%;
+    background-color: @color-gray-dark;
+    z-index: 20;
+  }
+}
+
+.slick-dots .slick-active button {
+  &::after {
+    content: "";
+    position: absolute;
+    visibility: visible;
+    width: 12px;
+    height: 12px;
+    top: -3px;
+    left: -3px;
+    border-radius: 50%;
+    background-color: @color-blue;
+    z-index: 10;
+  }
 }
 
 .rewiews__text {
@@ -62,6 +154,18 @@
 @media (min-width: @width-desktop) {
   .rewiews {
     .container-desktop();
+  }
+
+  .slick-list {
+    width: calc(100% - 90px);
+  }
+
+  .slick-prev, .slick-next {
+    display: block !important; //important, потому что плагин слайдер проставляет в атрибут style display: inline-block;
+  }
+
+  .slick-dots {
+    display: none !important; //important, потому что плагин слайдер проставляет в атрибут style display: block;
   }
 
   .rewiews__author {
