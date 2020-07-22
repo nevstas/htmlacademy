@@ -2,8 +2,8 @@
   font-size: 14px;
   line-height: 30px;
   color: @color-blue;
-
   .container-mobile();
+  margin-top: 60px;
 }
 
 .rewiews__list {
@@ -118,12 +118,13 @@
   line-height: 30px;
   font-weight: @font-weight-bold;
   color: @color-black;
-
+  margin: 0px;
   width: 100%;
   order: 10;
 }
 
 .rewiews__author-info {
+  margin: 0px;
   width: 100%;
   display: none;
   order: 30;
@@ -154,6 +155,16 @@
 @media (min-width: @width-desktop) {
   .rewiews {
     .container-desktop();
+    margin-top: 60px;
+    &::before {
+      display: block;
+      margin: auto;
+      margin-bottom: 60px;
+      width: 104px;
+      height: 85px;
+      content: "";
+      background: url("../img/rewiews-quotes.svg") no-repeat 0;
+    }
   }
 
   .slick-list {

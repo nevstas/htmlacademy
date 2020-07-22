@@ -58,9 +58,6 @@ $(document).ready(function () {
 
 var pricelist_dot = document.querySelectorAll('.pricelist__dot');
 var pricelist_table = document.querySelector('.pricelist__table');
-var pricelist_left1 = "calc(-100vw)";
-var pricelist_left2 = "calc(-100vw)";
-var pricelist_left3 = "calc(-100vw)";
 
 for (var i = 0, len = pricelist_dot.length; i < len; i++) {
     pricelist_dot[i].addEventListener("click", function(e) {
@@ -70,14 +67,12 @@ for (var i = 0, len = pricelist_dot.length; i < len; i++) {
         }
         this.classList.add('pricelist__dot--active');
 
-        var index = document.querySelector('.pricelist__dot.pricelist__dot--active').length;
         var nodes = Array.prototype.slice.call( document.querySelector('.pricelist__dots').children ),
             liRef = document.querySelector('.pricelist__dot.pricelist__dot--active');
         var index = nodes.indexOf(liRef);
         index++;
 
         pricelist_table.style.left = "calc(-" + (100 * index) + "vw)";
-        pricelist_table.style.transition = "1s";
     });
 }
 

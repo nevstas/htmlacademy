@@ -662,6 +662,7 @@
   margin: 0 auto;
   width: 280px;
   padding: 0 20px;
+  margin-top: 60px;
 }
 .rewiews__list {
   list-style: none;
@@ -759,10 +760,12 @@
   line-height: 30px;
   font-weight: 700;
   color: #000000;
+  margin: 0px;
   width: 100%;
   order: 10;
 }
 .rewiews__author-info {
+  margin: 0px;
   width: 100%;
   display: none;
   order: 30;
@@ -792,6 +795,16 @@
     margin: 0 auto;
     width: 940px;
     padding: 0 10px;
+    margin-top: 60px;
+  }
+  .rewiews::before {
+    display: block;
+    margin: auto;
+    margin-bottom: 60px;
+    width: 104px;
+    height: 85px;
+    content: "";
+    background: url("../img/rewiews-quotes.svg") no-repeat 0;
   }
   .slick-list {
     width: calc(100% - 90px);
@@ -829,6 +842,7 @@
 }
 .pricelist__table {
   border-collapse: collapse;
+  transition: 1s;
   position: absolute;
   width: calc(100vw * 4);
   left: calc(-100vw);
