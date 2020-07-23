@@ -40,10 +40,6 @@
   display: none;
 }
 
-.home-page .footer {
-  display: none;
-}
-
 .footer__social-list {
   width: 100%;
 }
@@ -57,10 +53,17 @@
 }
 
 .footer__develop-img {
+  width: 27px;
   height: 35px;
   fill: @color-red;
   &:hover {
     fill: @color-blue;
+  }
+}
+
+@media (max-width: @width-only-mobile) {
+  .home-page .footer {
+    display: none;
   }
 }
 

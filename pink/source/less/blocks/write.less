@@ -8,6 +8,7 @@
   font-size: 14px;
   line-height: 30px;
   text-align: center;
+  padding: 40px 0px;
 }
 
 .write__wrapper {
@@ -69,6 +70,9 @@
     background: @color-white;
     cursor: pointer;
     margin-top: 0px;
+    &:hover, &:focus, &:active {
+      background: @color-red;
+    }
   }
   &:focus {
     outline: none;
@@ -126,6 +130,9 @@
     margin-right: 20px;
   }
 
+  .write__title {
+    padding: 60px 0px;
+  }
   .write__label--img {
     fill: @color-red;
   }
