@@ -61,9 +61,8 @@ var pricelist_table = document.querySelector('.pricelist__table');
 
 for (var i = 0, len = pricelist_dot.length; i < len; i++) {
     pricelist_dot[i].addEventListener("click", function(e) {
-        var pricelist_dots = document.querySelectorAll('.pricelist__dot');
-        for (var i = 0, len = pricelist_dots.length; i < len; i++) {
-            pricelist_dots[i].classList.remove('pricelist__dot--active');
+        for (var i = 0, len = pricelist_dot.length; i < len; i++) {
+            pricelist_dot[i].classList.remove('pricelist__dot--active');
         }
         this.classList.add('pricelist__dot--active');
 
@@ -76,5 +75,23 @@ for (var i = 0, len = pricelist_dot.length; i < len; i++) {
     });
 }
 
+var write_label = document.querySelectorAll('.write__label');
 
+for (var i = 0, len = write_label.length; i < len; i++) {
+    write_label[i].addEventListener("click", function(e) {
 
+        for (var i = 0, len = write_label.length; i < len; i++) {
+            write_label[i].classList.remove('write__label--active');
+        }
+        this.classList.add('write__label--active');
+
+        var input_id = this.getAttribute("for");
+        var write_input = document.querySelectorAll('.write__input');
+        for (var i = 0, len = write_input.length; i < len; i++) {
+            write_input[i].classList.remove('write__input--active');
+        }
+        var current_write_input = document.getElementById(input_id);
+        current_write_input.classList.add('write__input--active');
+
+    });
+}

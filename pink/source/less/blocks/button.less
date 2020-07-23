@@ -1,13 +1,12 @@
 .button__type1 {
-  //font-size: 18px;
-  //line-height: 18px;
-  //font-weight: @font-weight-bold;
-
   color: @color-white;
   text-align: center;
   border: 3px solid @color-white;
   border-radius: 30px;
-  padding: 12px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
 
   &:hover, &:focus, &:active {
     color: @color-red;
@@ -20,11 +19,37 @@
 }
 
 .button__type3 {
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 35px;
+  color: @color-white;
+  background-color: @color-red;
 }
 
 .button__type4 {
-  &--disable {
-
+  cursor: pointer;
+  color: @color-red;
+  border: 3px solid @color-red;
+  background-color: @color-white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 56px;
+  border-radius: 28px;
+  &:hover, &:focus, &:active {
+    color: @color-white;
+    background-color: @color-red;
   }
+  &:disabled {
+    cursor: auto;
+    color: @color-gray-dark;
+    border: 3px solid @color-gray-dark;
+    &:hover, &:focus, &:active {
+      color: @color-gray-dark;
+      background-color: @color-white;
+    }
+  }
+
+
 }

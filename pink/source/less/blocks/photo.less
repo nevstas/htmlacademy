@@ -4,20 +4,39 @@
   color: @color-blue;
 }
 
-.photo-title {
+.photo__title {
   font-size: 14px;
   line-height: 30px;
   text-align: center;
+  padding: 45px 0px;
+}
+
+.photo__img {
+  display: block;
+  width: 280px;
+  height: 180px;
+  object-fit: cover;
 }
 
 .main-photo {
+  position: relative;
+  margin-bottom: 20px;
+}
 
+.main-photo .photo__img {
+  width: 100%;
+  height: auto;
 }
 
 .main-photo__button {
   font-size: 12px;
   line-height: 24px;
   font-weight: @font-weight-bold;
+  width: 140px;
+
+  position: absolute;
+  top: 0px;
+  right: 20px;
 }
 
 .photo__list {
@@ -27,28 +46,35 @@
 }
 
 .photo__item {
+  display: flex;
+  flex-wrap: wrap;
   width: 100%;
+  margin-bottom: 20px;
+  background-color: @color-gray;
 }
 
-.photo-data {
+.photo__data {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding: 20px;
+}
+
+.photo__data-wrapper {
+
 }
 
 .photo__author {
+  margin: 0;
   width: 100%;
   order: 10;
 }
 
 .photo__desc {
+  margin: 0;
   width: 100%;
   order: 20;
-}
-
-.photo__like {
-  width: 100%;
-  order: 30;
+  margin-bottom: 10px;
 }
 
 .photo__author_name {
@@ -62,29 +88,63 @@
 }
 
 .photo__like {
+  width: 100%;
+  order: 30;
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
 }
 
 .photo__like-text {
   font-size: 12px;
   line-height: 24px;
   color: @color-red;
+  order: 20;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.photo__like-img-link {
+  display: flex;
+  order: 10;
 }
 
 .photo__like-img {
-  width: 20px;
+  width: 16px;
+  margin-right: 20px;
 }
 
 @media (min-width: @width-tablet) {
 
-  .photo-title {
+  .photo__title {
     font-size: 18px;
     line-height: 30px;
+    padding: 90px 0px;
+  }
+
+  .main-photo__button {
+    top: 55px;
+  }
+
+  .photo__img {
+    width: 300px;
+    height: 300px;
   }
 
   .photo__item {
     width: 300px;
+  }
+
+  .photo__like-text {
+    order: 10;
+  }
+
+  .photo__like-img-link {
+    order: 20;
+  }
+
+  .photo__like-img {
+    margin-right: auto;
+    margin-left: 20px;
   }
 
   .main-photo .photo__author {
@@ -101,11 +161,25 @@
       width: 150px;
       order: 20;
     }
+
+  .photo__like {
+    justify-content: space-between;
+  }
 }
 
 @media (min-width: @width-desktop) {
+
+  .main-photo__button {
+    right: 130px;
+  }
+
   .main-photo .photo__img {
     width: 100%;
+  }
+
+  .photo__img {
+    width: 300px;
+    height: 400px;
   }
 
   .photo__item {

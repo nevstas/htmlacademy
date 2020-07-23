@@ -5,10 +5,17 @@
 }
 
 .write__title {
+  font-size: 14px;
+  line-height: 30px;
   text-align: center;
 }
 
 .write__wrapper {
+  background-color: @color-gray;
+  padding: 20px 0px;
+}
+
+.write__wrapper .container {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -22,7 +29,56 @@
   width: 100%;
 }
 
+.write__block-setting {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.write__label {
+  width: calc(100% / 3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 35px;
+}
+
+.write__label--img {
+  width: 50px;
+  height: 50px;
+  fill: @color-gray-dark;
+  &:hover {
+    fill: @color-black;
+  }
+}
+
+.write__input {
+  width: 100%;
+  -webkit-appearance: none;
+  height: 2px;
+  cursor: pointer;
+  background: @color-blue;
+  margin-bottom: 10px;
+
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: 2px solid @color-red;
+    height: 14px;
+    width: 14px;
+    border-radius: 14px;
+    background: @color-white;
+    cursor: pointer;
+    margin-top: 0px;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
 .write__buttons {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: @font-weight-bold;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -30,12 +86,53 @@
 
 .write__button {
   width: 100%;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: @font-weight-bold;
+  margin-bottom: 10px;
+}
+
+@media (max-width: @width-only-mobile) {
+
+  .write__input {
+    display: none;
+    &--active {
+      display: block;
+    }
+  }
+
+  .write__label {
+    order: -1;
+    &--active {
+      .write__label--img {
+        fill: @color-red;
+      }
+    }
+  }
 }
 
 @media (min-width: @width-tablet) {
+  .write__wrapper {
+    padding: 55px 0px;
+  }
+
   .write {
     font-size: 18px;
     line-height: 30px;
+  }
+
+  .write__label {
+    width: 50px;
+    margin-right: 20px;
+  }
+
+  .write__label--img {
+    fill: @color-red;
+  }
+
+  .write__input {
+    width: 230px;
+    margin-top: 25px;
   }
 
   .write__block-img {
@@ -56,4 +153,11 @@
     width: auto;
   }
 
+  .write__input {
+    width: 340px;
+  }
+
+  .write__button {
+    width: 190px;
+  }
 }
