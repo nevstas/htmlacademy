@@ -1,3 +1,19 @@
+.container {
+    .container-mobile();
+}
+
+@media (min-width: @width-tablet) {
+    .container {
+        .container-tablet();
+    }
+}
+
+@media (min-width: @width-desktop) {
+    .container {
+        .container-desktop();
+    }
+}
+
 @import "variables.less";
 @import "mixins.less";
 @import "blocks/button.less";
@@ -45,20 +61,4 @@ img {
     width: 1px;
     height: 1px;
     margin: -1px;
-}
-
-.container {
-    .container-mobile();
-}
-
-@media (min-width: @width-tablet) {
-    .container {
-        .container-tablet();
-    }
-}
-
-@media (min-width: @width-desktop) {
-    .container {
-        .container-desktop();
-    }
 }

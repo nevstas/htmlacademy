@@ -6,7 +6,8 @@
 
 .prize__desc {
   text-align: center;
-  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .prize-wrapper {
@@ -15,14 +16,29 @@
   flex-wrap: wrap;
 }
 
+.prize-label {
+  font-size: 14px;
+  line-height: 30px;
+  color: @color-red;
+  text-transform: uppercase;
+}
+
+.prize__person-input {
+
+}
+
 .prize__person {
-  width: 100%;
   order: 10;
 }
 
 .prize__person-input, .prize__contacts-input, .prize__emotions-input {
   font-size: 18px;
   line-height: 30px;
+  width: calc(100% - 40px);
+  padding: 20px;
+  height: 16px;
+  color: @color-blue;
+  border: 2px solid @color-gray;
 }
 
 .prize__person-label, .prize__contacts-label {
@@ -36,13 +52,82 @@
 }
 
 .prize__app {
+  margin-top: 45px;
+  margin-bottom: 45px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   width: 100%;
+  background-color: @color-gray;
   order: 40;
 }
+
+.prize__app-item {
+  margin-bottom: 45px;
+}
+
+.prize__app-label {
+  position: relative;
+  padding-left: 70px;
+  cursor: pointer;
+  padding-top: 10px;
+}
+
+.prize__app-input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Кружки начало */
+
+.checkmark-radio {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  top: 0px;
+  left: 0px;
+  border-radius: 50%;
+  border: 2px solid @color-gray-dark;
+  background-color: @color-white;
+}
+
+.checkmark-circle {
+  position: absolute;
+  display: none;
+}
+
+.prize__app-input:checked ~ .checkmark-radio .checkmark-circle {
+  display: block;
+}
+
+.prize__app-input:hover .checkmark-circle {
+  border: 2px solid @color-blue;
+}
+
+.prize__app-input:focus ~ .checkmark-radio {
+  border: 2px solid @color-blue;
+}
+
+.checkmark-circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #d22856;
+  top: 12px;
+  left: 12px;
+}
+
+/* Кружки конец */
 
 .prize__contacts {
   width: 100%;
   order: 30;
+}
+
+.prize__title-contacts {
+  display: none;
 }
 
 .prize__contacts-wrapper {
@@ -55,14 +140,109 @@
   width: 100%;
 }
 
-.prize__achievements {
-  width: 100%;
-  order: 20;
+.prize__contacts-label {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-.prize__emotions {
+.prize__achievements {
+  margin-top: 45px;
+  margin-bottom: 45px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   width: 100%;
+  order: 20;
+  background-color: @color-gray;
+}
+
+.prize__achievements-item {
+  margin-bottom: 45px;
+}
+
+.prize__achievements-label {
+  position: relative;
+  padding-left: 70px;
+  cursor: pointer;
+  padding-top: 10px;
+}
+
+.prize__achievements-input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Крестики начало */
+
+.checkmark-checkbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 40px;
+  width: 40px;
+  border: 2px solid @color-gray-dark;
+}
+
+.checkmark-cross {
+  position: absolute;
+  display: none;
+}
+
+.prize__achievements-input:checked ~ .checkmark-checkbox .checkmark-cross {
+  display: block;
+}
+
+.prize__achievements-input:focus ~ .checkmark-checkbox {
+  border: 2px solid @color-blue;
+}
+.prize__achievements-label:hover .checkmark-checkbox {
+  border: 2px solid @color-blue;
+}
+
+.checkmark-cross {
+  width: 15px;
+  height: 15px;
+  margin-left: 2px;
+  margin-top: 2px;
+  position: relative;
+  transform:rotate(45deg);
+  -ms-transform:rotate(45deg); /* IE 9 */
+  -webkit-transform:rotate(45deg); /* Safari and Chrome */
+}
+
+.checkmark-cross::before, .checkmark-cross::after {
+  content: "";
+  position: absolute;
+  background: @color-red;
+}
+
+.checkmark-cross::before {
+  left: 131%;
+  width: 2px;
+  margin-left: 35%;
+  height: 173%;
+  top: -55%;
+}
+
+.checkmark-cross::after {
+  top: 120%;
+  height: 2px;
+  margin-top: -15%;
+  width: 70%;
+  left: 96%;
+}
+
+/* Крестики конец */
+
+.prize__emotions {
   order: 50;
+  margin-bottom: 45px;
+}
+
+.prize__emotions-input {
+  min-height: 200px;
 }
 
 .prize__submit-wrapper {
@@ -70,11 +250,11 @@
   justify-content: space-between;
   flex-wrap: wrap;
 
-  width: 100%;
   order: 60;
 }
 
 .prize__submit {
+  width: 100%;
   font-size: 18px;
   line-height: 30px;
   font-weight: @font-weight-bold;
@@ -85,16 +265,21 @@
   line-height: 30px;
 }
 
+.prize__required-text {
+  color: @color-red
+}
+
 .prize__person-label {
-  font-size: 14px;
-  line-height: 30px;
-  color: @color-red;
+  width: 100%;
 }
 
 .prize__title {
   font-size: 14px;
   line-height: 18px;
   color: @color-red;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 45px;
 }
 
 @media (min-width: @width-tablet) {
@@ -103,9 +288,39 @@
     line-height: 30px;
   }
 
+  .prize__person-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+
+  .prize__person-label {
+    width: 130px;
+    margin-top: 15px;
+  }
+
+  .prize__person-input {
+    width: clac(100% - 130px);
+  }
+
+  .prize__block {
+    border: 2px solid @color-gray;
+    border-radius: 2px;
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
   .prize__title {
     font-size: 14px;
     line-height: 30px;
+  }
+
+  .prize__block .prize__title {
+    position: absolute;
+    background-color: white;
+    padding: 0 30px;
+    top: -28px;
   }
 
   .prize__person {
@@ -114,18 +329,98 @@
 
   .prize__app {
     order: 20;
+
+    background-color: transparent;
+  }
+
+  .prize__app .prize__title {
+    left: 135px;
   }
 
   .prize__contacts {
     order: 30;
   }
 
+  .prize__title-contacts {
+    display: block;
+  }
+
+  .prize__contacts .prize__title {
+    left: 198px;
+  }
+
+  .prize__contacts-item {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .prize__contacts-item-phone {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      background-color: @color-gray;
+      top: 0px;
+      right: 0px;
+    }
+    &::after {
+      content: "";
+      background: url("../img/contacts-phone.svg") no-repeat;
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      top: 17px;
+      right: -17px;
+    }
+  }
+
+  .prize__contacts-item-email {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      background-color: @color-gray;
+      top: 0px;
+      right: 0px;
+    }
+    &::after {
+      content: "";
+      background: url("../img/contacts-email.svg") no-repeat;
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      top: 20px;
+      right: -18px;
+    }
+  }
+
+  .prize__contacts-label {
+    order: 20;
+  }
+
+  .prize__contacts-input {
+    order: 10;
+  }
+
   .prize__achievements {
+    background-color: transparent;
     order: 40;
+  }
+
+  .prize__achievements .prize__title {
+    left: 107px;
   }
 
   .prize__emotions {
     order: 50;
+  }
+
+  .prize__emotions .prize__title {
+    left: 206px;
   }
 
   .prize__submit-wrapper {
@@ -135,31 +430,84 @@
 
 @media (min-width: @width-desktop) {
 
+  .prize-wrapper {
+    .container-desktop();
+  }
+
   .prize__person {
     width: 435px;
   }
 
   .prize__app {
     width: 435px;
+    margin-top: 0px;
+  }
+
+  .prize__app-label {
+    margin-left: 70px;
+  }
+
+  .prize__app .container {
+    width: 435px;
+  }
+
+  .prize__app .prize__title {
+    left: 33px;
   }
 
   .prize__contacts {
 
   }
 
+  .prize__contacts .prize__title {
+    left: 350px;
+  }
+
   .prize__contacts-item {
     width: 375px;
+  }
+
+  .prize__contacts-item-phone {
+    margin-left: 60px;
+  }
+
+  .prize__contacts-item-email {
+    margin-right: 60px;
   }
 
   .prize__achievements {
 
   }
 
+  .prize__achievements .prize__title {
+    left: 257px;
+  }
+
+  .prize__achievements .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .prize__achievements-item {
+    width: calc(100% / 3);
+  }
+
   .prize__emotions {
 
   }
 
-  .prize__submit-wrapper {
-
+  .prize__emotions .prize__title {
+    left: 345px;
   }
+
+  .prize__submit-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .prize__submit {
+    width: 300px;
+  }
+
 }

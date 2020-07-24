@@ -134,86 +134,117 @@
 <main>
     <h1 class="visually-hidden">Конкурс</h1>
 
-    <form class="prize container">
-        <p class="prize__desc">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
+    <form class="prize">
+        <p class="prize__desc container">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
 
         <div class="prize-wrapper">
-            <div class="prize__person">
+            <div class="prize__person container">
                 <p class="prize__person-item">
-                    <label class="prize__person-label" for="first_name">Фамилия</label>
+                    <label class="prize-label prize__person-label" for="first_name">Фамилия</label>
                     <input class="prize__person-input" id="first_name" type="text" placeholder="Укажите фамилию *">
                 </p>
                 <p class="prize__person-item">
-                    <label class="prize__person-label" for="last_name">Имя</label>
+                    <label class="prize-label prize__person-label" for="last_name">Имя</label>
                     <input class="prize__person-input" id="last_name" type="text" placeholder="Введите ваше имя *">
                 </p>
                 <p class="prize__person-item">
-                    <label class="prize__person-label" for="middle_name">Отчество</label>
+                    <label class="prize-label prize__person-label" for="middle_name">Отчество</label>
                     <input class="prize__person-input" id="middle_name" type="text" placeholder="Ну и отчество тоже">
                 </p>
             </div>
-            <div class="prize__app prize__block">
-                <h2 class="prize__title">С каким приложением путешествовали?</h2>
-                <p class="prize__app-item">
-                    <label class="prize__app-label" for="app_ios">Pink для IOS</label>
-                    <input class="prize__app-input" type="radio" id="app_ios" name="app" checked>
-                </p>
-                <p class="prize__app-item">
-                    <label class="prize__app-label" for="app_android">Pink на Android</label>
-                    <input class="prize__app-input" type="radio" id="app_android" name="app">
-                </p>
-                <p class="prize__app-item">
-                    <label class="prize__app-label" for="app_windows">Windows Phone</label>
-                    <input class="prize__app-input" type="radio" id="app_windows" name="app">
-                </p>
-            </div>
-            <div class="prize__contacts prize__block">
-                <h2 class="prize__title">Контактная информация</h2>
-                <div class="prize__contacts-wrapper">
-                    <p class="prize__contacts-item">
-                        <input class="prize__contacts-input" id="phone" type="text" placeholder="Номер, пожалуйста">
-                        <label class="prize__contacts-label" for="phone">Номер телефона</label>
+            <div class="prize__app">
+                <div class="container prize__block">
+                    <h2 class="prize__title">С каким приложением путешествовали?</h2>
+                    <p class="prize__app-item">
+                        <label class="prize-label prize__app-label" for="app_ios">
+                            Pink для IOS
+                            <input class="prize__app-input" type="radio" id="app_ios" name="app" checked>
+                            <span class="checkmark-radio"><span class="checkmark-circle"></span></span>
+                        </label>
                     </p>
-                    <p class="prize__contacts-item">
-                        <input class="prize__contacts-input" id="email" type="text" placeholder="Введите почту *">
-                        <label class="prize__contacts-label" for="email">Адрес почты</label>
+                    <p class="prize__app-item">
+                        <label class="prize-label prize__app-label" for="app_android">
+                            Pink на Android
+                            <input class="prize__app-input" type="radio" id="app_android" name="app">
+                            <span class="checkmark-radio"><span class="checkmark-circle"></span></span>
+                        </label>
+                    </p>
+                    <p class="prize__app-item">
+                        <label class="prize-label prize__app-label" for="app_windows">
+                            Windows Phone
+                            <input class="prize__app-input" type="radio" id="app_windows" name="app">
+                            <span class="checkmark-radio"><span class="checkmark-circle"></span></span>
+                        </label>
                     </p>
                 </div>
             </div>
-            <div class="prize__achievements prize__block">
-                <h2 class="prize__title">Ваши безбашенные достижения в путешествии</h2>
-                <p class="prize__achievements-item">
-                    <label class="prize__achievements-label" for="achievements_1">Сделал селфи с акулой</label>
-                    <input class="prize__achievements-input" type="checkbox" id="achievements_1" name="achievements" checked>
-                </p>
-                <p class="prize__achievements-item">
-                    <label class="prize__achievements-label" for="achievements_2">Видел Чака Норриса</label>
-                    <input class="prize__achievements-input" type="checkbox" id="achievements_2" name="achievements" checked>
-                </p>
-                <p class="prize__achievements-item">
-                    <label class="prize__achievements-label" for="achievements_3">Удержал башню</label>
-                    <input class="prize__achievements-input" type="checkbox" id="achievements_3" name="achievements" checked>
-                </p>
-                <p class="prize__achievements-item">
-                    <label class="prize__achievements-label" for="achievements_4">Обгорел на пляже</label>
-                    <input class="prize__achievements-input" type="checkbox" id="achievements_4" name="achievements" checked>
-                </p>
-                <p class="prize__achievements-item">
-                    <label class="prize__achievements-label" for="achievements_5">Накупил сувениров</label>
-                    <input class="prize__achievements-input" type="checkbox" id="achievements_5" name="achievements" checked>
-                </p>
-                <p class="prize__achievements-item">
-                    <label class="prize__achievements-label" for="achievements_6">Разгромил отель</label>
-                    <input class="prize__achievements-input" type="checkbox" id="achievements_6" name="achievements" checked>
-                </p>
+            <div class="prize__contacts">
+                <div class="prize__contacts-wrapper container prize__block">
+                    <h2 class="prize__title prize__title-contacts">Контактная информация</h2>
+                    <p class="prize__contacts-item prize__contacts-item-phone">
+                        <label class="prize-label prize__contacts-label" for="phone">Номер телефона</label>
+                        <input class="prize__contacts-input" id="phone" type="text" placeholder="Номер, пожалуйста">
+                    </p>
+                    <p class="prize__contacts-item prize__contacts-item-email">
+                        <label class="prize-label prize__contacts-label" for="email">Адрес почты</label>
+                        <input class="prize__contacts-input" id="email" type="text" placeholder="Введите почту *">
+                    </p>
+                </div>
             </div>
-            <div class="prize__emotions prize__block">
+            <div class="prize__achievements">
+                <div class="container prize__block">
+                    <h2 class="prize__title">Ваши безбашенные достижения в путешествии</h2>
+                    <p class="prize__achievements-item">
+                        <label class="prize__achievements-label" for="achievements_1">
+                            Сделал селфи с акулой
+                            <input class="prize__achievements-input" type="checkbox" id="achievements_1" name="achievements" checked>
+                            <span class="checkmark-checkbox"><span class="checkmark-cross"></span></span>
+                        </label>
+                    </p>
+                    <p class="prize__achievements-item">
+                        <label class="prize__achievements-label" for="achievements_2">
+                            Видел Чака Норриса
+                            <input class="prize__achievements-input" type="checkbox" id="achievements_2" name="achievements" checked>
+                            <span class="checkmark-checkbox"><span class="checkmark-cross"></span></span>
+                        </label>
+                    </p>
+                    <p class="prize__achievements-item">
+                        <label class="prize__achievements-label" for="achievements_3">
+                            Удержал башню
+                            <input class="prize__achievements-input" type="checkbox" id="achievements_3" name="achievements">
+                            <span class="checkmark-checkbox"><span class="checkmark-cross"></span></span>
+                        </label>
+                    </p>
+                    <p class="prize__achievements-item">
+                        <label class="prize__achievements-label" for="achievements_4">
+                            Обгорел на пляже
+                            <input class="prize__achievements-input" type="checkbox" id="achievements_4" name="achievements">
+                            <span class="checkmark-checkbox"><span class="checkmark-cross"></span></span>
+                        </label>
+                    </p>
+                    <p class="prize__achievements-item">
+                        <label class="prize__achievements-label" for="achievements_5">
+                            Накупил сувениров
+                            <input class="prize__achievements-input" type="checkbox" id="achievements_5" name="achievements" checked>
+                            <span class="checkmark-checkbox"><span class="checkmark-cross"></span></span>
+                        </label>
+                    </p>
+                    <p class="prize__achievements-item">
+                        <label class="prize__achievements-label" for="achievements_6">
+                            Разгромил отель
+                            <input class="prize__achievements-input" type="checkbox" id="achievements_6" name="achievements">
+                            <span class="checkmark-checkbox"><span class="checkmark-cross"></span></span>
+                        </label>
+                    </p>
+                </div>
+            </div>
+            <div class="prize__emotions prize__block container">
                 <h2 class="prize__title">Опишите свои эмоции</h2>
                 <textarea class="prize__emotions-input" id="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </div>
-            <div class="prize__submit-wrapper">
-                <button class="prize__submit button__type2">Отправить форму</button>
-                <p class="prize__required"><span class="required_text">*</span> — обязательные для заполнения поля</p>
+            <div class="prize__submit-wrapper container">
+                <button class="prize__submit button__type2" type="submit">Отправить форму</button>
+                <p class="prize__required"><span class="prize__required-text">*</span> — обязательные для заполнения поля</p>
             </div>
         </div>
     </form>
