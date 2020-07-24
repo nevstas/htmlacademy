@@ -145,6 +145,17 @@
   width: 50px;
   cursor: pointer;
 }
+.main-header__wrapper--closed .main-header__logo-burger-block:hover .main-header__logo-burger,
+.main-header__wrapper--closed .main-header__logo-burger-block:focus .main-header__logo-burger,
+.main-header__wrapper--closed .main-header__logo-burger-block:active .main-header__logo-burger,
+.main-header__wrapper--closed .main-header__logo-burger-block:hover .main-header__logo-burger::before,
+.main-header__wrapper--closed .main-header__logo-burger-block:focus .main-header__logo-burger::before,
+.main-header__wrapper--closed .main-header__logo-burger-block:active .main-header__logo-burger::before,
+.main-header__wrapper--closed .main-header__logo-burger-block:hover .main-header__logo-burger::after,
+.main-header__wrapper--closed .main-header__logo-burger-block:focus .main-header__logo-burger::after,
+.main-header__wrapper--closed .main-header__logo-burger-block:active .main-header__logo-burger::after {
+  background-color: #d22856;
+}
 .main-header__wrapper--closed .main-header__logo-burger {
   top: 23px;
   right: 20px;
@@ -156,6 +167,17 @@
   width: 50px;
   height: 5px;
   background-color: #FFFFFF;
+}
+.main-header__wrapper--closed .main-header__logo-burger:hover,
+.main-header__wrapper--closed .main-header__logo-burger::before:hover,
+.main-header__wrapper--closed .main-header__logo-burger::after:hover,
+.main-header__wrapper--closed .main-header__logo-burger:focus,
+.main-header__wrapper--closed .main-header__logo-burger::before:focus,
+.main-header__wrapper--closed .main-header__logo-burger::after:focus,
+.main-header__wrapper--closed .main-header__logo-burger:active,
+.main-header__wrapper--closed .main-header__logo-burger::before:active,
+.main-header__wrapper--closed .main-header__logo-burger::after:active {
+  background-color: #d22856;
 }
 .main-header__wrapper--closed .main-header__logo-burger::before {
   content: "";
@@ -170,6 +192,17 @@
 .main-header__wrapper--opened .main-header__logo-burger-block {
   width: 50px;
   cursor: pointer;
+}
+.main-header__wrapper--opened .main-header__logo-burger-block:hover .main-header__logo-burger,
+.main-header__wrapper--opened .main-header__logo-burger-block:focus .main-header__logo-burger,
+.main-header__wrapper--opened .main-header__logo-burger-block:active .main-header__logo-burger,
+.main-header__wrapper--opened .main-header__logo-burger-block:hover .main-header__logo-burger::before,
+.main-header__wrapper--opened .main-header__logo-burger-block:focus .main-header__logo-burger::before,
+.main-header__wrapper--opened .main-header__logo-burger-block:active .main-header__logo-burger::before,
+.main-header__wrapper--opened .main-header__logo-burger-block:hover .main-header__logo-burger::after,
+.main-header__wrapper--opened .main-header__logo-burger-block:focus .main-header__logo-burger::after,
+.main-header__wrapper--opened .main-header__logo-burger-block:active .main-header__logo-burger::after {
+  background-color: #d22856;
 }
 .main-header__wrapper--opened .main-header__logo-burger::before,
 .main-header__wrapper--opened .main-header__logo-burger::after {
@@ -1096,6 +1129,9 @@
   font-weight: 300;
   color: #d22856;
 }
+.contacts__link-email:hover {
+  color: #283645;
+}
 @media (min-width: 660px) {
   .contacts__title {
     font-size: 40px;
@@ -1252,6 +1288,17 @@
   height: 16px;
   color: #283645;
   border: 2px solid #f2f2f2;
+}
+.prize__person-input:hover,
+.prize__contacts-input:hover,
+.prize__emotions-input:hover {
+  border: 2px solid #283645;
+}
+.prize__person-input:focus,
+.prize__contacts-input:focus,
+.prize__emotions-input:focus {
+  border: 2px solid #d22856;
+  outline: none;
 }
 .prize__person-label,
 .prize__contacts-label {

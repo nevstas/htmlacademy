@@ -48,6 +48,11 @@
   .main-header__logo-burger-block {
     width: 50px;
     cursor: pointer;
+    &:hover, &:focus, &:active {
+      .main-header__logo-burger, .main-header__logo-burger::before, .main-header__logo-burger::after {
+        background-color: @color-red;
+      }
+    }
   }
 
   .main-header__logo-burger {
@@ -60,6 +65,9 @@
     width: 50px;
     height: 5px;
     background-color: @color-white;
+    &:hover, &:focus, &:active {
+      background-color: @color-red;
+    }
   }
 
   .main-header__logo-burger::before {
@@ -79,6 +87,11 @@
   .main-header__logo-burger-block {
     width: 50px;
     cursor: pointer;
+    &:hover, &:focus, &:active {
+      .main-header__logo-burger, .main-header__logo-burger::before, .main-header__logo-burger::after {
+        background-color: @color-red;
+      }
+    }
   }
 
   .main-header__logo-burger::before, .main-header__logo-burger::after {
