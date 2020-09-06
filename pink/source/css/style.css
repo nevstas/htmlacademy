@@ -1666,10 +1666,13 @@
   .prize__achievements .container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
   }
   .prize__achievements-item {
-    width: calc(100% / 3);
+    width: 275px;
+  }
+  .prize__emotions-wrapper {
+    padding: 0px 50px;
   }
   .prize__emotions .prize__title {
     left: 345px;
